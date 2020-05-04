@@ -30,5 +30,4 @@ execute as @a at @s if block ~ ~ ~ #minecraft:beds run tp @s ~ ~ ~
 schedule function ndd:natural_disaster/acid_rain/tick 2s
 
 scoreboard players add ndd.time ndd.data 1
-execute if score ndd.time ndd.data matches 30 run schedule clear ndd:natural_disaster/acid_rain/tick
-execute if score ndd.time ndd.data matches 30 run function ndd:natural_disaster/acid_rain/remove
+execute if score ndd.time ndd.data matches 150 run function ndd:natural_disaster/acid_rain/remove

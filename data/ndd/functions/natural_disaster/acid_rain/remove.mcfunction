@@ -3,7 +3,6 @@
 # Datapck by 2mal3
 
 weather clear
-
-
+schedule clear ndd:natural_disaster/acid_rain/tick
 function ndd:new_time
 scoreboard players set ndd.natural_disaster_on ndd.data 0

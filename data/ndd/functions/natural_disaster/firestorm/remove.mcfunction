@@ -2,6 +2,7 @@
 # Called from: ndd:natural_disaster/firestorm/tick
 # Datapck by 2mal3
 
+schedule clear ndd:natural_disaster/firestorm/tick
 scoreboard players set ndd.firestorm_on ndd.data 0
 tp @e[tag=ndd.firestorm.s] ~ -1000 ~
 function ndd:new_time

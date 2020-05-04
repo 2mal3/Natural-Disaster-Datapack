@@ -7,7 +7,7 @@
 scoreboard objectives add ndd.data dummy
 scoreboard players set V1 ndd.data 0
 scoreboard players set V2 ndd.data 8
-scoreboard players set V3 ndd.data 2
+scoreboard players set V3 ndd.data 3
 
 # send message
 tellraw @a ["",{"text":"[Server] Natural Disaster Datapack v."},{"score":{"name":"V1","objective":"ndd.data"}},{"text":"."},{"score":{"name":"V2","objective":"ndd.data"}},{"text":"."},{"score":{"name":"V3","objective":"ndd.data"}},{"text":" by 2mal3 was loaded!"}]

@@ -12,5 +12,4 @@ execute as @e[tag=ndd.doline] at @s run kill @e[type=minecraft:item,distance=..1
 schedule function ndd:natural_disaster/doline/tick 5t
 
 scoreboard players add ndd.time ndd.data 1
-execute if score ndd.time ndd.data matches 30 run schedule clear ndd:natural_disaster/doline/tick
 execute if score ndd.time ndd.data matches 30 run function ndd:natural_disaster/doline/remove
