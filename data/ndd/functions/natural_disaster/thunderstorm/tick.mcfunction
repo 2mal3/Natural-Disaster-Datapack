@@ -15,5 +15,5 @@ execute as @a at @s if block ~ ~ ~ #minecraft:beds run tp @s ~ ~ ~
 # timer
 schedule function ndd:natural_disaster/thunderstorm/tick 5s
 
-scoreboard players add ndd.time ndd.data 1
-execute if score ndd.time ndd.data matches 60 run function ndd:natural_disaster/thunderstorm/remove
+scoreboard players remove ndd.time ndd.data 1
+execute if score ndd.time ndd.data matches 0 run function ndd:natural_disaster/thunderstorm/remove

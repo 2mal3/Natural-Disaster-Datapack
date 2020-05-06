@@ -6,8 +6,8 @@
 # add system scoreboards
 scoreboard objectives add ndd.data dummy
 scoreboard players set V1 ndd.data 0
-scoreboard players set V2 ndd.data 8
-scoreboard players set V3 ndd.data 3
+scoreboard players set V2 ndd.data 9
+scoreboard players set V3 ndd.data 4
 
 # send message
 tellraw @a ["",{"text":"[Server] Natural Disaster Datapack v."},{"score":{"name":"V1","objective":"ndd.data"}},{"text":"."},{"score":{"name":"V2","objective":"ndd.data"}},{"text":"."},{"score":{"name":"V3","objective":"ndd.data"}},{"text":" by 2mal3 was loaded!"}]
@@ -22,6 +22,8 @@ scoreboard objectives add ndd.deathCount deathCount
 # first datapack run
 execute unless score ndd.first ndd.data matches 1 run function ndd:main/first
 
+# load config
+function ndd:config
 
 # slow tick
 schedule function ndd:main/tick_slow 1s

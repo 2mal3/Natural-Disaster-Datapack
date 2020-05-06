@@ -20,5 +20,5 @@ execute as @a at @s if block ~ ~ ~ #minecraft:beds run tp @s ~ ~ ~
 # timer
 schedule function ndd:natural_disaster/hail/tick 2s
 
-scoreboard players add ndd.time ndd.data 1
-execute if score ndd.time ndd.data matches 150 run function ndd:natural_disaster/hail/remove
+scoreboard players remove ndd.time ndd.data 1
+execute if score ndd.time ndd.data matches 0 run function ndd:natural_disaster/hail/remove

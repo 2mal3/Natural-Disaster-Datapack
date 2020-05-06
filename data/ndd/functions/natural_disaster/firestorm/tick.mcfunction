@@ -13,6 +13,7 @@ execute as @a[gamemode=!spectator] at @s run summon minecraft:area_effect_cloud 
 execute as @a[gamemode=!spectator] at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["ndd.firestorm.p"]}
 execute as @a[gamemode=!spectator] at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["ndd.firestorm.p"]}
 execute as @a[gamemode=!spectator] at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["ndd.firestorm.p"]}
+execute as @a[gamemode=!spectator] at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["ndd.firestorm.p"]}
 
 
 execute as @a[gamemode=!spectator] at @s run spreadplayers ~ ~ 10 30 false @e[sort=nearest,limit=10,tag=ndd.firestorm.p]
@@ -22,5 +23,5 @@ execute as @e[tag=ndd.firestorm.p] at @s run summon minecraft:slime ~ ~35 ~ {NoG
 # timer
 schedule function ndd:natural_disaster/firestorm/tick 2s
 
-scoreboard players add ndd.time ndd.data 1
-execute if score ndd.time ndd.data matches 150 run function ndd:natural_disaster/firestorm/remove
+scoreboard players remove ndd.time ndd.data 1
+execute if score ndd.time ndd.data matches 0 run function ndd:natural_disaster/firestorm/remove

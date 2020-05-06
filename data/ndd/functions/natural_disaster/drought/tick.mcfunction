@@ -12,5 +12,5 @@ execute as @a[gamemode=!spectator] at @s run fill ~-6 ~-6 ~-6 ~6 ~6 ~6 minecraft
 # timer
 schedule function ndd:natural_disaster/drought/tick 10t
 
-scoreboard players add ndd.time ndd.data 1
-execute if score ndd.time ndd.data matches 600 run function ndd:natural_disaster/drought/remove
+scoreboard players remove ndd.time ndd.data 1
+execute if score ndd.time ndd.data matches 0 run function ndd:natural_disaster/drought/remove
