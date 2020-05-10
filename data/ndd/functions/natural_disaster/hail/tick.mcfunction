@@ -14,7 +14,7 @@ execute as @e[tag=ndd.hail] at @s run summon minecraft:falling_block ~ ~100 ~ {B
 
 
 # no sleep
-execute as @a at @s if block ~ ~ ~ #minecraft:beds run tp @s ~ ~ ~
+execute as @a[gamemode=!spectator] at @s if block ~ ~ ~ #minecraft:beds run tp @s ~ ~ ~
 
 
 # timer

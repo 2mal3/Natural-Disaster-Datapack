@@ -23,7 +23,7 @@ execute as @a at @s if block ~ ~2 ~ minecraft:air if block ~ ~3 ~ minecraft:air 
 
 
 # no sleep
-execute as @a at @s if block ~ ~ ~ #minecraft:beds run tp @s ~ ~ ~
+execute as @a[gamemode=!spectator] at @s if block ~ ~ ~ #minecraft:beds run tp @s ~ ~ ~
 
 
 # timer

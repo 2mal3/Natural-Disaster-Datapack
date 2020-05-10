@@ -9,7 +9,7 @@ execute as @e[tag=ndd.thunderstorm] at @s run summon minecraft:lightning_bolt ~ 
 
 
 # no sleep
-execute as @a at @s if block ~ ~ ~ #minecraft:beds run tp @s ~ ~ ~
+execute as @a[gamemode=!spectator] at @s if block ~ ~ ~ #minecraft:beds run tp @s ~ ~ ~
 
 
 # timer

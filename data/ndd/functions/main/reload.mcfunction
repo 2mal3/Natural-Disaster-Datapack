@@ -7,7 +7,7 @@
 scoreboard objectives add ndd.data dummy
 scoreboard players set V1 ndd.data 0
 scoreboard players set V2 ndd.data 9
-scoreboard players set V3 ndd.data 4
+scoreboard players set V3 ndd.data 5
 
 # send message
 tellraw @a ["",{"text":"[Server] Natural Disaster Datapack v."},{"score":{"name":"V1","objective":"ndd.data"}},{"text":"."},{"score":{"name":"V2","objective":"ndd.data"}},{"text":"."},{"score":{"name":"V3","objective":"ndd.data"}},{"text":" by 2mal3 was loaded!"}]
@@ -29,11 +29,6 @@ function ndd:config
 schedule function ndd:main/tick_slow 1s
 
 
-
-### To Do ####
-# meteroid einschlagswinkel
-# doline kaputtes loch
-# config
-# scoreboards
-# übersetztung
-# balanc
+# bugfixes
+# beeter and more efficient code
+# added the hurricane
