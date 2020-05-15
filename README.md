@@ -1,5 +1,5 @@
-# Natural-Disaster-Datapack Beta v.0.9.4
-The Natural Disaster Datapack adds over 7 different and mostly unique natural disasters. These occur in Minecraft over a random period of one week to one month.
+# Natural-Disaster-Datapack Beta v.0.10.6
+The Natural Disaster Datapack adds over 8 different and mostly unique natural disasters. These occur in Minecraft over a random period of one week to one month.
 This datapack is still in development, so it is not yet balanced and bugs may occur. Therefore I am open for more ideas for natural disasters and other things.
 
 Natural disasters:
@@ -11,10 +11,13 @@ Natural disasters:
   - Acid rain (Etches the world away and poisons the players.)
   - Doline (A large, collapsing hole in the ground.)
   - Firestorm (Much fire.)
+  - Hurricane
 
 Planned features:
-  - Hurricane
-  - Cold
+  - blizzards/snowstorms
+  - sandstorms
+  - flash floods
+  - volcanoes/volcanic eruptions
   - Language support with my Language Pack
   - Individual setting options for natural disasters
 

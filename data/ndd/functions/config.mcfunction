@@ -32,5 +32,5 @@ scoreboard players set ndd.hail_time ndd.config 150
 scoreboard players set ndd.thunderstorm_time ndd.config 60
 
 ##### hurricane #####
-# How long is this hurricane going to last? (in half seconds)
-#scoreboard players set ndd.hurricane_time ndd.config 480
+# How long is this hurricane going to last? (in double ticks)
+scoreboard players set ndd.hurricane_time ndd.config 3000

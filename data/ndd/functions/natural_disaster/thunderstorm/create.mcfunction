@@ -5,8 +5,7 @@
 weather thunder 99999
 say thunderstorm
 
-scoreboard players set ndd.time ndd.data 0
-scoreboard players operation ndd.time ndd.data += ndd.thunderstorm_time ndd.config
+scoreboard players operation ndd.time ndd.data = ndd.thunderstorm_time ndd.config
 scoreboard players set ndd.natural_disaster_on ndd.data 1
 
 schedule function ndd:natural_disaster/thunderstorm/tick 10s

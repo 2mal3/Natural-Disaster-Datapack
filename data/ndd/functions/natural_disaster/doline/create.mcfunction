@@ -7,8 +7,7 @@ execute as @r[limit=1] at @s run summon minecraft:armor_stand ~ ~ ~ {Invulnerabl
 playsound minecraft:ambient.cave master @a ~ ~ ~ 10
 say doline
 
-scoreboard players set ndd.time ndd.data 0
-scoreboard players operation ndd.time ndd.data += ndd.doline_time ndd.config
+scoreboard players operation ndd.time ndd.data = ndd.doline_time ndd.config
 scoreboard players set ndd.natural_disaster_on ndd.data 1
 
 schedule function ndd:natural_disaster/doline/tick 2s

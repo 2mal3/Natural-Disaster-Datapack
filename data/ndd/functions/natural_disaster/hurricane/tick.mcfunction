@@ -6,7 +6,7 @@
 execute as @e[tag=ndd.hurricane,type=minecraft:armor_stand] at @s run function ndd:natural_disaster/hurricane/particle
 
 # Catch entitys
-execute as @e[tag=ndd.hurricane,type=minecraft:armor_stand] at @s as @e[distance=5..25] at @s run function ndd:natural_disaster/hurricane/catch
+execute as @e[tag=ndd.hurricane,type=minecraft:armor_stand] at @s run function ndd:natural_disaster/hurricane/catch
 
 # no sleep
 execute as @a[gamemode=!spectator] at @s if block ~ ~ ~ #minecraft:beds run tp @s ~ ~ ~

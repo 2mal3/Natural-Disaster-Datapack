@@ -12,6 +12,6 @@ execute if score ndd.disaster ndd.data matches 5 run function ndd:natural_disast
 execute if score ndd.disaster ndd.data matches 6 run function ndd:natural_disaster/firestorm/create
 execute if score ndd.disaster ndd.data matches 7 run function ndd:natural_disaster/acid_rain/create
 execute if score ndd.disaster ndd.data matches 8 run function ndd:natural_disaster/disease/create
-#execute if score ndd.disaster ndd.data matches 9 run function ndd:natural_disaster/hurricane/create
+execute if score ndd.disaster ndd.data matches 9 run function ndd:natural_disaster/hurricane/create
 
 #tellraw @a {"score":{"name":"ndd.time","objective":"ndd.data"}}
