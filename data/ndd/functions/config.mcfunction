@@ -42,3 +42,7 @@ scoreboard players set ndd.thunderstorm_time ndd.config 150
 ##### hurricane #####
 # How long is this hurricane going to last? (in double ticks, normally 3000)
 scoreboard players set ndd.hurricane_time ndd.config 3000
+
+##### blizzard #####
+# How long is this blizzard going to last (in seconds, normally 300)?
+scoreboard players set ndd.blizzard_time ndd.config 300

@@ -6,7 +6,7 @@
 # add system scoreboards
 scoreboard objectives add ndd.data dummy
 scoreboard players set V1 ndd.data 0
-scoreboard players set V2 ndd.data 14
+scoreboard players set V2 ndd.data 15
 scoreboard players set V3 ndd.data 10
 
 # send message
@@ -34,5 +34,5 @@ schedule function ndd:main/tick_slow 1s
 # clearer code
 # better drought
 # better hurricane
-# debug system added 0.13.10
-# desaster notifications added 0.14.10
+# debug system added
+# desaster notifications added

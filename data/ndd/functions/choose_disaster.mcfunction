@@ -13,5 +13,6 @@ execute if score ndd.disaster ndd.data matches 6 run function ndd.firestorm:crea
 execute if score ndd.disaster ndd.data matches 7 run function ndd.acid_rain:create
 execute if score ndd.disaster ndd.data matches 8 run function ndd.disease:create
 execute if score ndd.disaster ndd.data matches 9 run function ndd.hurricane:create
+execute if score ndd.disaster ndd.data matches 10 run function ndd.blizzard:create
 
 #tellraw @a {"score":{"name":"ndd.time","objective":"ndd.data"}}
