@@ -3,11 +3,7 @@
 # Datapck by 2mal3
 
 # summon blocks
-execute as @a[gamemode=!spectator] at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["ndd.hail"]}
-execute as @a[gamemode=!spectator] at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["ndd.hail"]}
-execute as @a[gamemode=!spectator] at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["ndd.hail"]}
-execute as @a[gamemode=!spectator] at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["ndd.hail"]}
-execute as @a[gamemode=!spectator] at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["ndd.hail"]}
+execute as @a[gamemode=!spectator] at @s run function nnd.hail:summon
 
 execute as @a[gamemode=!spectator] at @s run spreadplayers ~ ~ 10 40 false @e[sort=nearest,limit=5,tag=ndd.hail]
 execute as @e[tag=ndd.hail] at @s run summon minecraft:falling_block ~ ~100 ~ {BlockState:{Name:"minecraft:ice"},Time:1}

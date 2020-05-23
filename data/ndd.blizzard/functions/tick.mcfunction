@@ -4,32 +4,17 @@
 
 
 # blizzard effects
-effect give @a[gamemode=!spectator] minecraft:blindness 5 0 true
-effect give @a[gamemode=!spectator] minecraft:slowness 5 1 true
+execute as @a[gamemode=!spectator] at @s if block ~ ~2 ~ minecraft:air if block ~ ~3 ~ minecraft:air if block ~ ~4 ~ minecraft:air if block ~ ~5 ~ minecraft:air if block ~ ~6 ~ minecraft:air run function ndd.blizzard:effect
 
 
 # place random snow around the player and stack it
-execute as @e[type=minecraft:armor_stand,tag=ndd.blizzard] at @s if block ~ ~ ~ minecraft:snow[layers=7] run setblock ~ ~ ~ minecraft:snow[layers=8] replace
-execute as @e[type=minecraft:armor_stand,tag=ndd.blizzard] at @s if block ~ ~ ~ minecraft:snow[layers=6] run setblock ~ ~ ~ minecraft:snow[layers=7] replace
-execute as @e[type=minecraft:armor_stand,tag=ndd.blizzard] at @s if block ~ ~ ~ minecraft:snow[layers=5] run setblock ~ ~ ~ minecraft:snow[layers=6] replace
-execute as @e[type=minecraft:armor_stand,tag=ndd.blizzard] at @s if block ~ ~ ~ minecraft:snow[layers=4] run setblock ~ ~ ~ minecraft:snow[layers=5] replace
-execute as @e[type=minecraft:armor_stand,tag=ndd.blizzard] at @s if block ~ ~ ~ minecraft:snow[layers=3] run setblock ~ ~ ~ minecraft:snow[layers=4] replace
-execute as @e[type=minecraft:armor_stand,tag=ndd.blizzard] at @s if block ~ ~ ~ minecraft:snow[layers=2] run setblock ~ ~ ~ minecraft:snow[layers=3] replace
-execute as @e[type=minecraft:armor_stand,tag=ndd.blizzard] at @s if block ~ ~ ~ minecraft:snow[layers=1] run setblock ~ ~ ~ minecraft:snow[layers=2] replace
-execute as @e[type=minecraft:armor_stand,tag=ndd.blizzard] at @s unless block ~ ~ ~ minecraft:snow run setblock ~ ~ ~ minecraft:snow[layers=1]
+execute as @e[type=minecraft:item,tag=ndd.snow] at @s unless block ~ ~-1 ~ minecraft:air run function ndd.blizzard:place
 
+execute as @a[gamemode=!spectator] at @s run function ndd.blizzard:summon
+execute as @a[gamemode=!spectator] at @s run spreadplayers ~ ~ 2 7 false @e[sort=nearest,limit=5,tag=ndd.blizzard]
+
+execute as @e[type=minecraft:armor_stand,tag=ndd.blizzard] at @s run summon minecraft:item ~ ~10 ~ {NoGravity:1b,Motion:[0.0,-0.3,0.0],Tags:["ndd.snow"],Item:{id:"minecraft:snowball",Count:1b}}
 kill @e[type=minecraft:armor_stand,tag=ndd.blizzard]
-
-execute as @a[gamemode=!spectator] at @s run summon minecraft:armor_stand ~ ~ ~ {Invulnerable:1b,NoBasePlate:1b,Invisible:1b,PersistenceRequired:1b,Tags:["ndd.blizzard"]}
-execute as @a[gamemode=!spectator] at @s run summon minecraft:armor_stand ~ ~ ~ {Invulnerable:1b,NoBasePlate:1b,Invisible:1b,PersistenceRequired:1b,Tags:["ndd.blizzard"]}
-execute as @a[gamemode=!spectator] at @s run summon minecraft:armor_stand ~ ~ ~ {Invulnerable:1b,NoBasePlate:1b,Invisible:1b,PersistenceRequired:1b,Tags:["ndd.blizzard"]}
-execute as @a[gamemode=!spectator] at @s run summon minecraft:armor_stand ~ ~ ~ {Invulnerable:1b,NoBasePlate:1b,Invisible:1b,PersistenceRequired:1b,Tags:["ndd.blizzard"]}
-execute as @a[gamemode=!spectator] at @s run summon minecraft:armor_stand ~ ~ ~ {Invulnerable:1b,NoBasePlate:1b,Invisible:1b,PersistenceRequired:1b,Tags:["ndd.blizzard"]}
-execute as @a[gamemode=!spectator] at @s run summon minecraft:armor_stand ~ ~ ~ {Invulnerable:1b,NoBasePlate:1b,Invisible:1b,PersistenceRequired:1b,Tags:["ndd.blizzard"]}
-execute as @a[gamemode=!spectator] at @s run summon minecraft:armor_stand ~ ~ ~ {Invulnerable:1b,NoBasePlate:1b,Invisible:1b,PersistenceRequired:1b,Tags:["ndd.blizzard"]}
-execute as @a[gamemode=!spectator] at @s run summon minecraft:armor_stand ~ ~ ~ {Invulnerable:1b,NoBasePlate:1b,Invisible:1b,PersistenceRequired:1b,Tags:["ndd.blizzard"]}
-
-execute as @a[gamemode=!spectator] at @s run spreadplayers ~ ~ 2 7 false @e[sort=nearest,limit=8,tag=ndd.blizzard]
 
 
 # timer

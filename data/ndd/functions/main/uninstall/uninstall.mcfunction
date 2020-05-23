@@ -8,8 +8,10 @@ tellraw @a ["",{"text":"[Server] The Natural Disaster Datapack v."},{"score":{"n
 # remove scoreborads
 scoreboard objectives remove ndd.data
 scoreboard objectives remove ndd.config
+
 scoreboard objectives remove ndd.infected_t
 scoreboard objectives remove ndd.deathCount
+
 
 # diable Datapack
 datapack disable "file/Natural-Disaster-Datapack"

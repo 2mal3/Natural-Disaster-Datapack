@@ -3,16 +3,7 @@
 # Datapck by 2mal3
 
 # remove blocks
-execute as @a[gamemode=!spectator] at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["ndd.acid_rain"]}
-execute as @a[gamemode=!spectator] at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["ndd.acid_rain"]}
-execute as @a[gamemode=!spectator] at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["ndd.acid_rain"]}
-execute as @a[gamemode=!spectator] at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["ndd.acid_rain"]}
-execute as @a[gamemode=!spectator] at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["ndd.acid_rain"]}
-execute as @a[gamemode=!spectator] at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["ndd.acid_rain"]}
-execute as @a[gamemode=!spectator] at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["ndd.acid_rain"]}
-execute as @a[gamemode=!spectator] at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["ndd.acid_rain"]}
-execute as @a[gamemode=!spectator] at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["ndd.acid_rain"]}
-execute as @a[gamemode=!spectator] at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["ndd.acid_rain"]}
+execute as @a[gamemode=!spectator] at @s run function ndd.acid_rain:summon
 
 execute as @a[gamemode=!spectator] at @s run spreadplayers ~ ~ 10 40 false @e[sort=nearest,limit=10,tag=ndd.acid_rain]
 execute as @e[tag=ndd.acid_rain] at @s unless block ~ ~-1 ~ #ndd.acid_rain:acid_rain_immune run setblock ~ ~-1 ~ minecraft:air

@@ -1,13 +1,13 @@
-# Natural-Disaster-Datapack Beta v.0.15.10
+# Natural-Disaster-Datapack Beta v.0.17.12
 
-The Natural Disaster Datapack adds over 9 different, adjustable and unique natural disasters. These occur in Minecraft over a random period of
+The Natural Disaster Datapack adds over 10 different, adjustable and unique natural disasters. These occur in Minecraft over a random period of
 one week to one month.
 This datapack is still in development, so it is not yet balanced and bugs may occur. Therefore, I am open for more ideas for natural disasters
 and other things.
 
 
 Features:
-  - Over 9 different and unique natural disasters
+  - Over 10 different and unique natural disasters
   - Multiplayer friendly
   - Easy to configure
   - Easy bug help
@@ -24,11 +24,11 @@ Natural disasters:
   - Doline (A large, collapsing hole in the ground.)
   - Firestorm (Much fire.)
   - Hurricane
-  - blizzard /snowstorm
+  - blizzard / snowstorm
+  - sandstorm
 
 
 Planned features:
-  - sandstorms
   - flash floods
   - volcanoes/volcanic eruptions
   - Language support with my Language Pack
