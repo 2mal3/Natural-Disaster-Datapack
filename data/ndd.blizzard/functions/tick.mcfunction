@@ -11,10 +11,10 @@ execute as @a[gamemode=!spectator] at @s if block ~ ~2 ~ minecraft:air if block 
 execute as @e[type=minecraft:item,tag=ndd.snow] at @s unless block ~ ~-1 ~ minecraft:air run function ndd.blizzard:place
 
 execute as @a[gamemode=!spectator] at @s run function ndd.blizzard:summon
-execute as @a[gamemode=!spectator] at @s run spreadplayers ~ ~ 2 7 false @e[sort=nearest,limit=5,tag=ndd.blizzard]
+execute as @a[gamemode=!spectator] at @s run spreadplayers ~ ~ 2 7 false @e[sort=nearest,limit=5,tag=ndd.blizzard,type=minecraft:area_effect_cloud]
 
-execute as @e[type=minecraft:armor_stand,tag=ndd.blizzard] at @s run summon minecraft:item ~ ~10 ~ {NoGravity:1b,Motion:[0.0,-0.3,0.0],Tags:["ndd.snow"],Item:{id:"minecraft:snowball",Count:1b}}
-kill @e[type=minecraft:armor_stand,tag=ndd.blizzard]
+execute as @e[tag=ndd.blizzard,type=minecraft:area_effect_cloud] at @s run summon minecraft:item ~ ~10 ~ {NoGravity:1b,Motion:[0.0,-0.3,0.0],Tags:["ndd.snow"],Item:{id:"minecraft:snowball",Count:1b}}
+kill @e[type=minecraft:area_effect_cloud,tag=ndd.blizzard]
 
 
 # timer

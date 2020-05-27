@@ -2,7 +2,7 @@
 # Called from: ndd:choose_disaster
 # Datapck by 2mal3
 
-execute if score ndd.notifications_on ndd.config matches 1 run tellraw @a {"text":"A hurricane begins.","color":"gray"}
+execute if score ndd.notifications_on ndd.config matches 1 run tellraw @a {"translate":"A hurricane begins.","color":"gray"}
 
 weather thunder 99999
 execute as @a[sort=random,gamemode=!spectator,limit=1] at @s run summon minecraft:armor_stand ~ 300 ~ {Invulnerable:1b,Invisible:1b,NoBasePlate:1b,PersistenceRequired:1b,Tags:["ndd.hurricane"],Motion:[0.0,-5.0,0.0]}

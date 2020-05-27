@@ -3,7 +3,7 @@
 # Datapack by 2mal3
 
 weather clear
-execute if score ndd.notifications_on ndd.config matches 1 run tellraw @a {"text":"The acid rain stops.","color":"gray"}
+execute if score ndd.notifications_on ndd.config matches 1 run tellraw @a {"translate":"The acid rain stops.","color":"gray"}
 
 schedule clear ndd.acid_rain:tick
 function ndd:new_time

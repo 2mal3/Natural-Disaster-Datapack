@@ -2,7 +2,7 @@
 # Called from: ndd.thunderstorm:tick
 # Datapck by 2mal3
 
-execute if score ndd.notifications_on ndd.config matches 1 run tellraw @a {"text":"The thunderstorm stops.","color":"gray"}
+execute if score ndd.notifications_on ndd.config matches 1 run tellraw @a {"translate":"The thunderstorm stops.","color":"gray"}
 
 schedule clear ndd.thunderstorm:tick
 weather clear

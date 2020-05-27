@@ -3,7 +3,7 @@
 # Datapck by 2mal3
 
 # message
-execute if score ndd.notifications_on ndd.config matches 1 run tellraw @a {"text":"The disease stops.","color":"gray"}
+execute if score ndd.notifications_on ndd.config matches 1 run tellraw @a {"translate":"The disease stops.","color":"gray"}
 
 # remove ingame scoreboards
 scoreboard players reset ndd.infected ndd.data

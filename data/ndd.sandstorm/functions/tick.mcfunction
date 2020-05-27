@@ -10,7 +10,7 @@ execute as @a[gamemode=!spectator] at @s if block ~ ~2 ~ minecraft:air if block 
 # place sand
 execute as @a[gamemode=!spectator] at @s run function ndd.sandstorm:summon
 
-execute as @a[gamemode=!spectator] at @s run spreadplayers ~ ~ 2 7 false @e[sort=nearest,limit=2,tag=ndd.sandstorm]
+execute as @a[gamemode=!spectator] at @s run spreadplayers ~ ~ 2 7 false @e[sort=nearest,limit=2,tag=ndd.sandstorm,type=minecraft:area_effect_cloud]
 execute as @e[type=minecraft:area_effect_cloud,tag=ndd.sandstorm] at @s run summon minecraft:falling_block ~ 260 ~ {BlockState:{Name:"minecraft:sand"},Time:1}
 
 

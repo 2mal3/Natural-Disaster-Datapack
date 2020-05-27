@@ -7,7 +7,7 @@ execute as @a[gamemode=!spectator] at @s as @e[type=!minecraft:player,type=!#ndd
 
 
 # other
-execute if score ndd.notifications_on ndd.config matches 1 run tellraw @a {"text":"The disease begins.","color":"gray"}
+execute if score ndd.notifications_on ndd.config matches 1 run tellraw @a {"translate":"A disease begins.","color":"gray"}
 
 scoreboard players set ndd.time ndd.data 0
 scoreboard players set ndd.natural_disaster_on ndd.data 1

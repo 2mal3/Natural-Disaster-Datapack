@@ -6,8 +6,8 @@
 # add system scoreboards
 scoreboard objectives add ndd.data dummy
 scoreboard players set V1 ndd.data 0
-scoreboard players set V2 ndd.data 17
-scoreboard players set V3 ndd.data 12
+scoreboard players set V2 ndd.data 20
+scoreboard players set V3 ndd.data 13
 
 
 # send message
@@ -31,7 +31,7 @@ function ndd:config
 schedule function ndd:main/tick_slow 1s
 
 
-# added sandstorm 0.16.10
-# better performance 0.16.11
-# improved blizzard 0.16.12
-# api for new desaster time 0.17.12
+# better performance 0.17.13
+# The occurrence of natural disasters can now be changed in the settings. 0.18.13
+# low grapics mode 0.19.13
+# language support 0.20.13

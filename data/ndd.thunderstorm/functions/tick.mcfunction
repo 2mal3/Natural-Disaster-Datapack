@@ -1,11 +1,11 @@
 # Description: The thunderstorm tick
 # Called from: ndd.thunderstorm:create
-# Datapck by 2mal3
+# Datapack by 2mal3
 
 # summon lightning bolt
 execute as @a[gamemode=!spectator] at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["ndd.thunderstorm"]}
 execute as @a[gamemode=!spectator] at @s run spreadplayers ~ ~ 10 40 false @e[sort=nearest,limit=1,tag=ndd.thunderstorm]
-execute as @e[tag=ndd.thunderstorm] at @s run summon minecraft:lightning_bolt ~ ~ ~
+execute as @e[type=minecraft:area_effect_cloud,tag=ndd.thunderstorm] at @s run summon minecraft:lightning_bolt ~ ~ ~
 
 
 # no sleep
