@@ -1,4 +1,4 @@
-# Natural-Disaster-Datapack Beta v.0.20.13
+# Natural-Disaster-Datapack Beta v.0.21.16
 
 The Natural Disaster Datapack adds over 10 different, adjustable and unique natural disasters. These occur in Minecraft over a random period of
 one week to one month.
@@ -13,6 +13,7 @@ Features:
   - Easy to configure
   - Easy bug help
   - Still in development. You have influence on the development and new features constantly being added.
+  - Supports with my Language Pack (https://link-to.net/80983/2mal3sLanguagePack) the languages Spanish, German and French
 
 
 Natural disasters:
@@ -32,9 +33,7 @@ Natural disasters:
 Planned features:
   - flash floods
   - volcanoes/volcanic eruptions
-  - Language support with my Language Pack
   - More individual setting options for natural disasters
-  - Low graphics mode
   - Own wiki
 
 

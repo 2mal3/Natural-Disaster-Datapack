@@ -6,8 +6,8 @@
 # add system scoreboards
 scoreboard objectives add ndd.data dummy
 scoreboard players set V1 ndd.data 0
-scoreboard players set V2 ndd.data 20
-scoreboard players set V3 ndd.data 13
+scoreboard players set V2 ndd.data 21
+scoreboard players set V3 ndd.data 16
 
 
 # send message
@@ -31,7 +31,7 @@ function ndd:config
 schedule function ndd:main/tick_slow 1s
 
 
-# better performance 0.17.13
-# The occurrence of natural disasters can now be changed in the settings. 0.18.13
-# low grapics mode 0.19.13
-# language support 0.20.13
+# better time between natural disasters 0.20.14
+# better config description 0.20.15
+# better debug 0.21.15
+# bugfixes 0.21.16

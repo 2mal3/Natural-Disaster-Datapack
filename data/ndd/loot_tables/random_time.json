@@ -2,8 +2,10 @@
   "pools": [
     {
       "rolls": {
+        "_comment": "How much time should there be at least between two natural disasters? (in double seconds, normally 4200)",
         "min": 4200,
-        "max": 49200
+        "_comment": "What is the maximum time between two natural disasters? (in double seconds, normally 16800)",
+        "max": 16800
       },
       "entries": [
         {

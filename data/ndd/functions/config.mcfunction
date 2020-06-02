@@ -15,6 +15,7 @@
 scoreboard players set ndd.notifications_on ndd.config 1
 # Should the performance be improved at the expense of the graphics?
 scoreboard players set ndd.low_graphics_mode ndd.config 0
+# To indicate the time between natural disasters, go to: data > ndd > loot_tables > random_time.json
 
 
 ##### meteoroid #####
@@ -29,7 +30,7 @@ scoreboard players set ndd.thunderstorm_time ndd.config 150
 
 ##### doline #####
 # Should a doline happen?
-scoreboard players set ndd.dolinen ndd.config 1
+scoreboard players set ndd.doline ndd.config 1
 # How deep should the doline hole be? (in blocks, normally 30)
 scoreboard players set ndd.doline_time ndd.config 30
 

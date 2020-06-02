@@ -3,8 +3,8 @@
     "icon": {
       "item": "minecraft:lava_bucket"
     },
-    "title": "Natural Disaster v.0.20.13",
-    "description": [{"translate":"With the "},{"text":"Natural Disaster Datapack v.0.20.13"},{"translate":" by 2mal3 over 10 unique and dangerous natural disasters are added."}],
+    "title": "Natural Disaster v.0.21.16",
+    "description": [{"translate":"With the "},{"text":"Natural Disaster Datapack v.0.21.16"},{"translate":" by 2mal3 over 10 unique and dangerous natural disasters are added."}],
     "frame": "goal",
     "show_toast": true,
     "announce_to_chat": false
