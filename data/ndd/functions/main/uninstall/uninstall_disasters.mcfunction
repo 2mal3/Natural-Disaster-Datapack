@@ -10,4 +10,4 @@ execute if score ndd.disaster ndd.data matches 7 run function ndd.acid_rain:remo
 execute if score ndd.disaster ndd.data matches 8 run function ndd.disease:remove
 execute if score ndd.disaster ndd.data matches 9 run function ndd.hurricane:remove
 execute if score ndd.disaster ndd.data matches 10 run function ndd.blizzard:remove
-execute if score ndd.disaster ndd.data matches 11 run  function ndd.sandstorm:remove
+execute if score ndd.disaster ndd.data matches 11 run function ndd.sandstorm:remove
