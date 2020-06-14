@@ -79,3 +79,9 @@ scoreboard players set ndd.blizzard_time ndd.config 300
 scoreboard players set ndd.sandstorm ndd.config 1
 # How long is this sandstorm going to last (in seconds, normally 300)?
 scoreboard players set ndd.sandstorm_time ndd.config 300
+
+##### volcano #####
+# Should a Volcano be generated?
+scoreboard players set ndd.volcano_generate ndd.config 1
+# Should it be volcanic eruptions?
+scoreboard players set ndd.volcano_eruptions ndd.config 1

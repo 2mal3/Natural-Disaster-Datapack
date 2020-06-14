@@ -39,6 +39,6 @@ execute as @e[type=minecraft:item,predicate=ndd.disease:remedy] at @s as @e[type
 
 
 # timer
-schedule function ndd.disease:tick 10t
+schedule function ndd.disease:tick 1s
 
 execute if score ndd.infected ndd.data matches 0 run function ndd.disease:remove

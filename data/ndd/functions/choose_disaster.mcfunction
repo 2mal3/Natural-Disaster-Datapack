@@ -1,6 +1,6 @@
 # Description: chooses a random desaster and selects it
 # Called from: ndd:main/tick
-# Datapck by 2mal3
+# Datapack by 2mal3
 
 execute store result score ndd.disaster ndd.data run loot spawn ~ ~ ~ loot ndd:random_disaster
 
@@ -15,8 +15,8 @@ execute if score ndd.disease ndd.config matches 1 if score ndd.disaster ndd.data
 execute if score ndd.hurricane ndd.config matches 1 if score ndd.disaster ndd.data matches 9 run function ndd.hurricane:create
 execute if score ndd.blizzard ndd.config matches 1 if score ndd.disaster ndd.data matches 10 run function ndd.blizzard:create
 execute if score ndd.sandstorm ndd.config matches 1 if score ndd.disaster ndd.data matches 11 run function ndd.sandstorm:create
+execute if score ndd.volcano_eruptions ndd.config matches 1 if score ndd.disaster ndd.data matches 12 run function ndd.volcano:eruption/1
 
-say hi
 execute if score ndd.natural_disaster_on ndd.data matches 0 run function ndd:choose_disaster
 
 #tellraw @a {"score":{"name":"ndd.time","objective":"ndd.data"}}

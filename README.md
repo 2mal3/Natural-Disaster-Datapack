@@ -1,40 +1,47 @@
-# Natural-Disaster-Datapack Beta v.0.21.16
+# Natural Disaster Datapack Beta v.0.28.18
 
-The Natural Disaster Datapack adds over 10 different, adjustable and unique natural disasters. These occur in Minecraft over a random period of
+The Natural Disaster Datapack adds over 11 different, adjustable and unique natural disasters. These occur in Minecraft over a random period of
 one week to one month.
 This datapack is still in development, so it is not yet balanced and bugs may occur. Therefore, I am open for more ideas for natural disasters
 and other things.
-This datapack supports with my Language Pack (https://link-to.net/80983/2mal3sLanguagePack) the languages Spanish, German and French.
+This datapack supports with my Language Pack (http://adfoc.us/51488274977668) the languages Spanish, German and French.                   
+To make this datapack work you need Datapack Utils (https://www.planetminecraft.com/data-pack/datapack-utils/) which you have to download separately and install in your world.
+
+I always recommend updating to the newest version, because the older versions have some big bugs and are no longer supported.Volcanoes can be generated in already generated and built-up areas.                                                                                 
+To avoid this, I recommend installing Datapack Utils first and go to the important places and only then install the Natural Disasters Datapack. This way the entered areas will not be regenerated.
 
 
 Features:
-  - Over 10 different and unique natural disasters
+  - Over 11 different and unique natural disasters
   - Multiplayer friendly
   - Easy to configure
   - Easy bug help
   - Still in development. You have influence on the development and new features constantly being added.
-  - Supports with my Language Pack (https://link-to.net/80983/2mal3sLanguagePack) the languages Spanish, German and French
+  - Supports with my Language Pack (http://adfoc.us/51488274977668) the languages Spanish, German and French
+  - Own wiki (https://github.com/2mal3/Natural-Disaster-Datapack/wiki)
+  - API  (More about this in the Wiki (https://github.com/2mal3/Natural-Disaster-Datapack/wiki).)
 
 
 Natural disasters:
-  - Meteorite impact (All gone.)
-  - Thunderstorm (Like a normal thunderstorm only worse.)
-  - Disease (A deadly virus. Quickly develop the cure.)
-  - Hail (It rains ice.)
-  - Drought (Intense heat and everything that goes with it.)
-  - Acid rain (Etches the world away and poisons the players.)
-  - Doline (A large, collapsing hole in the ground.)
-  - Firestorm (Much fire.)
+  - Meteorite impact
+  - Thunderstorm
+  - Disease
+  - Hail
+  - Drought
+  - Acid rain
+  - Doline
+  - Firestorm
   - Hurricane
   - blizzard / snowstorm
   - sandstorm
+  - Randomly generated volcanoes with eruptions
 
 
 Planned features:
-  - flash floods
-  - volcanoes/volcanic eruptions
-  - More individual setting options for natural disasters
-  - Own wiki
+  - More individual setting options for natural disasters#
+  - Better hurricane
+  - Better disease
+  - Better Meteoroid
 
 
 Bug reporting:
@@ -49,7 +56,6 @@ Bug reporting:
 
  Installation:
   - Download the file.
-  - Unzip the file.
   - Move the folder in the file to a datapack folder in a world of your choice.
 
 

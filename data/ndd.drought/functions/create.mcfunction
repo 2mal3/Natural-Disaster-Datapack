@@ -6,5 +6,6 @@ execute if score ndd.notifications_on ndd.config matches 1 run tellraw @a {"tran
 
 scoreboard players operation ndd.time ndd.data = ndd.drought_time ndd.config
 scoreboard players set ndd.natural_disaster_on ndd.data 1
+function #ndd_api:drought_time
 
 schedule function ndd.drought:tick 5s

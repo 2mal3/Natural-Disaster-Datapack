@@ -1,5 +1,5 @@
 {
  "values": [
- "ndd:main/reload"
+ "#load:__init"
  ]
 }
