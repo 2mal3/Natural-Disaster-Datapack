@@ -3,7 +3,7 @@
 # Datapack by 2mal3
 
 # ending natural diasaters
-execute if score ndd.natural_disaster_on ndd.data 1 run function ndd:main/uninstall/uninstall_disasters
+execute if score ndd.natural_disaster_on ndd.data matches 1 run function ndd:main/uninstall/uninstall_disasters
 
 
 # remove scoreborads
