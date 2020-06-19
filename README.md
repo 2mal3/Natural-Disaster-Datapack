@@ -1,4 +1,4 @@
-## Natural Disaster Datapack Beta v.0.28.18
+# Natural Disaster Datapack Beta v.0.28.18
 
 The Natural Disaster Datapack adds over 11 different, adjustable and unique natural disasters. These occur in Minecraft over a random period of
 one week to one month.
@@ -10,8 +10,9 @@ To make this datapack work you need [Datapack Utils](https://www.planetminecraft
 I always recommend updating to the newest version, because the older versions have some big bugs and are no longer supported.Volcanoes can be generated in already generated and built-up areas.                                                                                 
 To avoid this, I recommend installing Datapack Utils first and go to the important places and only then install the Natural Disasters Datapack. This way the entered areas will not be regenerated.
 
+***
 
-#Features:
+### Features:
   - Over 11 different and unique natural disasters
   - Multiplayer friendly
   - Easy to configure
@@ -22,7 +23,7 @@ To avoid this, I recommend installing Datapack Utils first and go to the importa
   - API  (More about this in the [Wiki](https://github.com/2mal3/Natural-Disaster-Datapack/wiki).)
 
 
-#Natural disasters:
+### Natural disasters:
   - Meteorite impact
   - Thunderstorm
   - Disease
@@ -37,30 +38,32 @@ To avoid this, I recommend installing Datapack Utils first and go to the importa
   - Randomly generated volcanoes with eruptions
 
 
-#Planned features:
+### Planned features:
   - More individual setting options for natural disasters#
   - Better hurricane
   - Better disease
   - Better Meteoroid
 
+***
 
-#Bug reporting:                                                                      
-    If you find a bug in the Datapack, feel free to post it in the comments on
-    [Planet Minecraft](https://www.planetminecraft.com/data-pack/natural-disaster-4574511/). Please answer the following questions, so I can
-    help you better.
+### Bug reporting:                                                                      
+   If you find a bug in the Datapack, feel free to post it in the comments on
+   [Planet Minecraft](https://www.planetminecraft.com/data-pack/natural-disaster-4574511/). Please answer the following questions, so I can
+   help you better.
 
   - What does not work? Please be as precise as possible.
   - Does the datapack run on a server, LAN world or single player?
   - Which other datapacks do you use in the world?
-  - What is said when you type /function #ndd:debug in the chat (best would be a picture)?
+  - What is said when you type `/function #ndd:debug` in the chat (best would be a picture)?
 
+***
 
- #Installation:
+### Installation:
   - Download the file.
   - Move the folder in the file to a datapack folder in a world of your choice.
 
 
-#Uninstall:
-  - Enter /function #ndd:uninstall
+### Uninstall:
+  - Enter `/function #ndd:uninstall`
   - Confirm that you want to uninstall
   - Optional: Delete the datapack from the folder
