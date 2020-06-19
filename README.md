@@ -47,9 +47,9 @@ To avoid this, I recommend installing Datapack Utils first and go to the importa
 ***
 
 ### Bug reporting:                                                                      
-> If you find a bug in the Datapack, feel free to post it in the comments on
-> [Planet Minecraft](https://www.planetminecraft.com/data-pack/natural-disaster-4574511/). Please answer the following questions, so I can
-> help you better.
+  If you find a bug in the Datapack, feel free to post it in the comments on
+  [Planet Minecraft](https://www.planetminecraft.com/data-pack/natural-disaster-4574511/). Please answer the following questions, so I can
+  help you better.
 
   - What does not work? Please be as precise as possible.
   - Does the datapack run on a server, LAN world or single player?
