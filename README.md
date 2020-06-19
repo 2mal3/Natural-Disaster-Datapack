@@ -1,4 +1,4 @@
-# Natural Disaster Datapack Beta v.0.28.18
+## Natural Disaster Datapack Beta v.0.28.18
 
 The Natural Disaster Datapack adds over 11 different, adjustable and unique natural disasters. These occur in Minecraft over a random period of
 one week to one month.
@@ -11,7 +11,7 @@ I always recommend updating to the newest version, because the older versions ha
 To avoid this, I recommend installing Datapack Utils first and go to the important places and only then install the Natural Disasters Datapack. This way the entered areas will not be regenerated.
 
 
-Features:
+#Features:
   - Over 11 different and unique natural disasters
   - Multiplayer friendly
   - Easy to configure
@@ -22,7 +22,7 @@ Features:
   - API  (More about this in the [Wiki](https://github.com/2mal3/Natural-Disaster-Datapack/wiki).)
 
 
-Natural disasters:
+#Natural disasters:
   - Meteorite impact
   - Thunderstorm
   - Disease
@@ -37,17 +37,17 @@ Natural disasters:
   - Randomly generated volcanoes with eruptions
 
 
-Planned features:
+#Planned features:
   - More individual setting options for natural disasters#
   - Better hurricane
   - Better disease
   - Better Meteoroid
 
 
-Bug reporting:                                                                      
-  If you find a bug in the Datapack, feel free to post it in the comments on
-  [Planet Minecraft](https://www.planetminecraft.com/data-pack/natural-disaster-4574511/). Please answer the following questions, so I can
-  help you better.
+#Bug reporting:                                                                      
+    If you find a bug in the Datapack, feel free to post it in the comments on
+    [Planet Minecraft](https://www.planetminecraft.com/data-pack/natural-disaster-4574511/). Please answer the following questions, so I can
+    help you better.
 
   - What does not work? Please be as precise as possible.
   - Does the datapack run on a server, LAN world or single player?
@@ -55,12 +55,12 @@ Bug reporting:
   - What is said when you type /function #ndd:debug in the chat (best would be a picture)?
 
 
- Installation:
+ #Installation:
   - Download the file.
   - Move the folder in the file to a datapack folder in a world of your choice.
 
 
-Uninstall:
+#Uninstall:
   - Enter /function #ndd:uninstall
   - Confirm that you want to uninstall
   - Optional: Delete the datapack from the folder
