@@ -4,8 +4,8 @@ The Natural Disaster Datapack adds over 11 different, adjustable and unique natu
 one week to one month.
 This datapack is still in development, so it is not yet balanced and bugs may occur. Therefore, I am open for more ideas for natural disasters
 and other things.
-This datapack supports with my Language Pack (http://adfoc.us/51488274977668) the languages Spanish, German and French.                   
-To make this datapack work you need Datapack Utils (https://www.planetminecraft.com/data-pack/datapack-utils/) which you have to download separately and install in your world.
+This datapack supports with my [Language Pack](http://adfoc.us/51488274977668) the languages Spanish, German and French.                   
+To make this datapack work you need [Datapack Utils](https://www.planetminecraft.com/data-pack/datapack-utils/) which you have to download separately and install in your world.
 
 I always recommend updating to the newest version, because the older versions have some big bugs and are no longer supported.Volcanoes can be generated in already generated and built-up areas.                                                                                 
 To avoid this, I recommend installing Datapack Utils first and go to the important places and only then install the Natural Disasters Datapack. This way the entered areas will not be regenerated.
@@ -17,9 +17,9 @@ Features:
   - Easy to configure
   - Easy bug help
   - Still in development. You have influence on the development and new features constantly being added.
-  - Supports with my Language Pack (http://adfoc.us/51488274977668) the languages Spanish, German and French
-  - Own wiki (https://github.com/2mal3/Natural-Disaster-Datapack/wiki)
-  - API  (More about this in the Wiki (https://github.com/2mal3/Natural-Disaster-Datapack/wiki).)
+  - Supports with my [Language Pack](http://adfoc.us/51488274977668) the languages Spanish, German and French
+  - [Own wiki](https://github.com/2mal3/Natural-Disaster-Datapack/wiki)
+  - API  (More about this in the [Wiki](https://github.com/2mal3/Natural-Disaster-Datapack/wiki).)
 
 
 Natural disasters:
@@ -45,8 +45,7 @@ Planned features:
 
 
 Bug reporting:
-  If you find a bug in the Datapack, feel free to post it in the comments on Planet Minecraft
-  (https://www.planetminecraft.com/data-pack/natural-disaster-4574511). Please answer the following questions, so I can help you better.
+  If you find a bug in the Datapack, feel free to post it in the comments on [Planet Minecraft](https://www.planetminecraft.com/data-   pack/natural-disaster-4574511). Please answer the following questions, so I can help you better.
 
   - What does not work? Please be as precise as possible.
   - Does the datapack run on a server, LAN world or single player?
