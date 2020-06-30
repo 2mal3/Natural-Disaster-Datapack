@@ -14,7 +14,7 @@ execute as @e[tag=ndd.infected,type=!#ndd.disease:not_infectable,tag=!ndd.not_in
 # infected
 execute as @e[tag=ndd.infected,type=!#ndd.disease:not_infectable,tag=!ndd.not_infectable] run scoreboard players add @s ndd.infected_t 1
 
-execute as @e[scores={ndd.infected_t=30..},type=!#ndd.disease:not_infectable,tag=!ndd.not_infectable] at @s as @e[distance=..2,type=!#ndd.disease:not_infectable,tag=!ndd.not_infectable,tag=!ndd.infected] unless score @s ndd.infected_t matches 1.. run function ndd.disease:infect
+execute as @e[scores={ndd.infected_t=300..},type=!#ndd.disease:not_infectable,tag=!ndd.not_infectable] at @s as @e[distance=..2,type=!#ndd.disease:not_infectable,tag=!ndd.not_infectable,tag=!ndd.infected] unless score @s ndd.infected_t matches 1.. run function ndd.disease:infect
 
 
 # if a infectet player dies
@@ -22,12 +22,12 @@ execute as @a[scores={ndd.deathCount=1..}] run function ndd.disease:death
 
 
 # infected effects
-execute as @e[scores={ndd.infected_t=90..},type=!#ndd.disease:not_infectable,tag=!ndd.not_infectable] at @s run function ndd.disease:effect_1
-execute as @e[scores={ndd.infected_t=120..},type=!#ndd.disease:not_infectable,tag=!ndd.not_infectable] at @s run function ndd.disease:effect_2
-execute as @e[scores={ndd.infected_t=150..},type=!#ndd.disease:not_infectable,tag=!ndd.not_infectable] at @s run function ndd.disease:effect_3
-execute as @e[scores={ndd.infected_t=180..},type=!#ndd.disease:not_infectable,tag=!ndd.not_infectable] at @s run function ndd.disease:effect_4
-execute as @e[scores={ndd.infected_t=210..},type=!#ndd.disease:not_infectable,tag=!ndd.not_infectable] at @s run function ndd.disease:effect_5
-execute as @e[scores={ndd.infected_t=240..},type=!#ndd.disease:not_infectable,tag=!ndd.not_infectable] at @s run function ndd.disease:effect_6
+execute as @e[scores={ndd.infected_t=720..},type=!#ndd.disease:not_infectable,tag=!ndd.not_infectable] at @s run function ndd.disease:effect_1
+execute as @e[scores={ndd.infected_t=840..},type=!#ndd.disease:not_infectable,tag=!ndd.not_infectable] at @s run function ndd.disease:effect_2
+execute as @e[scores={ndd.infected_t=960..},type=!#ndd.disease:not_infectable,tag=!ndd.not_infectable] at @s run function ndd.disease:effect_3
+execute as @e[scores={ndd.infected_t=1080..},type=!#ndd.disease:not_infectable,tag=!ndd.not_infectable] at @s run function ndd.disease:effect_4
+execute as @e[scores={ndd.infected_t=1200..},type=!#ndd.disease:not_infectable,tag=!ndd.not_infectable] at @s run function ndd.disease:effect_5
+execute as @e[scores={ndd.infected_t=1320..},type=!#ndd.disease:not_infectable,tag=!ndd.not_infectable] at @s run function ndd.disease:effect_6
 
 
 # healed

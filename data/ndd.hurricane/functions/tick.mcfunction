@@ -2,11 +2,17 @@
 # Called from: ndd.hurricane:create, ndd.hurricane:tick
 # Datapck by 2mal3
 
+# move hurricane armor stand
+execute as @e[type=minecraft:pig,tag=ndd.hurricane.2] at @s run tp @e[type=minecraft:armor_stand,tag=ndd.hurricane.1] ~ ~ ~
+
 # show hurricane particles
-execute as @e[tag=ndd.hurricane,type=minecraft:armor_stand] at @s run function ndd.hurricane:particle
+execute as @e[type=minecraft:armor_stand,tag=ndd.hurricane.1] at @s run function ndd.hurricane:particle
 
 # Catch entitys
-execute as @e[tag=ndd.hurricane,type=minecraft:armor_stand] at @s run function ndd.hurricane:catch
+execute as @e[type=minecraft:armor_stand,tag=ndd.hurricane.1] at @s run function ndd.hurricane:catch
+
+# make falling blocks
+execute if predicate ndd.hurricane:random as @e[type=minecraft:armor_stand,tag=ndd.hurricane.1] at @s run function ndd.hurricane:break
 
 # no sleep
 execute as @a[gamemode=!spectator] at @s if block ~ ~ ~ #minecraft:beds run tp @s ~ ~ ~

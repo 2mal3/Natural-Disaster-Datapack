@@ -4,7 +4,7 @@
 
 execute store result score ndd.disaster ndd.data run loot spawn ~ ~ ~ loot ndd:random_disaster
 
-execute if score ndd.meteoroid ndd.config matches 1 if score ndd.disaster ndd.data matches 1 run function ndd.meteoroid:summon
+execute if score ndd.meteoroid ndd.config matches 1 if score ndd.disaster ndd.data matches 1 run function ndd.meteoroid:create.1
 execute if score ndd.thunderstorm ndd.config matches 1 if score ndd.disaster ndd.data matches 2 run function ndd.thunderstorm:create
 execute if score ndd.doline ndd.config matches 1 if score ndd.disaster ndd.data matches 3 run function ndd.doline:create
 execute if score ndd.hail ndd.config matches 1 if score ndd.disaster ndd.data matches 4 run function ndd.hail:create

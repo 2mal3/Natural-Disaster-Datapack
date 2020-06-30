@@ -1,7 +1,6 @@
-# Natural Disaster Datapack Beta v.0.28.18
+# Natural Disaster Datapack Beta v.0.31.19
 
-The Natural Disaster Datapack adds over 11 different, adjustable and unique natural disasters. These occur in Minecraft over a random period of
-one week to one month.
+The Natural Disaster Datapack adds over 11 different, adjustable and unique natural disasters. These occur in Minecraft over a random period of one week to one month.
 This datapack is still in development, so it is not yet balanced and bugs may occur. Therefore, I am open for more ideas for natural disasters
 and other things.
 This datapack supports with my [Language Pack](http://adfoc.us/51488274977668) the languages Spanish, German and French.                   
@@ -15,7 +14,7 @@ To avoid this, I recommend installing Datapack Utils first and go to the importa
 ### Features:
   - Over 11 different and unique natural disasters
   - Multiplayer friendly
-  - Easy to configure
+  - Fully configure (under data > ndd.config > functions > config.mcfunction)
   - Easy bug help
   - Still in development. You have influence on the development and new features constantly being added.
   - Supports with my [Language Pack](http://adfoc.us/51488274977668) the languages Spanish, German and French
@@ -39,10 +38,7 @@ To avoid this, I recommend installing Datapack Utils first and go to the importa
 
 
 ### Planned features:
-  - More individual setting options for natural disasters#
-  - Better hurricane
-  - Better disease
-  - Better Meteoroid
+  - In game config
 
 ***
 

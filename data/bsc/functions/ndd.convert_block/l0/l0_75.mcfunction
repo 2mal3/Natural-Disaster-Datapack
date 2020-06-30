@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:wheat[age=0] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:wheat",Properties:{age:0}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:wheat[age=1] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:wheat",Properties:{age:1}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:wheat[age=2] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:wheat",Properties:{age:2}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:wheat[age=3] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:wheat",Properties:{age:3}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:wheat[age=4] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:wheat",Properties:{age:4}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:wheat[age=5] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:wheat",Properties:{age:5}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:wheat[age=6] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:wheat",Properties:{age:6}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:wheat[age=7] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:wheat",Properties:{age:7}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:farmland[moisture=0] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:farmland",Properties:{moisture:0}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:farmland[moisture=1] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:farmland",Properties:{moisture:1}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:farmland[moisture=2] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:farmland",Properties:{moisture:2}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:farmland[moisture=3] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:farmland",Properties:{moisture:3}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:farmland[moisture=4] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:farmland",Properties:{moisture:4}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:farmland[moisture=5] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:farmland",Properties:{moisture:5}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:farmland[moisture=6] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:farmland",Properties:{moisture:6}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:farmland[moisture=7] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:farmland",Properties:{moisture:7}},NoGravity:1b,Time:1}

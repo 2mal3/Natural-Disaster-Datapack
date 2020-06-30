@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:lava_bucket"
+    },
+    "title": "Natural Disaster v.0.31.19",
+    "description": [{"translate":"With the "},{"text":"Natural Disaster Datapack v.0.31.19"},{"translate":" by 2mal3 over 11 unique and dangerous natural disasters are added."}],
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "global:2mal3",
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

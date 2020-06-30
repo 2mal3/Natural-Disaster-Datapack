@@ -108,5 +108,5 @@ execute if score @s ndd.data matches 98 run data merge entity @s {Motion:[0.90,-
 execute if score @s ndd.data matches 99 run data merge entity @s {Motion:[-1.41,-0.81,0.82]}
 
 
-# rset scoreboards
+# reset scoreboards
 scoreboard players reset @s ndd.data

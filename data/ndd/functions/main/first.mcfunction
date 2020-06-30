@@ -2,7 +2,6 @@
 # Called from: main/realod
 # Datapck by 2mal3
 
-
 execute store result score ndd.time ndd.data run loot spawn ~ ~ ~ loot ndd:random_time
 scoreboard players set ndd.firestorm_on ndd.data 0
 scoreboard players set ndd.first ndd.data 1

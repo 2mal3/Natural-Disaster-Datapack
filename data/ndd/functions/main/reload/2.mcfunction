@@ -6,8 +6,8 @@
 # add system scoreboards
 scoreboard objectives add ndd.data dummy
 scoreboard players set V1 ndd.data 0
-scoreboard players set V2 ndd.data 28
-scoreboard players set V3 ndd.data 18
+scoreboard players set V2 ndd.data 31
+scoreboard players set V3 ndd.data 19
 
 
 # send message
@@ -25,18 +25,14 @@ scoreboard objectives add ndd.deathCount deathCount
 execute unless score ndd.first ndd.data matches 1 run function ndd:main/first
 
 # load config
-function ndd:config
+function ndd.config:config
 
 # slow tick
 schedule function ndd:main/tick_slow 1s
 
 
-# improved hurricane 0.21.17
-# A little better code 0.21.18
-# more api technikes 0.22.18
-# language support for install and uninstall 0.23.18
-# using the du api 0.24.18
-# adden vulcan 0.25.18
-# improved doline 0.26.18
-# better uninstall 0.27.18
-# better load 0.28.18
+# improved meteroit 0.29.18
+# better disease time 0.29.19
+# improved debug 0.30.19
+# little better config 0.30.20
+# better hurricane 0.31.19

@@ -1,0 +1,13 @@
+execute if block ~ ~ ~ minecraft:lapis_block[] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:lapis_block",Properties:{}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:dispenser[facing=north,triggered=true] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:dispenser",Properties:{facing:north,triggered:true}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:dispenser[facing=north,triggered=false] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:dispenser",Properties:{facing:north,triggered:false}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:dispenser[facing=east,triggered=true] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:dispenser",Properties:{facing:east,triggered:true}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:dispenser[facing=east,triggered=false] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:dispenser",Properties:{facing:east,triggered:false}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:dispenser[facing=south,triggered=true] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:dispenser",Properties:{facing:south,triggered:true}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:dispenser[facing=south,triggered=false] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:dispenser",Properties:{facing:south,triggered:false}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:dispenser[facing=west,triggered=true] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:dispenser",Properties:{facing:west,triggered:true}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:dispenser[facing=west,triggered=false] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:dispenser",Properties:{facing:west,triggered:false}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:dispenser[facing=up,triggered=true] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:dispenser",Properties:{facing:up,triggered:true}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:dispenser[facing=up,triggered=false] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:dispenser",Properties:{facing:up,triggered:false}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:dispenser[facing=down,triggered=true] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:dispenser",Properties:{facing:down,triggered:true}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:dispenser[facing=down,triggered=false] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:dispenser",Properties:{facing:down,triggered:false}},NoGravity:1b,Time:1}

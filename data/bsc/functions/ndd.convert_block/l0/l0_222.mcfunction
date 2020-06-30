@@ -1,0 +1,12 @@
+execute if block ~ ~ ~ minecraft:oak_slab[type=top,waterlogged=true] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:oak_slab",Properties:{type:top,waterlogged:true}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:oak_slab[type=top,waterlogged=false] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:oak_slab",Properties:{type:top,waterlogged:false}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:oak_slab[type=bottom,waterlogged=true] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:oak_slab",Properties:{type:bottom,waterlogged:true}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:oak_slab[type=bottom,waterlogged=false] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:oak_slab",Properties:{type:bottom,waterlogged:false}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:oak_slab[type=double,waterlogged=true] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:oak_slab",Properties:{type:double,waterlogged:true}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:oak_slab[type=double,waterlogged=false] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:oak_slab",Properties:{type:double,waterlogged:false}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:spruce_slab[type=top,waterlogged=true] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:spruce_slab",Properties:{type:top,waterlogged:true}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:spruce_slab[type=top,waterlogged=false] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:spruce_slab",Properties:{type:top,waterlogged:false}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:spruce_slab[type=bottom,waterlogged=true] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:spruce_slab",Properties:{type:bottom,waterlogged:true}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:spruce_slab[type=bottom,waterlogged=false] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:spruce_slab",Properties:{type:bottom,waterlogged:false}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:spruce_slab[type=double,waterlogged=true] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:spruce_slab",Properties:{type:double,waterlogged:true}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:spruce_slab[type=double,waterlogged=false] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:spruce_slab",Properties:{type:double,waterlogged:false}},NoGravity:1b,Time:1}

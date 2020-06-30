@@ -1,0 +1,9 @@
+execute if block ~ ~ ~ minecraft:blast_furnace[facing=north,lit=true] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:blast_furnace",Properties:{facing:north,lit:true}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:blast_furnace[facing=north,lit=false] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:blast_furnace",Properties:{facing:north,lit:false}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:blast_furnace[facing=south,lit=true] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:blast_furnace",Properties:{facing:south,lit:true}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:blast_furnace[facing=south,lit=false] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:blast_furnace",Properties:{facing:south,lit:false}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:blast_furnace[facing=west,lit=true] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:blast_furnace",Properties:{facing:west,lit:true}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:blast_furnace[facing=west,lit=false] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:blast_furnace",Properties:{facing:west,lit:false}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:blast_furnace[facing=east,lit=true] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:blast_furnace",Properties:{facing:east,lit:true}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:blast_furnace[facing=east,lit=false] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:blast_furnace",Properties:{facing:east,lit:false}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:cartography_table[] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:cartography_table",Properties:{}},NoGravity:1b,Time:1}

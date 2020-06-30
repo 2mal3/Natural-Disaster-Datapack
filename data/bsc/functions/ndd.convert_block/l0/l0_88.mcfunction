@@ -1,0 +1,4 @@
+execute if block ~ ~ ~ minecraft:acacia_pressure_plate[powered=true] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:acacia_pressure_plate",Properties:{powered:true}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:acacia_pressure_plate[powered=false] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:acacia_pressure_plate",Properties:{powered:false}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:dark_oak_pressure_plate[powered=true] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:dark_oak_pressure_plate",Properties:{powered:true}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:dark_oak_pressure_plate[powered=false] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:dark_oak_pressure_plate",Properties:{powered:false}},NoGravity:1b,Time:1}

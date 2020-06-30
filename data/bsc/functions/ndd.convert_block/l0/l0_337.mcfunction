@@ -1,0 +1,15 @@
+execute if block ~ ~ ~ minecraft:jigsaw[facing=north] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:jigsaw",Properties:{facing:north}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:jigsaw[facing=east] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:jigsaw",Properties:{facing:east}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:jigsaw[facing=south] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:jigsaw",Properties:{facing:south}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:jigsaw[facing=west] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:jigsaw",Properties:{facing:west}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:jigsaw[facing=up] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:jigsaw",Properties:{facing:up}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:jigsaw[facing=down] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:jigsaw",Properties:{facing:down}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:composter[level=0] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:composter",Properties:{level:0}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:composter[level=1] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:composter",Properties:{level:1}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:composter[level=2] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:composter",Properties:{level:2}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:composter[level=3] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:composter",Properties:{level:3}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:composter[level=4] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:composter",Properties:{level:4}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:composter[level=5] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:composter",Properties:{level:5}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:composter[level=6] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:composter",Properties:{level:6}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:composter[level=7] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:composter",Properties:{level:7}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:composter[level=8] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:composter",Properties:{level:8}},NoGravity:1b,Time:1}

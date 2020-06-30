@@ -1,0 +1,9 @@
+execute if block ~ ~ ~ minecraft:snow[layers=1] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:snow",Properties:{layers:1}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:snow[layers=2] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:snow",Properties:{layers:2}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:snow[layers=3] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:snow",Properties:{layers:3}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:snow[layers=4] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:snow",Properties:{layers:4}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:snow[layers=5] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:snow",Properties:{layers:5}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:snow[layers=6] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:snow",Properties:{layers:6}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:snow[layers=7] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:snow",Properties:{layers:7}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:snow[layers=8] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:snow",Properties:{layers:8}},NoGravity:1b,Time:1}
+execute if block ~ ~ ~ minecraft:ice[] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:ice",Properties:{}},NoGravity:1b,Time:1}

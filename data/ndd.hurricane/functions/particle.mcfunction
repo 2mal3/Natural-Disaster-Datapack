@@ -2,6 +2,7 @@
 # Called from: ndd.hurricane:tick
 # Datapck by 2mal3
 
+# rotate 
 tp @s ~ ~ ~ ~5 ~
 
 #List of particles
