@@ -1,7 +1,0 @@
-execute if block ~ ~ ~ minecraft:dark_prismarine_slab[type=top,waterlogged=true] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:dark_prismarine_slab",Properties:{type:top,waterlogged:true}},NoGravity:1b,Time:1}
-execute if block ~ ~ ~ minecraft:dark_prismarine_slab[type=top,waterlogged=false] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:dark_prismarine_slab",Properties:{type:top,waterlogged:false}},NoGravity:1b,Time:1}
-execute if block ~ ~ ~ minecraft:dark_prismarine_slab[type=bottom,waterlogged=true] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:dark_prismarine_slab",Properties:{type:bottom,waterlogged:true}},NoGravity:1b,Time:1}
-execute if block ~ ~ ~ minecraft:dark_prismarine_slab[type=bottom,waterlogged=false] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:dark_prismarine_slab",Properties:{type:bottom,waterlogged:false}},NoGravity:1b,Time:1}
-execute if block ~ ~ ~ minecraft:dark_prismarine_slab[type=double,waterlogged=true] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:dark_prismarine_slab",Properties:{type:double,waterlogged:true}},NoGravity:1b,Time:1}
-execute if block ~ ~ ~ minecraft:dark_prismarine_slab[type=double,waterlogged=false] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:dark_prismarine_slab",Properties:{type:double,waterlogged:false}},NoGravity:1b,Time:1}
-execute if block ~ ~ ~ minecraft:sea_lantern[] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:sea_lantern",Properties:{}},NoGravity:1b,Time:1}

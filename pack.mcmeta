@@ -1,6 +1,6 @@
      {
           "pack": {
-              "pack_format": 1,
-              "description": "The Natural Disaster Datapack Beta v.0.31.19 by 2mal3!"
+              "pack_format": 5,
+              "description": {"text":"The Natural Disaster Datapack Beta\nv.1.0.0\nBy 2mal3!"}
           }
       }

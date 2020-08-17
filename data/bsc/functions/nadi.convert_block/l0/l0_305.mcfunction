@@ -1,0 +1,9 @@
+execute if block ~ ~ ~ minecraft:sea_pickle[pickles=1,waterlogged=true] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:sea_pickle",Properties:{pickles:1,waterlogged:true}},Time:1}
+execute if block ~ ~ ~ minecraft:sea_pickle[pickles=1,waterlogged=false] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:sea_pickle",Properties:{pickles:1,waterlogged:false}},Time:1}
+execute if block ~ ~ ~ minecraft:sea_pickle[pickles=2,waterlogged=true] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:sea_pickle",Properties:{pickles:2,waterlogged:true}},Time:1}
+execute if block ~ ~ ~ minecraft:sea_pickle[pickles=2,waterlogged=false] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:sea_pickle",Properties:{pickles:2,waterlogged:false}},Time:1}
+execute if block ~ ~ ~ minecraft:sea_pickle[pickles=3,waterlogged=true] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:sea_pickle",Properties:{pickles:3,waterlogged:true}},Time:1}
+execute if block ~ ~ ~ minecraft:sea_pickle[pickles=3,waterlogged=false] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:sea_pickle",Properties:{pickles:3,waterlogged:false}},Time:1}
+execute if block ~ ~ ~ minecraft:sea_pickle[pickles=4,waterlogged=true] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:sea_pickle",Properties:{pickles:4,waterlogged:true}},Time:1}
+execute if block ~ ~ ~ minecraft:sea_pickle[pickles=4,waterlogged=false] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:sea_pickle",Properties:{pickles:4,waterlogged:false}},Time:1}
+execute if block ~ ~ ~ minecraft:blue_ice[] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:blue_ice",Properties:{}},Time:1}

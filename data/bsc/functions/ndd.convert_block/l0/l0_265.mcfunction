@@ -1,8 +1,0 @@
-execute if block ~ ~ ~ minecraft:brown_glazed_terracotta[facing=north] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:brown_glazed_terracotta",Properties:{facing:north}},NoGravity:1b,Time:1}
-execute if block ~ ~ ~ minecraft:brown_glazed_terracotta[facing=south] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:brown_glazed_terracotta",Properties:{facing:south}},NoGravity:1b,Time:1}
-execute if block ~ ~ ~ minecraft:brown_glazed_terracotta[facing=west] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:brown_glazed_terracotta",Properties:{facing:west}},NoGravity:1b,Time:1}
-execute if block ~ ~ ~ minecraft:brown_glazed_terracotta[facing=east] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:brown_glazed_terracotta",Properties:{facing:east}},NoGravity:1b,Time:1}
-execute if block ~ ~ ~ minecraft:green_glazed_terracotta[facing=north] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:green_glazed_terracotta",Properties:{facing:north}},NoGravity:1b,Time:1}
-execute if block ~ ~ ~ minecraft:green_glazed_terracotta[facing=south] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:green_glazed_terracotta",Properties:{facing:south}},NoGravity:1b,Time:1}
-execute if block ~ ~ ~ minecraft:green_glazed_terracotta[facing=west] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:green_glazed_terracotta",Properties:{facing:west}},NoGravity:1b,Time:1}
-execute if block ~ ~ ~ minecraft:green_glazed_terracotta[facing=east] run summon falling_block ~ ~5 ~ {BlockState:{Name:"minecraft:green_glazed_terracotta",Properties:{facing:east}},NoGravity:1b,Time:1}

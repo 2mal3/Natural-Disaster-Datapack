@@ -1,6 +1,6 @@
 {
     "values": [
-      "ndd:main/reload/1",
-      "ndd.volcano:register"
+      "nadi:main/reload/1",
+      "nadi:natural_disasters/volcano/register"
     ]
 }

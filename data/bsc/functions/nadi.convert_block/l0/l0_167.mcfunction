@@ -1,0 +1,13 @@
+execute if block ~ ~ ~ minecraft:dropper[facing=north,triggered=true] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:dropper",Properties:{facing:north,triggered:true}},Time:1}
+execute if block ~ ~ ~ minecraft:dropper[facing=north,triggered=false] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:dropper",Properties:{facing:north,triggered:false}},Time:1}
+execute if block ~ ~ ~ minecraft:dropper[facing=east,triggered=true] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:dropper",Properties:{facing:east,triggered:true}},Time:1}
+execute if block ~ ~ ~ minecraft:dropper[facing=east,triggered=false] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:dropper",Properties:{facing:east,triggered:false}},Time:1}
+execute if block ~ ~ ~ minecraft:dropper[facing=south,triggered=true] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:dropper",Properties:{facing:south,triggered:true}},Time:1}
+execute if block ~ ~ ~ minecraft:dropper[facing=south,triggered=false] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:dropper",Properties:{facing:south,triggered:false}},Time:1}
+execute if block ~ ~ ~ minecraft:dropper[facing=west,triggered=true] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:dropper",Properties:{facing:west,triggered:true}},Time:1}
+execute if block ~ ~ ~ minecraft:dropper[facing=west,triggered=false] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:dropper",Properties:{facing:west,triggered:false}},Time:1}
+execute if block ~ ~ ~ minecraft:dropper[facing=up,triggered=true] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:dropper",Properties:{facing:up,triggered:true}},Time:1}
+execute if block ~ ~ ~ minecraft:dropper[facing=up,triggered=false] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:dropper",Properties:{facing:up,triggered:false}},Time:1}
+execute if block ~ ~ ~ minecraft:dropper[facing=down,triggered=true] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:dropper",Properties:{facing:down,triggered:true}},Time:1}
+execute if block ~ ~ ~ minecraft:dropper[facing=down,triggered=false] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:dropper",Properties:{facing:down,triggered:false}},Time:1}
+execute if block ~ ~ ~ minecraft:white_terracotta[] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:white_terracotta",Properties:{}},Time:1}
