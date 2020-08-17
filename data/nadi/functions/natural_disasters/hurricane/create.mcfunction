@@ -9,7 +9,7 @@ execute if score $nadi.notifications_on nadi.config matches 1 run tellraw @a[tag
 weather thunder 99999
 
 # choose a random player for the hurricane and summon an ancor entity there
-execute as @r[gamemode=!spectator,limit=1,tag=!global.ignore] at @s run summon minecraft:pig ~ 300 ~ {Silent:1b,Invulnerable:1b,Motion:[0.0,-5.0,0.0],PersistenceRequired:1b,Tags:["nadi.hurricane","global.ignore"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:99999,ShowParticles:0b}],Attributes:[{Name:generic.movementSpeed,Base:0.1}]}
+execute as @r[gamemode=!spectator,limit=1,tag=!global.ignore] at @s run summon minecraft:pig ~ 300 ~ {Silent:1b,Invulnerable:1b,Motion:[0.0,-5.0,0.0],PersistenceRequired:1b,Tags:["nadi.hurricane","global.ignore"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:99999,ShowParticles:0b}],Attributes:[{Name:"generic.movement_speed",Base:0.1}]}
 
 
 # load hurricane time

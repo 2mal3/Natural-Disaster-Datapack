@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:structure_block[mode=save] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:structure_block",Properties:{mode:save}},Time:1}
+execute if block ~ ~ ~ minecraft:structure_block[mode=load] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:structure_block",Properties:{mode:load}},Time:1}
+execute if block ~ ~ ~ minecraft:structure_block[mode=corner] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:structure_block",Properties:{mode:corner}},Time:1}
+execute if block ~ ~ ~ minecraft:structure_block[mode=data] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:structure_block",Properties:{mode:data}},Time:1}
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=down_east] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:jigsaw",Properties:{orientation:down_east}},Time:1}
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=down_north] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:jigsaw",Properties:{orientation:down_north}},Time:1}
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=down_south] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:jigsaw",Properties:{orientation:down_south}},Time:1}
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=down_west] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:jigsaw",Properties:{orientation:down_west}},Time:1}
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=up_east] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:jigsaw",Properties:{orientation:up_east}},Time:1}
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=up_north] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:jigsaw",Properties:{orientation:up_north}},Time:1}
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=up_south] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:jigsaw",Properties:{orientation:up_south}},Time:1}
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=up_west] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:jigsaw",Properties:{orientation:up_west}},Time:1}
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=west_up] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:jigsaw",Properties:{orientation:west_up}},Time:1}
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=east_up] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:jigsaw",Properties:{orientation:east_up}},Time:1}
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=north_up] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:jigsaw",Properties:{orientation:north_up}},Time:1}
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=south_up] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:jigsaw",Properties:{orientation:south_up}},Time:1}

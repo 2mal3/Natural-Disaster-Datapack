@@ -1,5 +1,5 @@
-# Natural Disaster Datapack Beta v.1.0.0
-Compatibility: Multiplayer 1.15
+# Natural Disaster Datapack Beta v.1.1.0
+Compatibility: Multiplayer 1.16+
 
 The Natural Disaster Datapack adds over 11 different, adjustable and unique natural disasters. These occur in Minecraft over a random period of one week to one month.               
 To make this datapack work you need [Datapack Utils](https://www.planetminecraft.com/data-pack/datapack-utils/) which you have to download separately and install in your world.

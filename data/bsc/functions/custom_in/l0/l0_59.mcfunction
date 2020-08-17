@@ -1,0 +1,13 @@
+execute if block ~ ~ ~ minecraft:moving_piston[facing=north,type=normal] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:moving_piston",Properties:{facing:north,type:normal}},Time:1}
+execute if block ~ ~ ~ minecraft:moving_piston[facing=north,type=sticky] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:moving_piston",Properties:{facing:north,type:sticky}},Time:1}
+execute if block ~ ~ ~ minecraft:moving_piston[facing=east,type=normal] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:moving_piston",Properties:{facing:east,type:normal}},Time:1}
+execute if block ~ ~ ~ minecraft:moving_piston[facing=east,type=sticky] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:moving_piston",Properties:{facing:east,type:sticky}},Time:1}
+execute if block ~ ~ ~ minecraft:moving_piston[facing=south,type=normal] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:moving_piston",Properties:{facing:south,type:normal}},Time:1}
+execute if block ~ ~ ~ minecraft:moving_piston[facing=south,type=sticky] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:moving_piston",Properties:{facing:south,type:sticky}},Time:1}
+execute if block ~ ~ ~ minecraft:moving_piston[facing=west,type=normal] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:moving_piston",Properties:{facing:west,type:normal}},Time:1}
+execute if block ~ ~ ~ minecraft:moving_piston[facing=west,type=sticky] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:moving_piston",Properties:{facing:west,type:sticky}},Time:1}
+execute if block ~ ~ ~ minecraft:moving_piston[facing=up,type=normal] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:moving_piston",Properties:{facing:up,type:normal}},Time:1}
+execute if block ~ ~ ~ minecraft:moving_piston[facing=up,type=sticky] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:moving_piston",Properties:{facing:up,type:sticky}},Time:1}
+execute if block ~ ~ ~ minecraft:moving_piston[facing=down,type=normal] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:moving_piston",Properties:{facing:down,type:normal}},Time:1}
+execute if block ~ ~ ~ minecraft:moving_piston[facing=down,type=sticky] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:moving_piston",Properties:{facing:down,type:sticky}},Time:1}
+execute if block ~ ~ ~ minecraft:dandelion[] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:dandelion",Properties:{}},Time:1}

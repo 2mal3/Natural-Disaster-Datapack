@@ -4,13 +4,14 @@
 scoreboard players set $world.in_0 du_data 2
 # [1,1000]: Generation weight. When total weight < 1000 for all possible structures, this is the percent chance it will generate. Otherwise it is weight/total weight (Gen chance will always be <= specified weight).
 scoreboard players set $world.in_1 du_data 500
-# [0,1]: 1 = Ignore placement restrictions (prevents generation on water, sky, void, side of cliffs, etc). Useful if you want to generate somewhere other than the surface (ie. ocean, under ground, sky, etc.)
+# [0,3]: Placement scheme. 0 = surface, 1 = surface without restriction (ie. on liquids), 2 = cave, 3 = sky
 scoreboard players set $world.in_2 du_data 0
-# [-1,1]: dimension ID
-scoreboard players set $world.in_3 du_data 0
 
+# Optional: add this line to adjust dimension and/or biome whitelist/blacklist
+# Defaults to overworld and no biome restrictions
+# data merge storage du:temp {object:{dimension:"minecraft:overworld",biomes:["biome_1","biome_2",...],isBlacklist:0b}}
 
 # Returns -1 if registering ore failed. Otherwise, returns generated structure registry ID.
 function du:world/registry/register_struct
-# Keep track of this number in a scoreboard value.
+# Keep track of this number in a scoreboard value. 
 scoreboard players operation $nadi.volcano nadi.data = $world.out_0 du_data
