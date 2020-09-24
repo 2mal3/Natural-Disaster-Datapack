@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:air",
+    "minecraft:grass",
+    "minecraft:tall_grass",
+    "#du:flowers",
+    "minecraft:snow"
+  ]
+}

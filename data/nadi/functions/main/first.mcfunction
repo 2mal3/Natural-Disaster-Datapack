@@ -3,7 +3,7 @@
 # Datapck by 2mal3
 
 # send install message
-tellraw @a[tag=!global.ignore,tag=!global.ignore.gui] [{"text":"[Server] Natural Disaster Datapack v.","color":"blue"},{"score":{"name":"$V1","objective":"nadi.data"},"color":"blue"},{"text":".","color":"blue"},{"score":{"name":"$V2","objective":"nadi.data"},"color":"blue"},{"text":".","color":"blue"},{"score":{"name":"$V3","objective":"nadi.data"},"color":"blue"},{"translate":" by 2mal3 was installed!","color":"blue"}]
+tellraw @a[tag=!global.ignore,tag=!global.ignore.gui] [{"text":"Natural Disaster Datapack v","color":"blue"},{"score":{"name":"$V1","objective":"nadi.data"},"color":"blue"},{"text":".","color":"blue"},{"score":{"name":"$V2","objective":"nadi.data"},"color":"blue"},{"text":".","color":"blue"},{"score":{"name":"$V3","objective":"nadi.data"},"color":"blue"},{"translate":" by 2mal3 was installed!","color":"blue"}]
 
 # init disaster scoreboards
 execute store result score $nadi.time nadi.data run loot spawn ~ ~ ~ loot nadi:nadi/random_time

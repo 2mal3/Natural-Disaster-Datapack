@@ -6,7 +6,7 @@
 execute if score nadi.natural_disaster_on nadi.data matches 1 run function nadi:main/uninstall/uninstall_disasters
 
 # send uninstall message
-tellraw @a[tag=!global.ignore,tag=!global.ignore.gui] ["",{"text":"[Server] Natural Disaster Datapack v."},{"score":{"name":"$V1","objective":"nadi.data"}},{"text":"."},{"score":{"name":"$V2","objective":"nadi.data"}},{"text":"."},{"score":{"name":"$V3","objective":"nadi.data"}},{"text":" by 2mal3 was successfully uninstalled."}]
+tellraw @a[tag=!global.ignore,tag=!global.ignore.gui] ["",{"text":"Natural Disaster Datapack v"},{"score":{"name":"$V1","objective":"nadi.data"}},{"text":"."},{"score":{"name":"$V2","objective":"nadi.data"}},{"text":"."},{"score":{"name":"$V3","objective":"nadi.data"}},{"text":" by 2mal3 was successfully uninstalled."}]
 
 
 # remove scoreborads
