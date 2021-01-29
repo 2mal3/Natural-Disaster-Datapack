@@ -1,0 +1,17 @@
+{
+    "display": {
+        "title": "Natural Disasters v1.1.1",
+        "description": {"text":"With the Natural Disasters over 11 unique and dangerous natural disasters are added."},
+        "icon": {
+            "item": "minecraft:lava_bucket"
+        },
+        "announce_to_chat": false,
+        "show_toast": false
+    },
+    "parent": "global:2mal3",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:tick"
+        }
+    }
+  }
