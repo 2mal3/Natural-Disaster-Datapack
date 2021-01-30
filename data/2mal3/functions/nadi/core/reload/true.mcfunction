@@ -1,8 +1,9 @@
 # Description: Commands when reloading the datapack
-# Called from tag: minecraft:reaload
+# Called from function: 2mal3:nadi/core/reload/test
 # Datapack by 2mal3
 
 # Output debug message in chat, if enabled (INFO)
+tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]: ","color":"gray"},{"text":"Datapack Utilities is present and up-to-date!","color":"green"}]
 tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]: ","color":"gray"},{"text":"Datapack reloaded!","color":"green"}]
 
 
@@ -27,4 +28,4 @@ execute unless score $nadi.first_run nadi.data matches 1 run schedule function 2
 
 # Starts the loops
 function 2mal3:nadi/core/tick/second
-function 2mal3:nadi/core/tick/2second
+function 2mal3:nadi/core/tick/minute
