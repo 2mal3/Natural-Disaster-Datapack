@@ -2,6 +2,11 @@
 # Called from: 2mal3:nadi/natural_disasters/...:remove
 # Datapack by 2mal3
 
-execute store result score $nadi.time nadi.data run loot spawn ~ ~ ~ loot 2mal3:nadi/nadi/random_time
+# Generates a random time
+scoreboard players set $2mal3.random.in_0 2mal3.random 4200
+scoreboard players set $2mal3.random.in_1 2mal3.random 16800
+function 2mal3:random/random
+scoreboard players operation $nadi.time nadi.data = $2mal3.random.out_0 2mal3.random
 
+# Calls an api functions
 function #nadi_api:new_time

@@ -6,6 +6,10 @@
 tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]: ","color":"gray"},{"text":"Datapack uninstalled!","color":"green"}]
 
 
+# uninstalls libraries
+function 2mal3:random/uninstall
+
+
 # Stops the loops
 schedule clear 2mal3:nadi/core/tick/second
 schedule clear 2mal3:nadi/core/tick/2second
