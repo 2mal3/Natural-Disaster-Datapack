@@ -12,7 +12,7 @@ function 2mal3:random/uninstall
 
 # Stops the loops
 schedule clear 2mal3:nadi/core/tick/second
-schedule clear 2mal3:nadi/core/tick/2second
+schedule clear 2mal3:nadi/core/tick/minute
 
 
 # Deletes the scoreboards
