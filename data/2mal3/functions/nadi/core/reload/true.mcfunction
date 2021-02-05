@@ -27,5 +27,4 @@ execute unless score $nadi.first_run nadi.data matches 1 run schedule function 2
 
 
 # Starts the loops
-function 2mal3:nadi/core/tick/second
 function 2mal3:nadi/core/tick/minute

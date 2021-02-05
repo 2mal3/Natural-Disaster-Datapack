@@ -3,8 +3,8 @@
 # Datapack by 2mal3
 
 # Generates a random time
-scoreboard players set $2mal3.random.in_0 2mal3.random 140
-scoreboard players set $2mal3.random.in_1 2mal3.random 560
+scoreboard players operation $2mal3.random.in_0 2mal3.random = $nadi.time.min nadi.config
+scoreboard players operation $2mal3.random.in_1 2mal3.random = $nadi.time.max nadi.config
 function 2mal3:random/random
 scoreboard players operation $nadi.time nadi.data = $2mal3.random.out_0 2mal3.random
 
