@@ -43,17 +43,12 @@ tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_co
 
 tellraw @s {"text":""}
 
-# Disease
-execute if score $nadi.disease nadi.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/disease/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Disease active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of disease."}}]
-execute if score $nadi.disease nadi.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/disease/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Disease active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of disease."}}]
-
-tellraw @s {"text":""}
-
 # Doline
 execute if score $nadi.doline nadi.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/doline/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Doline active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of doline."}}]
 execute if score $nadi.doline nadi.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/doline/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Doline active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of doline."}}]
 tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $nadi.doline_time nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Depth of the doline: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Depth of doline in blocks (default: 30)."}},{"score":{"name":"$nadi.doline_time","objective":"nadi.config"},"color":"red"}]
 
+tellraw @s {"text":""}
 tellraw @s {"text":""}
 
 

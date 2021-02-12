@@ -1,7 +1,0 @@
-{
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
-  "predicate": {
-    "nbt": "{Item:{id:\"minecraft:firework_star\",Count:1b,tag:{display:{Name:'{\"text\":\"Remedy\",\"color\":\"blue\"}'}}}}"
-  }
-}

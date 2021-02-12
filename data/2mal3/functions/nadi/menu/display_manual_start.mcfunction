@@ -17,7 +17,6 @@ tellraw @s [{"text":"Natural Disaster Datapack v1.1.1","bold":true,"color":"yell
 
 tellraw @s {"text":"Acid Rain \u25b6","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/natural_disasters/acid_rain/create"},"hoverEvent":{"action":"show_text","value":"*click*"}}
 tellraw @s {"text":"Blizzard \u25b6","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/natural_disasters/blizzard/create"},"hoverEvent":{"action":"show_text","value":"*click*"}}
-tellraw @s {"text":"Disease \u25b6","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/natural_disasters/disease/create"},"hoverEvent":{"action":"show_text","value":"*click*"}}
 tellraw @s {"text":"Doline \u25b6","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/natural_disasters/doline/create"},"hoverEvent":{"action":"show_text","value":"*click*"}}
 tellraw @s {"text":"Drought \u25b6","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/natural_disasters/drought/create"},"hoverEvent":{"action":"show_text","value":"*click*"}}
 tellraw @s {"text":"Firestorm \u25b6","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/natural_disasters/firestorm/create"},"hoverEvent":{"action":"show_text","value":"*click*"}}
