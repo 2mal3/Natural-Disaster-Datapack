@@ -7,7 +7,7 @@ tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"N
 
 
 # init disaster scoreboards
-execute store result score $nadi.time nadi.data run loot spawn ~ ~ ~ loot 2mal3:nadi/nadi/random_time
+function 2mal3:nadi/new_time
 scoreboard players set $nadi.firestorm_on nadi.data 0
 scoreboard players set $nadi.first nadi.data 1
 scoreboard players set $nadi.natural_disaster_on nadi.data 0
