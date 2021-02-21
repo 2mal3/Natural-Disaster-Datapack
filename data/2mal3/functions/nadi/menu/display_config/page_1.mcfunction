@@ -32,7 +32,7 @@ tellraw @s {"text":""}
 # Acid Rain
 execute if score $nadi.acid_rain nadi.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/acid_rain/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Acid Rain active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of acid rain."}}]
 execute if score $nadi.acid_rain nadi.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/acid_rain/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Acid Rain active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of acid rain."}}]
-tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $nadi.acid_rain_time nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Length of the acid rain: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Length of acid rain in double seconds (default: 150)."}},{"score":{"name":"$nadi.acid_rain_time","objective":"nadi.config"},"color":"red"}]
+tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $nadi.acid_rain_time nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Length of the acid rain: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Length of acid rain in minutes (default: 10)."}},{"score":{"name":"$nadi.acid_rain_time","objective":"nadi.config"},"color":"red"}]
 
 tellraw @s {"text":""}
 

@@ -34,7 +34,7 @@ scoreboard players set $nadi.firestorm_time nadi.config 150
 
 # acid rain
 scoreboard players set $nadi.acid_rain nadi.config 1
-scoreboard players set $nadi.acid_rain_time nadi.config 150
+scoreboard players set $nadi.acid_rain_time nadi.config 10
 
 # hurricane
 scoreboard players set $nadi.hurricane nadi.config 1
