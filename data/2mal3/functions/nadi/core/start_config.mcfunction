@@ -42,7 +42,7 @@ scoreboard players set $nadi.hurricane_time nadi.config 3000
 
 # blizzard
 scoreboard players set $nadi.blizzard nadi.config 1
-scoreboard players set $nadi.blizzard_time nadi.config 300
+scoreboard players set $nadi.blizzard_time nadi.config 10
 
 # sandstorm
 scoreboard players set $nadi.sandstorm nadi.config 1

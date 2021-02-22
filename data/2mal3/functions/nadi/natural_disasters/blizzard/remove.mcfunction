@@ -1,16 +1,25 @@
-# Description: Removes the blizzard
-# Called from: 2mal3:nadi/natural_disasters/blizzard/tick
+# Description: Stops the blizzard and resets it to the beginning
+# Called from function: 2mal3:nadi/natural_disasters/acid_rain/tick
 # Datapack by 2mal3
 
-# send remove message
+# Sends a message to all players when enabled
 execute if score nadi.notifications_on nadi.config matches 1 run tellraw @a {"translate":"The blizzard stops.","color":"gray"}
 
-# remove all blizzard stuff
-kill @e[type=minecraft:armor_stand,tag=nadi.blizzard]
-scoreboard players reset @a[scores={nadi.sound=1..}] nadi.sound
-scoreboard players set $nadi.blizzard nadi.data 0
+# Stops the loops from the blizzard
+schedule clear 2mal3:nadi/natural_disasters/blizzard/ticks/minute
+schedule clear 2mal3:nadi/natural_disasters/blizzard/ticks/second
+schedule clear 2mal3:nadi/natural_disasters/blizzard/ticks/tick
 
-# other
-schedule clear 2mal3:nadi/natural_disasters/blizzard/tick
+# Stops the sound library loop
+schedule clear 2mal3:nadi/libraries/sound/loop
+
+# Saves that natural disaster and blizzard are off
 scoreboard players set $nadi.natural_disaster_on nadi.data 0
+
+# Deletes all marker entitys
+kill @e[type=minecraft:armor_stand,tag=nadi.blizzard]
+# Resets the sound module for each player
+scoreboard players reset @a[scores={nadi.sound=1..}] nadi.sound
+
+# Sets a new time until the next natural disaster begins
 function 2mal3:nadi/new_time

@@ -39,7 +39,7 @@ tellraw @s {"text":""}
 # Blizzard
 execute if score $nadi.blizzard nadi.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/blizzard/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Blizzard active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of blizzard."}}]
 execute if score $nadi.blizzard nadi.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/blizzard/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Blizzard active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of blizzard."}}]
-tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $nadi.blizzard_time nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Length of the blizzard: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Length of blizzard in seconds (default: 300)."}},{"score":{"name":"$nadi.blizzard_time","objective":"nadi.config"},"color":"red"}]
+tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $nadi.blizzard_time nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Length of the blizzard: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Length of blizzard in minutes (default: 10)."}},{"score":{"name":"$nadi.blizzard_time","objective":"nadi.config"},"color":"red"}]
 
 tellraw @s {"text":""}
 

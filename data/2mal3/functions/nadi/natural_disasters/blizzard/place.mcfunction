@@ -1,5 +1,5 @@
-# Description: places snow layers
-# Called from: 2mal3:nadi/choose_disaster
+# Description: Sets snow layers, depending on the already existing snow layers
+# Called from function: 2mal3:nadi/natural_disasters/blizzard/tick
 # Datapack by 2mal3
 
 execute if block ~ ~ ~ minecraft:snow[layers=7] run setblock ~ ~ ~ minecraft:snow[layers=8] replace
