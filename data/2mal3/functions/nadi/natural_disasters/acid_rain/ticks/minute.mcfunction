@@ -6,5 +6,5 @@
 schedule function 2mal3:nadi/natural_disasters/acid_rain/ticks/minute 60s
 
 # Count down the time and then stop the acid rain
-scoreboard players remove $nadi.time nadi.data 1
+execute if entity @a[predicate=2mal3:nadi/in_overworld] run scoreboard players remove $nadi.time nadi.data 1
 execute if score $nadi.time nadi.data matches 0 run function 2mal3:nadi/natural_disasters/acid_rain/remove
