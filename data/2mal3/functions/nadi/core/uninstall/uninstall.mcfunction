@@ -17,6 +17,8 @@ scoreboard objectives remove nadi.data
 scoreboard objectives remove nadi.debug_mode
 scoreboard objectives remove nadi.config
 
+scoreboard objectives remove nadi.sound
+
 # remove volcanoes makers
 kill @e[type=minecraft:armor_stand,tag=nadi.nadi.volcano]
 
