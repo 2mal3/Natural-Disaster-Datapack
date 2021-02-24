@@ -22,7 +22,7 @@ execute if score $nadi.acid_rain nadi.config matches 1 if score $2mal3.random.ou
 execute if score $nadi.hurricane nadi.config matches 1 if score $2mal3.random.out_0 2mal3.random matches 7 run function 2mal3:nadi/natural_disasters/hurricane/create
 execute if score $nadi.blizzard nadi.config matches 1 if score $2mal3.random.out_0 2mal3.random matches 8 run function 2mal3:nadi/natural_disasters/blizzard/create
 execute if score $nadi.sandstorm nadi.config matches 1 if score $2mal3.random.out_0 2mal3.random matches 9 run function 2mal3:nadi/natural_disasters/sandstorm/create
-execute if score §nadi.volcano_eruptions nadi.config matches 1 if score $2mal3.random.out_0 2mal3.random matches 10 run function 2mal3:nadi/natural_disasters/volcano/eruption/1
+execute if score §nadi.volcano_eruptions nadi.config matches 1 if score $2mal3.random.out_0 2mal3.random matches 10 run function 2mal3:nadi/natural_disasters/volcano/eruption/find
 
 # Output debug message in chat, if enabled (WARN)
 execute if score nadi.natural_disaster_on nadi.data matches 0 run tellraw @a[scores={nadi.debug_mode=2..}] [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"gold"},{"text":"/","color":"gray"},{"text":"WARN","color":"gold"},{"text":"]: ","color":"gray"},{"text":"No natural disaster was triggered. Repeat procedure ...","color":"gold"}] 

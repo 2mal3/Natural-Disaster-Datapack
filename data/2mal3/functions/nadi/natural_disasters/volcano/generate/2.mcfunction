@@ -1,4 +1,4 @@
-# Description: generates the volcano
+# Description: Generates the volcano
 # Called from: 2mal3:nadi/natural_disasters/volcano/generate/1
 # Datapack by 2mal3
 

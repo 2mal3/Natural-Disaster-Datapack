@@ -1,5 +1,5 @@
-# Description: set the volcano blocks a random motion
-# Called from: 2mal3:nadi/natural_disasters/volcano/eruption/2
+# Description: Gives random direction to the falling block
+# Called from function: 2mal3:nadi/natural_disasters/volcano/eruption/eruption
 # Datapack by 2mal3
 
 # Generates a random motion number
@@ -7,7 +7,7 @@ scoreboard players set $2mal3.random.in_0 2mal3.random 0
 scoreboard players set $2mal3.random.in_1 2mal3.random 99
 function 2mal3:random/random
 
-# set motion from ranom numer
+# Sets a random direction according to the random number
 execute if score $2mal3.random.out_0 2mal3.random matches 0 run data merge entity @s {Motion:[-1.32,0.43,-0.73]}
 execute if score $2mal3.random.out_0 2mal3.random matches 1 run data merge entity @s {Motion:[1.12,-1.45,-1.36]}
 execute if score $2mal3.random.out_0 2mal3.random matches 2 run data merge entity @s {Motion:[1.32,-0.12,-0.92]}
