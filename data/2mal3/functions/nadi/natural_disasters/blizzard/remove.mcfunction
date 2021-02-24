@@ -2,6 +2,10 @@
 # Called from function: 2mal3:nadi/natural_disasters/acid_rain/tick
 # Datapack by 2mal3
 
+# Output debug message in chat, if enabled (INFO)
+tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]: ","color":"gray"},{"text":"The blizzard has stopped.","color":"green"}]
+
+
 # Sends a message to all players when enabled
 execute if score nadi.notifications_on nadi.config matches 1 run tellraw @a {"translate":"The blizzard stops.","color":"gray"}
 
