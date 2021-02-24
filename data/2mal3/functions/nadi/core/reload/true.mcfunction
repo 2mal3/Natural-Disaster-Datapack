@@ -13,8 +13,6 @@ scoreboard objectives add nadi.data dummy
 scoreboard objectives add nadi.debug_mode dummy
 scoreboard objectives add nadi.config dummy
 
-scoreboard objectives add nadi.infected_t dummy
-scoreboard objectives add nadi.deathCount deathCount
 scoreboard objectives add nadi.sound dummy
 
 
