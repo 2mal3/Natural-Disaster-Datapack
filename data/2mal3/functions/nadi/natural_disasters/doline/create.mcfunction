@@ -16,7 +16,7 @@ scoreboard players set $nadi.natural_disaster_on nadi.data 1
 
 
 # Creates an anchor antity at a random player
-execute as @r[limit=1,gamemode=!spectator,tag=!global.ignore] at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["nadi.doline","global.ignore"]}
+execute as @r[limit=1,gamemode=!spectator,tag=!global.ignore,predicate=2mal3:nadi/in_overworld] at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["nadi.doline","global.ignore"]}
 
 # Plays a cave sound at the anchor
 execute as @e[type=minecraft:area_effect_cloud,tag=nadi.doline] at @s run playsound minecraft:ambient.cave ambient @a ~ ~ ~ 10
