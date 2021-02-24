@@ -1,11 +1,19 @@
-# Description: Removes the thunderstorm
-# Called from: nadi.thunderstorm:tick
+# Description: Stops the doline and resets it to the beginning
+# Called from function: 2mal:nadi/natural_disasters/doline/tick
 # Datapck by 2mal3
 
-# send remove message
-kill @e[tag=nadi.doline,type=minecraft:armor_stand]
+# Output debug message in chat, if enabled (INFO)
+tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]: ","color":"gray"},{"text":"The doline has stopped.","color":"green"}]
 
-# other
+
+# Stops the loop from the doline
 schedule clear 2mal3:nadi/natural_disasters/doline/tick
-function 2mal3:nadi/new_time
+
+# Saves that no natural disaster is off
 scoreboard players set $nadi.natural_disaster_on nadi.data 0
+
+# Deletes the anchor
+kill @e[type=minecraft:area_effect_cloud,tag=nadi.doline]
+
+# Sets a new time until the next natural disaster begins
+function 2mal3:nadi/new_time
