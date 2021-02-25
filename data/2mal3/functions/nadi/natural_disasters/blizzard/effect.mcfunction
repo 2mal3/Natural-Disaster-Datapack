@@ -5,7 +5,7 @@
 # Creates 5 anchor entitys and distributes them around the player
 scoreboard players set $nadi.temp_0 nadi.data 5
 function 2mal3:nadi/libraries/summon_anchors
-spreadplayers ~ ~ 2 10 false @e[type=minecraft:area_effect_cloud,tag=nadi.anchor,sort=nearest,limit=5]
+spreadplayers ~ ~ 2 10 false @e[type=minecraft:area_effect_cloud,tag=nadi.anchor,distance=..0.1]
 
 # Saves that the wind sound is played to the player
 tag @s add nadi.sound

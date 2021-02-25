@@ -7,5 +7,5 @@ scoreboard players set $nadi.temp_0 nadi.data 2
 function 2mal3:nadi/libraries/summon_anchors
 
 # Spreads the anchor entitys and remove the block under them
-spreadplayers ~ ~ 10 40 false @e[type=minecraft:area_effect_cloud,tag=nadi.anchor,sort=nearest,limit=2]
+spreadplayers ~ ~ 10 40 false @e[type=minecraft:area_effect_cloud,tag=nadi.anchor,distance=..0.1]
 execute as @e[type=minecraft:area_effect_cloud,tag=nadi.anchor] at @s unless block ~ ~-1 ~ #2mal3:nadi/acid_rain/acid_rain_immune run setblock ~ ~-1 ~ minecraft:air
