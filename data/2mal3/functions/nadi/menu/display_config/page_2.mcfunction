@@ -27,7 +27,7 @@ tellraw @s {"text":""}
 # Firestorm
 execute if score $nadi.firestorm nadi.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/firestorm/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Firestorm active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of firestorm."}}]
 execute if score $nadi.firestorm nadi.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/firestorm/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Firestorm active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of firestorm."}}]
-tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $nadi.firestorm_time nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Length of the firestorm: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Length of firestorm in double seconds (default: 150)."}},{"score":{"name":"$nadi.firestorm_time","objective":"nadi.config"},"color":"red"}]
+tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $nadi.firestorm_time nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Length of the firestorm: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Length of firestorm in minutes (default: 10)."}},{"score":{"name":"$nadi.firestorm_time","objective":"nadi.config"},"color":"red"}]
 
 tellraw @s {"text":""}
 

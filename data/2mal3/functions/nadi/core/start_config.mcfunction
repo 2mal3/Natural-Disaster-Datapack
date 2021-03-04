@@ -14,7 +14,7 @@ scoreboard players set $nadi.meteoroid nadi.config 1
 
 # thunderstorm
 scoreboard players set $nadi.thunderstorm nadi.config 1
-scoreboard players set $nadi.thunderstorm_time nadi.config 150
+scoreboard players set $nadi.thunderstorm_time nadi.config 10
 
 # doline
 scoreboard players set $nadi.doline nadi.config 1
