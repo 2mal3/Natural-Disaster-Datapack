@@ -1,11 +1,26 @@
-# Description: Removes the drought
-# Called from: 2mal3:nadi/natural_disasters/drought/tick
+# Description: Stops the drought and resets it to the beginning
+# Called from function: 2mal3:nadi/natural_disasters/drought/tick
 # Datapck by 2mal3
 
-# send remove message
-execute if score $nadi.notifications_on nadi.config matches 1 run tellraw @a[tag=!global.ignore,tag=!global.ignore.gui] {"translate":"The drought stops.","color":"gray"}
+# Output debug message in chat, if enabled (INFO)
+tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]: ","color":"gray"},{"text":"The drought has stopped.","color":"green"}]
 
-# other
-schedule clear 2mal3:nadi/natural_disasters/drought/tick
-function 2mal3:nadi/new_time
+
+# Sends a message to all players when enabled
+execute if score $nadi.notifications_on nadi.config matches 1 run tellraw @a {"text":"The drought stops.","color":"gray"}
+
+# Stops the loops
+schedule clear 2mal3:nadi/natural_disasters/drought/ticks/tick
+schedule clear 2mal3:nadi/natural_disasters/drought/ticks/second
+schedule clear 2mal3:nadi/natural_disasters/drought/ticks/minute
+
+# Saves that no natural disaster is off
 scoreboard players set $nadi.natural_disaster_on nadi.data 0
+
+# Resets the radom tick speed back to 3
+gamerule randomTickSpeed 3
+# Deletes all maker entities
+kill @e[type=minecraft:area_effect_cloud,tag=nadi.drought_converted]
+
+# Sets a new time until the next natural disaster begins
+function 2mal3:nadi/new_time

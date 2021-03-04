@@ -1,0 +1,15 @@
+{
+  "replace": true,
+  "values": [
+    "#minecraft:leaves",
+    "minecraft:water",
+    "#minecraft:ice",
+    "minecraft:grass",
+    "minecraft:tall_grass",
+    "minecraft:sea_pickle",
+    "minecraft:seagrass",
+    "minecraft:tall_seagrass",
+    "minecraft:kelp",
+    "minecraft:kelp_plant"
+  ]
+}

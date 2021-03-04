@@ -20,7 +20,7 @@ tellraw @s {"text":""}
 # Drought
 execute if score $nadi.drought nadi.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/drought/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Drought active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of drought."}}]
 execute if score $nadi.drought nadi.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/drought/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Drought active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of drought."}}]
-tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $nadi.drought_time nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Length of the drought: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Length of drought in half seconds (default: 600)."}},{"score":{"name":"$nadi.drought_time","objective":"nadi.config"},"color":"red"}]
+tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $nadi.drought_time nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Length of the drought: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Length of drought in minutes (default: 10)."}},{"score":{"name":"$nadi.drought_time","objective":"nadi.config"},"color":"red"}]
 
 tellraw @s {"text":""}
 

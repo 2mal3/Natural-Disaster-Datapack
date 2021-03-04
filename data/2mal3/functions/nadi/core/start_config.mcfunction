@@ -26,7 +26,7 @@ scoreboard players set $nadi.hail_time nadi.config 150
 
 # drought
 scoreboard players set $nadi.drought nadi.config 1
-scoreboard players set $nadi.drought_time nadi.config 600
+scoreboard players set $nadi.drought_time nadi.config 10
 
 # firestorm
 scoreboard players set $nadi.firestorm nadi.config 1
