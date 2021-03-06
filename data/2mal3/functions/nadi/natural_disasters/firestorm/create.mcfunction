@@ -1,17 +1,23 @@
-# Description: Creat a firestorm
-# Called from: 2mal3:nadi/choose_disaster
-# Datapck by 2mal3
+# Description: Starts a firestorm
+# Called from function: 2mal3:nadi/choose_disaster
+# Datapack by 2mal3
 
-# send create message
-execute if score $nadi.notifications_on nadi.config matches 1 run tellraw @a[tag=!global.ignore,tag=!global.ignore.gui] {"translate":"A firestorm begins.","color":"gray"}
+# Output debug message in chat, if enabled (INFO)
+tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]: ","color":"gray"},{"text":"A firestorm is started.","color":"green"}]
 
-# load config time
+
+# Sends a message to all players when enabled
+execute if score $nadi.notifications_on nadi.config matches 1 run tellraw @a {"text":"A firestorm begins.","color":"gray"}
+
+# Loads the time for the firestorm from the config
 scoreboard players operation $nadi.time nadi.data = $nadi.firestorm_time nadi.config
-scoreboard players set $nadi.firestorm_on nadi.data 1
+# Saves that a natural disaster is active
 scoreboard players set $nadi.natural_disaster_on nadi.data 1
 
-# some stuff for the api
-function #nadi_api:firestorm_time
+# Starts the loops
+schedule function 2mal3:nadi/natural_disasters/firestorm/ticks/minute 60s
+schedule function 2mal3:nadi/natural_disasters/firestorm/ticks/second 1s
+schedule function 2mal3:nadi/natural_disasters/firestorm/ticks/tick 1t
 
-# start firestorm
-schedule function 2mal3:nadi/natural_disasters/firestorm/tick 6s
+# Calls the corresponding function of the api
+function #nadi_api:firestorm_time

@@ -1,15 +1,24 @@
-# Description: Removes the firestorm
-# Called from: 2mal3:nadi/natural_disasters/firestorm/tick
-# Datapck by 2mal3
+# Description: Stops the firestorm and resets it to the beginning
+# Called from function: 2mal3:nadi/natural_disasters/firestorm/ticks/minute
+# Datapack by 2mal3
 
-# send remove message
-execute if score $nadi.notifications_on nadi.config matches 1 run tellraw @a[tag=!global.ignore,tag=!global.ignore.gui] {"translate":"The firestorm stops.","color":"gray"}
+# Output debug message in chat, if enabled (INFO)
+tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]: ","color":"gray"},{"text":"The firestorm has stopped.","color":"green"}]
+
+
+# Sends a message to all players when enabled
+execute if score $nadi.notifications_on nadi.config matches 1 run tellraw @a {"text":"The firestorm stops.","color":"gray"}
+
+# Stops the loops from the firestorm
+schedule clear 2mal3:nadi/natural_disasters/firestorm/ticks/minute
+schedule clear 2mal3:nadi/natural_disasters/firestorm/ticks/second
+schedule clear 2mal3:nadi/natural_disasters/firestorm/ticks/tick
+
+# Saves that no natural disaster is off
+scoreboard players set $nadi.natural_disaster_on nadi.data 0
 
 # remove firetails
 tp @e[tag=nadi.firestorm.s,type=minecraft:slime] ~ -1000 ~
 
-# other
-schedule clear 2mal3:nadi/natural_disasters/firestorm/tick
-scoreboard players set $nadi.firestorm_on nadi.data 0
+# Sets a new time until the next natural disaster begins
 function 2mal3:nadi/new_time
-scoreboard players set $nadi.natural_disaster_on nadi.data 0
