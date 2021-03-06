@@ -38,7 +38,7 @@ execute if score $nadi.volcano_generate nadi.config matches 1 run tellraw @s [{"
 execute if score $nadi.volcano_eruptions nadi.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/volcano_eruptions/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Volcano eruptions","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of volcano eruptions."}}]
 execute if score $nadi.volcano_eruptions nadi.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/volcano_eruptions/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Volcano eruptions","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of volcano eruptions."}}]
 
-tellraw @s {"text":"\n\n\n\n\n\n\n"}
+tellraw @s {"text":"\n\n\n\n\n\n"}
 
 
 tellraw @s {"text":"\u25c0 Go back","color":"red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/display_menu"},"hoverEvent":{"action":"show_text","contents":"*click*"}}

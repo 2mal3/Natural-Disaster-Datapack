@@ -49,7 +49,7 @@ tellraw @s {"text":""}
 execute if score $nadi.meteoroid nadi.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/meteoroid/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Meteoroid active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of meteoroid."}}]
 execute if score $nadi.meteoroid nadi.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/meteoroid/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Meteoroid active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of meteoroid."}}]
 
-tellraw @s {"text":"\n\n"}
+tellraw @s {"text":"\n"}
 
 
 tellraw @s {"text":"\u25c0 Go back","color":"red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/display_menu"},"hoverEvent":{"action":"show_text","contents":"*click*"}}
