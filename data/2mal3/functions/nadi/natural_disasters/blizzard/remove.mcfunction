@@ -22,8 +22,6 @@ scoreboard players set $nadi.natural_disaster_on nadi.data 0
 
 # Deletes all marker entitys
 kill @e[type=minecraft:armor_stand,tag=nadi.blizzard]
-# Resets the sound module for each player
-scoreboard players reset @a[scores={nadi.sound=1..}] nadi.sound
 
 # Sets a new time until the next natural disaster begins
 function 2mal3:nadi/new_time
