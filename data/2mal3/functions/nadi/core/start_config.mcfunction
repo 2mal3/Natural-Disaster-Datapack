@@ -22,7 +22,7 @@ scoreboard players set $nadi.doline_time nadi.config 30
 
 # hail
 scoreboard players set $nadi.hail nadi.config 1
-scoreboard players set $nadi.hail_time nadi.config 150
+scoreboard players set $nadi.hail_time nadi.config 10
 
 # drought
 scoreboard players set $nadi.drought nadi.config 1
