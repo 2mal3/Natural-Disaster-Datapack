@@ -1,11 +1,24 @@
-# Description: Removes the sandstorm
-# Called from: 2mal3:nadi/natural_disasters/sandstorm/tick
+# Description: Stops the sandstorm and resets it to the beginning
+# Called from function: 2mal3:nadi/natural_disasters/acid_rain/tick
 # Datapack by 2mal3
 
-# send remove message
-execute if score $nadi.notifications_on nadi.config matches 1 run tellraw @a[tag=!global.ignore,tag=!global.ignore.gui] {"translate":"The sandstorm stops.","color":"gray"}
+# Output debug message in chat, if enabled (INFO)
+tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]: ","color":"gray"},{"text":"The sandstorm has stopped.","color":"green"}]
 
-schedule clear 2mal3:nadi/natural_disasters/sandstorm/tick
+
+# Sends a message to all players when enabled
+execute if score nadi.notifications_on nadi.config matches 1 run tellraw @a {"translate":"The sandstorm stops.","color":"gray"}
+
+# Stops the loops from the sandstorm
+schedule clear 2mal3:nadi/natural_disasters/sandstorm/ticks/minute
+schedule clear 2mal3:nadi/natural_disasters/sandstorm/ticks/second
+schedule clear 2mal3:nadi/natural_disasters/sandstorm/ticks/tick
+
+# Stops the sound library loop
+schedule clear 2mal3:nadi/libraries/sound/loop
+
+# Saves that natural disaster and sandstorm are off
 scoreboard players set $nadi.natural_disaster_on nadi.data 0
-scoreboard players set $nadi.sandstorm nadi.data 0
+
+# Sets a new time until the next natural disaster begins
 function 2mal3:nadi/new_time

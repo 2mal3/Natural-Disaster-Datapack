@@ -46,7 +46,7 @@ scoreboard players set $nadi.blizzard_time nadi.config 10
 
 # sandstorm
 scoreboard players set $nadi.sandstorm nadi.config 1
-scoreboard players set $nadi.sandstorm_time nadi.config 300
+scoreboard players set $nadi.sandstorm_time nadi.config 10
 
 # volcano
 scoreboard players set $nadi.volcano_generate nadi.config 1

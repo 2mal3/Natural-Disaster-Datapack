@@ -20,7 +20,7 @@ tellraw @s {"text":""}
 # Sandstorm
 execute if score $nadi.sandstorm nadi.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/sandstorm/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Sandstorm active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of sandstorm."}}]
 execute if score $nadi.sandstorm nadi.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/sandstorm/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Sandstorm active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of sandstorm."}}]
-tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $nadi.sandstorm_time nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Length of the sandstorm: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Length of sandstorm in seconds (default: 300)."}},{"score":{"name":"$nadi.sandstorm_time","objective":"nadi.config"},"color":"red"}]
+tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $nadi.sandstorm_time nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Length of the sandstorm: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Length of sandstorm in minutes (default: 10)."}},{"score":{"name":"$nadi.sandstorm_time","objective":"nadi.config"},"color":"red"}]
 
 tellraw @s {"text":""}
 
