@@ -12,7 +12,7 @@ scoreboard players set $2mal3.random.in_1 2mal3.random 11
 function 2mal3:random/random
 
 # Starts a natural disaster depending on the random number
-execute if score $nadi.meteoroid nadi.config matches 1 if score $2mal3.random.out_0 2mal3.random matches 0 run function 2mal3:nadi/natural_disasters/meteoroid/create.1
+execute if score $nadi.meteoroid nadi.config matches 1 if score $2mal3.random.out_0 2mal3.random matches 0 run function 2mal3:nadi/natural_disasters/meteoroid/create/create
 execute if score $nadi.thunderstorm nadi.config matches 1 if score $2mal3.random.out_0 2mal3.random matches 1 run function 2mal3:nadi/natural_disasters/thunderstorm/create
 execute if score $nadi.doline nadi.config matches 1 if score $2mal3.random.out_0 2mal3.random matches 2 run function 2mal3:nadi/natural_disasters/doline/create
 execute if score $nadi.hail nadi.config matches 1 if score $2mal3.random.out_0 2mal3.random matches 3 run function 2mal3:nadi/natural_disasters/hail/create

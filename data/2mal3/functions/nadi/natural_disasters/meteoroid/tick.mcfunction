@@ -1,14 +1,12 @@
-# Description: The meteroid tick
-# Called from: 2mal3:nadi/natural_disasters/meteoroid/tick, 2mal3:nadi/natural_disasters/meteoroid/create.1
+# Description: The main meteroid loop every tick
+# Called from function: 2mal3:nadi/natural_disasters/meteoroid/tick, 2mal3:nadi/natural_disasters/meteoroid/create/create
 # Datapack by 2mal3
 
-# move meteoroid
-execute as @e[tag=nadi.meteoroid.2,type=minecraft:armor_stand] at @s run function 2mal3:nadi/natural_disasters/meteoroid/move
+# Calls the function again in the next tick
+schedule function 2mal3:nadi/natural_disasters/meteoroid/tick 1t replace
 
-# meteoroid impact
-execute store result score $nadi.temp_0 nadi.data as @e[tag=nadi.meteoroid.2,type=minecraft:armor_stand] at @s run execute if block ~ ~-6 ~ minecraft:air
-execute if score $nadi.temp_0 nadi.data matches 0 run function 2mal3:nadi/natural_disasters/meteoroid/end
+# Moves the meteorite down one block
+execute as @e[type=minecraft:area_effect_cloud,tag=nadi.meteoroid] at @s run function 2mal3:nadi/natural_disasters/meteoroid/move
 
-
-# timer
-execute if score $nadi.temp_0 nadi.data matches 1 run schedule function 2mal3:nadi/natural_disasters/meteoroid/tick 1t
+# Tests whether the meteorite has hit the modes and ends the natural disaster if this is true
+execute as @e[type=minecraft:area_effect_cloud,tag=nadi.meteoroid] at @s unless block ~ ~-6 ~ minecraft:air run function 2mal3:nadi/natural_disasters/meteoroid/remove
