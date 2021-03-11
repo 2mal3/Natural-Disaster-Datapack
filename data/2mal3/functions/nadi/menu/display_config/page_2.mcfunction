@@ -41,7 +41,7 @@ tellraw @s {"text":""}
 # Hurricane
 execute if score $nadi.hurricane nadi.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/hurricane/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Hurricane active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of hurricane."}}]
 execute if score $nadi.hurricane nadi.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/hurricane/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Hurricane active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of hurricane."}}]
-tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $nadi.hurricane_time nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Length of the hurricane: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Length of hurricane in double ticks (default: 3000)."}},{"score":{"name":"$nadi.hurricane_time","objective":"nadi.config"},"color":"red"}]
+tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $nadi.hurricane_time nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Length of the hurricane: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Length of hurricane in minutes (default: 10)."}},{"score":{"name":"$nadi.hurricane_time","objective":"nadi.config"},"color":"red"}]
 
 tellraw @s {"text":""}
 
