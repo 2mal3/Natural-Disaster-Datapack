@@ -1,0 +1,10 @@
+execute if block ~ ~ ~ minecraft:rail[shape=north_south] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:rail",Properties:{shape:north_south}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:rail[shape=east_west] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:rail",Properties:{shape:east_west}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:rail[shape=ascending_east] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:rail",Properties:{shape:ascending_east}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:rail[shape=ascending_west] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:rail",Properties:{shape:ascending_west}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:rail[shape=ascending_north] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:rail",Properties:{shape:ascending_north}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:rail[shape=ascending_south] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:rail",Properties:{shape:ascending_south}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:rail[shape=south_east] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:rail",Properties:{shape:south_east}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:rail[shape=south_west] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:rail",Properties:{shape:south_west}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:rail[shape=north_west] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:rail",Properties:{shape:north_west}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:rail[shape=north_east] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:rail",Properties:{shape:north_east}},Time:1,NoGravity:1b}

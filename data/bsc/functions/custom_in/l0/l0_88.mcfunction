@@ -1,4 +1,0 @@
-execute if block ~ ~ ~ minecraft:birch_pressure_plate[powered=true] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:birch_pressure_plate",Properties:{powered:true}},Time:1}
-execute if block ~ ~ ~ minecraft:birch_pressure_plate[powered=false] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:birch_pressure_plate",Properties:{powered:false}},Time:1}
-execute if block ~ ~ ~ minecraft:jungle_pressure_plate[powered=true] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:jungle_pressure_plate",Properties:{powered:true}},Time:1}
-execute if block ~ ~ ~ minecraft:jungle_pressure_plate[powered=false] run summon falling_block ~ ~5 ~ {NoGravity:1b,BlockState:{Name:"minecraft:jungle_pressure_plate",Properties:{powered:false}},Time:1}

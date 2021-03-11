@@ -1,0 +1,12 @@
+execute if block ~ ~ ~ minecraft:grindstone[face=floor,facing=north] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:grindstone",Properties:{face:floor,facing:north}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:grindstone[face=floor,facing=south] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:grindstone",Properties:{face:floor,facing:south}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:grindstone[face=floor,facing=west] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:grindstone",Properties:{face:floor,facing:west}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:grindstone[face=floor,facing=east] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:grindstone",Properties:{face:floor,facing:east}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:grindstone[face=wall,facing=north] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:grindstone",Properties:{face:wall,facing:north}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:grindstone[face=wall,facing=south] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:grindstone",Properties:{face:wall,facing:south}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:grindstone[face=wall,facing=west] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:grindstone",Properties:{face:wall,facing:west}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:grindstone[face=wall,facing=east] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:grindstone",Properties:{face:wall,facing:east}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:grindstone[face=ceiling,facing=north] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:grindstone",Properties:{face:ceiling,facing:north}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:grindstone[face=ceiling,facing=south] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:grindstone",Properties:{face:ceiling,facing:south}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:grindstone[face=ceiling,facing=west] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:grindstone",Properties:{face:ceiling,facing:west}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:grindstone[face=ceiling,facing=east] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:grindstone",Properties:{face:ceiling,facing:east}},Time:1,NoGravity:1b}
