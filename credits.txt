@@ -1,26 +1,26 @@
 
         Natural Disaster Datapack Credits       
 
-----------------------Ideas----------------------
+--------------------- Ideas ---------------------
 
                       2mal3
                    Wolfy_Mystic
                      vicnick
 
 
-----------------------Code-----------------------
+--------------------- Code ----------------------
 
                       2mal3
 
 
---------------------Libraries--------------------
+------------------- Libraries -------------------
 
          Datapack Utils by ImCoolYeah105        
-          Block ID Packager by cloudwolf
+          Block ID Packager by Cloudwolf
              Lantern Load by Alluet            
 
 
-------------------Helpful Tools------------------
+----------------- Helpful Tools -----------------
 
             MCStacker (mcstacker.net)
      Minecraft Generators (misode.github.io)
