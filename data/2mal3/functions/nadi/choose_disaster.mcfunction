@@ -1,5 +1,5 @@
 # Description: chooses a random desaster and selects it
-# Called from: 2mal3:nadi/core/tick
+# Called from function: 2mal3:nadi/core/loops/minute
 # Datapack by 2mal3
 
 # Output debug message in chat, if enabled (INFO)

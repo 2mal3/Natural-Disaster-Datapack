@@ -10,22 +10,19 @@ tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"N
 function 2mal3:random/uninstall
 
 # Stops the loops
-schedule clear 2mal3:nadi/core/tick/minute
+schedule clear 2mal3:nadi/core/loops/minute
 
 # Deletes the scoreboards
 scoreboard objectives remove nadi.data
 scoreboard objectives remove nadi.debug_mode
 scoreboard objectives remove nadi.config
 
-scoreboard objectives remove nadi.sound
-
 # remove volcanoes makers
-kill @e[type=minecraft:armor_stand,tag=nadi.nadi.volcano]
+kill @e[type=minecraft:armor_stand,tag=nadi.volcano]
 
 # Sends an uninstallation message to all players
 tellraw @a [{"text":"Natural Disaster Datapack v1.1.1 by 2mal3 was successfully uninstalled."}]
 
-
 # Disables the datapack
 datapack disable "file/Natural-Disaster-Datapack-v1.1.1"
-datapack disable "file/Natural-Disaster-Datapack-v1.1..zip"
+datapack disable "file/Natural-Disaster-Datapack-v1.1.1.zip"

@@ -18,7 +18,7 @@ tellraw @s {"text":""}
 
 tellraw @s {"text":"\u2699 Configure Datapack \u25b6","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/display_config/page_1"},"hoverEvent":{"action":"show_text","contents":"*click*"}}
 tellraw @s {"text":"\u26a1 Manual start a natural disaster \u25b6","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/display_manual_start"},"hoverEvent":{"action":"show_text","contents":"*click*"}}
-tellraw @s {"text":"\u303d Debug datapack \u25b6","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/display_debug"},"hoverEvent":{"action":"show_text","contents":"*click*"}}
+tellraw @s {"text":"\u303d Debug datapack \u25b6","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/core/debug"},"hoverEvent":{"action":"show_text","contents":"*click*"}}
 
 tellraw @s {"text":""}
 

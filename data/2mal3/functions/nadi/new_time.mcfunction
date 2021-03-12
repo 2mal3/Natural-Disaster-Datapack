@@ -1,5 +1,5 @@
 # Description: Determines the time until the next natural disaster after a natural disaster
-# Called from: 2mal3:nadi/natural_disasters/...:remove
+# Called from functions: 2mal3:nadi/natural_disasters/...:remove
 # Datapack by 2mal3
 
 # Generates a random time
