@@ -13,7 +13,7 @@ playsound minecraft:ui.button.click master @s
 ### Display text
 tellraw @s {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
 tellraw @s [{"text":"Natural Disaster Config","bold":true,"color":"yellow"}]
-tellraw @s [{"text":"<","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/display_config/page_2"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" --------- ","color":"yellow"},{"text":"[Refresh]","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/display_config/page_3"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" --------- ","color":"yellow"},{"text":">","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/display_config/page_4"},"hoverEvent":{"action":"show_text","contents":"*click*"}}]
+tellraw @s [{"text":"<","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/display_config/page_2"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" --------- ","color":"yellow"},{"text":"3 / 4","color":"gold"},{"text":" --------- ","color":"yellow"},{"text":">","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/display_config/page_4"},"hoverEvent":{"action":"show_text","contents":"*click*"}}]
 
 
 tellraw @s {"text":""}
@@ -46,7 +46,7 @@ execute if score $nadi.thunderstorm nadi.config matches 1 run tellraw @s [{"text
 tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $nadi.thunderstorm.time nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Length of the thunderstorm: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Length of thunderstorm in in seconds * 5 (default: 150)."}},{"score":{"name":"$nadi.thunderstorm.time","objective":"nadi.config"},"color":"red"}]
 tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $nadi.sandstorm.anchor_entities nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Lightning bolt count: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Number of lightning bolt created per second (default: 1)."}},{"score":{"name":"$nadi.sandstorm.anchor_entities","objective":"nadi.config"},"color":"red"}]
 
-tellraw @s {"text":"\n\n"}
+tellraw @s {"text":"\n"}
 
 
 tellraw @s {"text":"\u25c0 Go back","color":"red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/display_menu"},"hoverEvent":{"action":"show_text","contents":"*click*"}}
