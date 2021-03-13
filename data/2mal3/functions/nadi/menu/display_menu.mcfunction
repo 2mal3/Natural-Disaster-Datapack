@@ -26,5 +26,5 @@ tellraw @s {"text":"\u2709 Datapack Wiki","color":"blue","clickEvent":{"action":
 tellraw @s {"text":"\u2b24 Datapack Website","color":"blue","clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/data-pack/natural-disaster-4574511/"},"hoverEvent":{"action":"show_text","contents":"*click*"}}
 tellraw @s {"text":"\u231a Github Account","color":"blue","clickEvent":{"action":"open_url","value":"https://github.com/2mal3"},"hoverEvent":{"action":"show_text","contents":"*click*"}}
 
-tellraw @s {"text":"\n"}
+tellraw @s {"text":""}
 tellraw @s {"text":"\u267b Uninstall the datapack \u25b6","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/core/uninstall/uninstall_ask"},"hoverEvent":{"action":"show_text","contents":"*click*"}}

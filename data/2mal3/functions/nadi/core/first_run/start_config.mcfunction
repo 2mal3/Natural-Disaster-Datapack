@@ -8,6 +8,9 @@ scoreboard players set $nadi.notifications nadi.config 1
 scoreboard players set $nadi.time.min nadi.config 140
 scoreboard players set $nadi.time.max nadi.config 560
 
+# random natural disasters
+scoreboard players set $nadi.random_natural_disasters nadi.config 1
+
 # acid rain
 scoreboard players set $nadi.acid_rain nadi.config 1
 scoreboard players set $nadi.acid_rain.time nadi.config 10
