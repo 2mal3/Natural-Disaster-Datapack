@@ -5,8 +5,10 @@
 # Output debug message in chat, if enabled (INFO)
 tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]: ","color":"gray"},{"text":"Datapack uninstalled!","color":"green"}]
 
+# Stop all natural disasters
+function #2mal3:nadi/stop_natural_disasters
 
-# uninstalls libraries
+# Uninstalls the libraries
 function 2mal3:random/uninstall
 
 # Stops the loops
@@ -17,7 +19,7 @@ scoreboard objectives remove nadi.data
 scoreboard objectives remove nadi.debug_mode
 scoreboard objectives remove nadi.config
 
-# remove volcanoes makers
+# Remove volcanoes makers
 kill @e[type=minecraft:armor_stand,tag=nadi.volcano]
 
 # Sends an uninstallation message to all players
