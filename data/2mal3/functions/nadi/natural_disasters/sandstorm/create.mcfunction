@@ -7,10 +7,10 @@ tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"N
 
 
 # Sends a message to all players when enabled
-execute if score $nadi.notifications_on nadi.config matches 1 run tellraw @a {"text":"A sandstorm begins.","color":"gray"}
+execute if score $nadi.notifications nadi.config matches 1 run tellraw @a {"text":"A sandstorm begins.","color":"gray"}
 
 # Loads the time for the acid rain from the config
-scoreboard players operation $nadi.time nadi.data = $nadi.sandstorm_time nadi.config
+scoreboard players operation $nadi.time nadi.data = $nadi.sandstorm.time nadi.config
 # Saves that a natural disaster and the sandstorm are active
 scoreboard players set $nadi.natural_disaster_on nadi.data 1
 

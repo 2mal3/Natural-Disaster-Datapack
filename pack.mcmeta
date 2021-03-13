@@ -1,6 +1,8 @@
-     {
-          "pack": {
-              "pack_format": 6,
-              "description": {"text":"The Natural Disaster Datapack \nv1.1.1\nBy 2mal3!"}
-          }
-      }
+    {
+        "pack": {
+            "pack_format": 6,
+            "description": {
+                "text": "The Natural Disaster Datapack\nv1.1.1\nBy 2mal3!"
+            }
+        }
+    }

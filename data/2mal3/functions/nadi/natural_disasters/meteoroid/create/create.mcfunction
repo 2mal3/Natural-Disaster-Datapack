@@ -7,7 +7,7 @@ tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"N
 
 
 # Sends a message to all players when enabled
-execute if score $nadi.notifications_on nadi.config matches 1 run tellraw @a {"text":"A meteoroid begins.","color":"gray"}
+execute if score $nadi.notifications nadi.config matches 1 run tellraw @a {"text":"A meteoroid begins.","color":"gray"}
 
 # Saves that a natural disaster is active
 scoreboard players set $nadi.natural_disaster_on nadi.data 1

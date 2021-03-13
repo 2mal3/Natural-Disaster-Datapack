@@ -2,8 +2,8 @@
 # Called from function: 2mal3:nadi/natural_disasters/thunderstorm/ticks/5_seconds
 # Datapck by 2mal3
 
-# Creates 1 anchor entity
-scoreboard players set $nadi.temp_0 nadi.data 1
+# Creates a configured number of anchor entities
+scoreboard players operation $nadi.temp_0 nadi.data = $nadi.thunderstorm.anchor_entities nadi.config
 function 2mal3:nadi/libraries/summon_anchors
 
 # Distributes the anchor entitys

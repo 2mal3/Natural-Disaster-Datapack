@@ -17,37 +17,33 @@ tellraw @s [{"text":"<","color":"gold","clickEvent":{"action":"run_command","val
 
 tellraw @s {"text":""}
 
+# Doline
+execute if score $nadi.doline nadi.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/doline/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Doline active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of doline."}}]
+execute if score $nadi.doline nadi.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/doline/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Doline active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of doline."}}]
+tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $nadi.doline.time nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Depth of the doline: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Depth of doline in blocks (default: 30)."}},{"score":{"name":"$nadi.doline.time","objective":"nadi.config"},"color":"red"}]
+
+tellraw @s {"text":""}
+
 # Drought
 execute if score $nadi.drought nadi.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/drought/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Drought active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of drought."}}]
 execute if score $nadi.drought nadi.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/drought/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Drought active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of drought."}}]
-tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $nadi.drought_time nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Length of the drought: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Length of drought in minutes (default: 10)."}},{"score":{"name":"$nadi.drought_time","objective":"nadi.config"},"color":"red"}]
+tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $nadi.drought.time nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Length of the drought: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Length of drought in minutes (default: 10)."}},{"score":{"name":"$nadi.drought.time","objective":"nadi.config"},"color":"red"}]
 
 tellraw @s {"text":""}
 
 # Firestorm
 execute if score $nadi.firestorm nadi.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/firestorm/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Firestorm active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of firestorm."}}]
 execute if score $nadi.firestorm nadi.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/firestorm/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Firestorm active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of firestorm."}}]
-tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $nadi.firestorm_time nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Length of the firestorm: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Length of firestorm in minutes (default: 10)."}},{"score":{"name":"$nadi.firestorm_time","objective":"nadi.config"},"color":"red"}]
+tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $nadi.firestorm.time nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Length of the firestorm: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Length of firestorm in minutes (default: 10)."}},{"score":{"name":"$nadi.firestorm.time","objective":"nadi.config"},"color":"red"}]
+tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $nadi.firestorm.anchor_entities nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Fire count: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Number of new fires created per second (default: 10)."}},{"score":{"name":"$nadi.firestorm.anchor_entities","objective":"nadi.config"},"color":"red"}]
 
 tellraw @s {"text":""}
 
 # Hail
 execute if score $nadi.hail nadi.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/hail/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Hail active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of hail."}}]
 execute if score $nadi.hail nadi.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/hail/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Hail active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of hail."}}]
-tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $nadi.hail_time nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Length of the hail: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Length of hail in minutes (default: 10)."}},{"score":{"name":"$nadi.hail_time","objective":"nadi.config"},"color":"red"}]
-
-tellraw @s {"text":""}
-
-# Hurricane
-execute if score $nadi.hurricane nadi.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/hurricane/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Hurricane active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of hurricane."}}]
-execute if score $nadi.hurricane nadi.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/hurricane/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Hurricane active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of hurricane."}}]
-tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $nadi.hurricane_time nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Length of the hurricane: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Length of hurricane in minutes (default: 10)."}},{"score":{"name":"$nadi.hurricane_time","objective":"nadi.config"},"color":"red"}]
-
-tellraw @s {"text":""}
-
-# Meteoroid
-execute if score $nadi.meteoroid nadi.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/meteoroid/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Meteoroid active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of meteoroid."}}]
-execute if score $nadi.meteoroid nadi.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/meteoroid/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Meteoroid active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of meteoroid."}}]
+tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $nadi.hail.time nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Length of the hail: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Length of hail in minutes (default: 10)."}},{"score":{"name":"$nadi.hail.time","objective":"nadi.config"},"color":"red"}]
+tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $nadi.hail.anchor_entities nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Hail count: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Number of new hailstones created per second (default: 5)."}},{"score":{"name":"$nadi.hail.anchor_entities","objective":"nadi.config"},"color":"red"}]
 
 tellraw @s {"text":"\n"}
 

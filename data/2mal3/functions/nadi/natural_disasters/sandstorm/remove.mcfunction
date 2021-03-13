@@ -7,7 +7,7 @@ tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"N
 
 
 # Sends a message to all players when enabled
-execute if score nadi.notifications_on nadi.config matches 1 run tellraw @a {"translate":"The sandstorm stops.","color":"gray"}
+execute if score nadi.notifications nadi.config matches 1 run tellraw @a {"translate":"The sandstorm stops.","color":"gray"}
 
 # Stops the loops from the sandstorm
 schedule clear 2mal3:nadi/natural_disasters/sandstorm/ticks/minute
