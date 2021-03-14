@@ -15,9 +15,9 @@ scoreboard players operation $nadi.time nadi.data = $nadi.sandstorm.time nadi.co
 scoreboard players set $nadi.natural_disaster_on nadi.data 1
 
 # Starts the sandstorm loop in 4 seconds
-schedule function 2mal3:nadi/natural_disasters/sandstorm/ticks/minute 60s
-schedule function 2mal3:nadi/natural_disasters/sandstorm/ticks/second 1s
-schedule function 2mal3:nadi/natural_disasters/sandstorm/ticks/tick 1t
+schedule function 2mal3:nadi/natural_disasters/sandstorm/ticks/minute 120s
+schedule function 2mal3:nadi/natural_disasters/sandstorm/ticks/second 61s
+schedule function 2mal3:nadi/natural_disasters/sandstorm/ticks/tick 1201t
 
 # Starts the sound library loop
 function 2mal3:nadi/libraries/sound/loop

@@ -20,8 +20,8 @@ scoreboard players set $nadi.prevent_sleep nadi.data 1
 weather thunder 99999
 
 # Starts the loops
-schedule function 2mal3:nadi/natural_disasters/thunderstorm/ticks/5_seconds 10s replace
-schedule function 2mal3:nadi/natural_disasters/thunderstorm/ticks/minute 60s replace
+schedule function 2mal3:nadi/natural_disasters/thunderstorm/ticks/5_seconds 65s replace
+schedule function 2mal3:nadi/natural_disasters/thunderstorm/ticks/minute 120s replace
 
 
 # Calls the corresponding function of the api

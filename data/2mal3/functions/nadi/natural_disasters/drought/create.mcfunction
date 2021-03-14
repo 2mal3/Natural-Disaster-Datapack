@@ -15,9 +15,9 @@ scoreboard players operation $nadi.time nadi.data = $nadi.drought.time nadi.conf
 scoreboard players set $nadi.natural_disaster_on nadi.data 1
 
 # Starts the loops
-schedule function 2mal3:nadi/natural_disasters/drought/ticks/tick 1t
-schedule function 2mal3:nadi/natural_disasters/drought/ticks/second 1s
-schedule function 2mal3:nadi/natural_disasters/drought/ticks/minute 60s
+schedule function 2mal3:nadi/natural_disasters/drought/ticks/tick 1201t
+schedule function 2mal3:nadi/natural_disasters/drought/ticks/second 61s
+schedule function 2mal3:nadi/natural_disasters/drought/ticks/minute 120s
 
 # Sets the radom tick speed for the time of drought to 1
 gamerule randomTickSpeed 1

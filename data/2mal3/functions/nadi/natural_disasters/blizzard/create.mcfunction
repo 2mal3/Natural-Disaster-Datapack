@@ -15,9 +15,9 @@ scoreboard players operation $nadi.time nadi.data = $nadi.blizzard.time nadi.con
 scoreboard players set $nadi.natural_disaster_on nadi.data 1
 
 # Starts the blizzard loop in 4 seconds
-schedule function 2mal3:nadi/natural_disasters/blizzard/ticks/minute 60s
-schedule function 2mal3:nadi/natural_disasters/blizzard/ticks/second 1s
-schedule function 2mal3:nadi/natural_disasters/blizzard/ticks/tick 1t
+schedule function 2mal3:nadi/natural_disasters/blizzard/ticks/minute 120s
+schedule function 2mal3:nadi/natural_disasters/blizzard/ticks/second 61s
+schedule function 2mal3:nadi/natural_disasters/blizzard/ticks/tick 1201t
 
 # Starts the sound library loop
 function 2mal3:nadi/libraries/sound/loop
