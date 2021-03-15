@@ -12,7 +12,7 @@ playsound minecraft:ui.button.click master @s
 
 # Displays the text
 tellraw @s {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
-tellraw @s [{"text":"Natural Disaster Datapack v1.1.1","bold":true,"color":"yellow"},{"text":"\n--------------------------------","color":"yellow"}]
+tellraw @s [{"text":"Natural Disaster Datapack v2.0.0","bold":true,"color":"yellow"},{"text":"\n--------------------------------","color":"yellow"}]
 
 tellraw @s {"text":""}
 
@@ -26,7 +26,7 @@ tellraw @s {"text":"\u2573 Stop all natural disasters","color":"gold","clickEven
 
 tellraw @s {"text":""}
 
-tellraw @s {"text":"\u2709 Datapack Wiki","color":"blue","clickEvent":{"action":"open_url","value":"https://github.com/2mal3/Natural-Disaster-Datapack/wiki"},"hoverEvent":{"action":"show_text","contents":"*click*"}}
+tellraw @s {"text":"\u2709 Datapack Wiki","color":"blue","clickEvent":{"action":"open_url","value":"https://bit.ly/NaturalDisasterDatapackWiki"},"hoverEvent":{"action":"show_text","contents":"*click*"}}
 tellraw @s {"text":"\u2b24 Datapack Website","color":"blue","clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/data-pack/natural-disaster-4574511/"},"hoverEvent":{"action":"show_text","contents":"*click*"}}
 tellraw @s {"text":"\u231a Github Account","color":"blue","clickEvent":{"action":"open_url","value":"https://github.com/2mal3"},"hoverEvent":{"action":"show_text","contents":"*click*"}}
 

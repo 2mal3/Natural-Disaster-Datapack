@@ -23,8 +23,8 @@ scoreboard objectives remove nadi.config
 kill @e[type=minecraft:armor_stand,tag=nadi.volcano]
 
 # Sends an uninstallation message to all players
-tellraw @a [{"text":"Natural Disaster Datapack v1.1.1 by 2mal3 was successfully uninstalled."}]
+tellraw @a [{"text":"Natural Disaster Datapack v2.0.0 by 2mal3 was successfully uninstalled."}]
 
 # Disables the datapack
-datapack disable "file/Natural-Disaster-Datapack-v1.1.1"
-datapack disable "file/Natural-Disaster-Datapack-v1.1.1.zip"
+datapack disable "file/Natural-Disaster-Datapack-v2.0.0"
+datapack disable "file/Natural-Disaster-Datapack-v2.0.0.zip"

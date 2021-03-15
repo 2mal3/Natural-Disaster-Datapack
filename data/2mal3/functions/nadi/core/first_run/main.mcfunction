@@ -12,7 +12,7 @@ scoreboard objectives add nadi.debug_mode dummy
 scoreboard objectives add nadi.config dummy
 
 # Set the version in format: xx.xx.xx
-scoreboard players set $nadi.version nadi.data 010101
+scoreboard players set $nadi.version nadi.data 020000
 
 # Install libraries
 function 2mal3:random/reload
