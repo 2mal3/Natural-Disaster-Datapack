@@ -7,18 +7,22 @@ tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"N
 
 
 # Adds scoreboards
+scoreboard objectives add nadi.data dummy
 scoreboard objectives add nadi.debug_mode dummy
 scoreboard objectives add nadi.config dummy
 
 # Set the version in format: xx.xx.xx
 scoreboard players set $nadi.version nadi.data 010101
 
-# init disaster scoreboards
+# Install libraries
+function 2mal3:random/reload
+
+# Load start config
+function 2mal3:nadi/core/first_run/start_config
+
+# Init disaster scoreboards
 scoreboard players set $nadi.natural_disaster_on nadi.data 0
 function 2mal3:nadi/new_time
-
-# load start config
-function 2mal3:nadi/core/first_run/start_config
 
 # Sends Insatlations message after 4 sekonds
 schedule function 2mal3:nadi/core/first_run/send_message 4s
