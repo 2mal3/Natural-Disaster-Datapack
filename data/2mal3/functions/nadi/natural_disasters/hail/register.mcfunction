@@ -6,4 +6,4 @@
 # Counts the number of natural disasters
 scoreboard players add $natural_disasters nadi.data 1
 # Saves the start function of the natural disaster
-data modify storage 2mal3:nadi natural_disasters append value "function 2mal3:nadi/natural_disasters/volcano/eruption/eruption"
+data modify storage 2mal3:nadi natural_disasters append value "function 2mal3:nadi/natural_disasters/hail/create"

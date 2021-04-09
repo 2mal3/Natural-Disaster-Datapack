@@ -10,7 +10,6 @@ function #2mal3:nadi/stop_natural_disasters
 
 # Uninstalls the libraries
 function 2mal3:random/uninstall
-
 # Stops the loops
 schedule clear 2mal3:nadi/core/loops/minute
 
@@ -18,6 +17,8 @@ schedule clear 2mal3:nadi/core/loops/minute
 scoreboard objectives remove nadi.data
 scoreboard objectives remove nadi.debug_mode
 scoreboard objectives remove nadi.config
+# Deletes the storage
+data merge storage 2mal3:nadi {}
 
 # Remove volcanoes makers
 kill @e[type=minecraft:armor_stand,tag=nadi.volcano]

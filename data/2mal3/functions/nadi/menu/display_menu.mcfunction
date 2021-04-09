@@ -5,7 +5,6 @@
 # Disables command fedback for a short time, so that no disturbing message is displayed
 gamerule sendCommandFeedback false
 schedule function 2mal3:nadi/menu/send_command_feedback_true 1t
-
 # Plays click sound
 playsound minecraft:ui.button.click master @s
 
@@ -17,12 +16,10 @@ tellraw @s [{"text":"Natural Disaster Datapack v2.0.0","bold":true,"color":"yell
 tellraw @s {"text":""}
 
 tellraw @s {"text":"\u26a1 Manual start a natural disaster \u25b6","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/display_manual_start"},"hoverEvent":{"action":"show_text","contents":"*click*"}}
+tellraw @s {"text":"\u2573 Stop all natural disasters","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/stop_natural_disasters"},"hoverEvent":{"action":"show_text","contents":"*click*"}}
 tellraw @s {"text":"\u2699 Configure Datapack \u25b6","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/display_config/page_1"},"hoverEvent":{"action":"show_text","contents":"*click*"}}
 tellraw @s {"text":"\u303d Debug datapack \u25b6","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/core/debug"},"hoverEvent":{"action":"show_text","contents":"*click*"}}
-
-tellraw @s {"text":""}
-
-tellraw @s {"text":"\u2573 Stop all natural disasters","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/stop_natural_disasters"},"hoverEvent":{"action":"show_text","contents":"*click*"}}
+tellraw @s {"text":"\u2702 List plugins \u25b6","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/list_plugins/list_plugins"},"hoverEvent":{"action":"show_text","contents":"*click*"}}
 
 tellraw @s {"text":""}
 

@@ -5,15 +5,13 @@
 # Disables command fedback for a short time, so that no disturbing message is displayed
 gamerule sendCommandFeedback false
 schedule function 2mal3:nadi/menu/send_command_feedback_true 1t
-
 # Plays click sound
 playsound minecraft:ui.button.click master @s
 
 
 # Displays the text
 tellraw @s {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
-
-tellraw @s [{"text":"Natural Disaster Datapack v1.1.1","bold":true,"color":"yellow"},{"text":"\n--------------------------------\n","color":"yellow"}]
+tellraw @s [{"text":"Natural Disaster Datapack v2.0.0","bold":true,"color":"yellow"},{"text":"\n--------------------------------\n","color":"yellow"}]
 
 tellraw @s {"text":"Acid Rain \u25b6","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/natural_disasters/acid_rain/create"},"hoverEvent":{"action":"show_text","value":"*click*"}}
 tellraw @s {"text":"Blizzard \u25b6","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/natural_disasters/blizzard/create"},"hoverEvent":{"action":"show_text","value":"*click*"}}
@@ -28,5 +26,4 @@ tellraw @s {"text":"Thunderstorm \u25b6","color":"gold","clickEvent":{"action":"
 tellraw @s {"text":"Volcano \u25b6","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/natural_disasters/volcano/eruption/1"},"hoverEvent":{"action":"show_text","value":"*click*"}}
 
 tellraw @s {"text":""}
-
 tellraw @s {"text":"\u25c0 Go back","color":"red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/display_menu"},"hoverEvent":{"action":"show_text","contents":"*click*"}}
