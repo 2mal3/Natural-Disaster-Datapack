@@ -11,7 +11,7 @@ function #2mal3:nadi/stop_natural_disasters
 # Uninstalls the libraries
 function 2mal3:random/uninstall
 # Stops the loops
-schedule clear 2mal3:nadi/core/loops/minute
+schedule clear 2mal3:nadi/core/loop
 
 # Deletes the scoreboards
 scoreboard objectives remove nadi.data

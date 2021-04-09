@@ -25,4 +25,4 @@ function #2mal3:nadi/register/plugins
 
 
 # Starts the loops
-schedule function 2mal3:nadi/core/loops/minute 60s replace
+schedule function 2mal3:nadi/core/loop 60s replace
