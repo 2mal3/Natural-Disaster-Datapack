@@ -3,8 +3,8 @@
 # Datapck by 2mal3
 
 # Creates a configured number of anchor entities
-scoreboard players operation $nadi.temp_0 nadi.data = $nadi.acid_rain.anchor_entities nadi.config
-function 2mal3:nadi/libraries/summon_anchors
+scoreboard players operation .temp_0 nadi.data = $acid_rain.anchor_entities nadi.config
+function 2mal3:nadi/utilities/summon_anchors
 
 # Spreads the anchor entitys and remove the block under them
 spreadplayers ~ ~ 10 40 false @e[type=minecraft:area_effect_cloud,tag=nadi.anchor,distance=..0.1]

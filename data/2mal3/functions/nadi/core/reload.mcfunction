@@ -11,8 +11,8 @@ tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"N
 scoreboard objectives add nadi.data dummy
 
 # Initializes the datapack at the first startup or new version
-execute unless score $nadi.first_run nadi.data matches 1 run function 2mal3:nadi/core/first_run/main
-execute if score $nadi.first_run nadi.data matches 1 unless score $nadi.version nadi.data matches 020000 run function 2mal3:nadi/core/first_run/update
+execute unless score .first_run nadi.data matches 1 run function 2mal3:nadi/core/first_run/main
+execute if score .first_run nadi.data matches 1 unless score $version nadi.data matches 020000 run function 2mal3:nadi/core/first_run/update
 
 
 # Updates the datapack storage

@@ -7,14 +7,14 @@ tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"N
 
 
 # Sends a message to all players when enabled
-execute if score $nadi.notifications nadi.config matches 1 run tellraw @a {"text":"A hurricane begins.","color":"gray"}
+execute if score $notifications nadi.config matches 1 run tellraw @a {"text":"A hurricane begins.","color":"gray"}
 
 # Loads the time for the acid rain from the config
-scoreboard players operation $nadi.time nadi.data = $nadi.hurricane.time nadi.config
+scoreboard players operation .time nadi.data = $hurricane.time nadi.config
 # Saves that a natural disaster is active
-scoreboard players set $nadi.natural_disaster_on nadi.data 1
+scoreboard players set .natural_disaster_on nadi.data 1
 # Saves that the bed can not be used
-scoreboard players set $nadi.prevent_sleep nadi.data 1
+scoreboard players set .prevent_sleep nadi.data 1
 
 # Sets the weather to endless thunder
 weather thunder 99999
@@ -27,7 +27,7 @@ schedule function 2mal3:nadi/natural_disasters/hurricane/ticks/second 61s replac
 schedule function 2mal3:nadi/natural_disasters/hurricane/ticks/minute 120s replace
 
 # Starts the sound library loop
-function 2mal3:nadi/libraries/sound/loop
+function 2mal3:nadi/utilities/sound/loop
 
 # Calls the corresponding function of the api
 function #nadi_api:hurricane_time

@@ -7,12 +7,12 @@ tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"N
 
 
 # Sends a message to all players when enabled
-execute if score $nadi.notifications nadi.config matches 1 run tellraw @a {"text":"A doline begins.","color":"gray"}
+execute if score $notifications nadi.config matches 1 run tellraw @a {"text":"A doline begins.","color":"gray"}
 
 # Loads the time for the doline from the config
-scoreboard players operation $nadi.time nadi.data = $nadi.doline.time nadi.config
+scoreboard players operation .time nadi.data = $doline.time nadi.config
 # Saves that a natural disaster is active
-scoreboard players set $nadi.natural_disaster_on nadi.data 1
+scoreboard players set .natural_disaster_on nadi.data 1
 
 
 # Creates an anchor antity at a random player

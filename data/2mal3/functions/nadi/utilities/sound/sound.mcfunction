@@ -1,5 +1,5 @@
 # Description: Plays the sound to a player
-# Called from function: 2mal3:nadi/libraries/sound/loop
+# Called from function: 2mal3:nadi/utilities/sound/loop
 # Datapack by 2mal3
 
 # Plays the sound

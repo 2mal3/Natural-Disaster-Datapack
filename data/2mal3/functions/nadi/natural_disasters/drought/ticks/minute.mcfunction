@@ -6,5 +6,5 @@
 schedule function 2mal3:nadi/natural_disasters/drought/ticks/minute 60s
 
 # Count down the time and then stop the drought
-scoreboard players remove $nadi.time nadi.data 1
-execute if score $nadi.time nadi.data matches 0 run function 2mal3:nadi/natural_disasters/drought/remove
+scoreboard players remove .time nadi.data 1
+execute if score .time nadi.data matches 0 run function 2mal3:nadi/natural_disasters/drought/remove

@@ -3,8 +3,8 @@
 # Datapack by 2mal3
 
 # Creates a configured number of anchor entities
-scoreboard players operation $nadi.temp_0 nadi.data = $nadi.hurricane.anchor_entities nadi.config
-function 2mal3:nadi/libraries/summon_anchors
+scoreboard players operation .temp_0 nadi.data = $hurricane.anchor_entities nadi.config
+function 2mal3:nadi/utilities/summon_anchors
 
 # Distributes the anchor entities in a certain radius
 spreadplayers ~ ~ 5 20 false @e[type=minecraft:area_effect_cloud,tag=nadi.anchor]

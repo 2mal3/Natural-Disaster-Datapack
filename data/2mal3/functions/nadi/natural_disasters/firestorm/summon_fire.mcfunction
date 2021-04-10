@@ -3,7 +3,7 @@
 # Datapack by 2mal3
 
 # Creates a configured number of anchor entities
-scoreboard players operation $nadi.temp_0 nadi.data = $nadi.firestorm.anchor_entities nadi.config
+scoreboard players operation .temp_0 nadi.data = $firestorm.anchor_entities nadi.config
 function 2mal3:nadi/libraries/summon_anchors
 
 # Spreads the anchor entitys in 20 block radius

@@ -3,7 +3,7 @@
 # Datapack by 2mal3
 
 # Saves the setting
-scoreboard players set $nadi.doline nadi.config 0
+scoreboard players set $doline nadi.config 0
 
 # Displays the updated config menu
 function 2mal3:nadi/menu/display_config/page_2

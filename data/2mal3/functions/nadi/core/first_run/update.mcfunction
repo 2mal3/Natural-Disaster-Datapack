@@ -16,4 +16,4 @@ scoreboard objectives remove nadi.sound
 function 2mal3:nadi/core/first_run/main
 
 # Set version variable in format xx.xx.xx
-scoreboard players set $nadi.version nola.data 020000
+scoreboard players set $version nola.data 020000

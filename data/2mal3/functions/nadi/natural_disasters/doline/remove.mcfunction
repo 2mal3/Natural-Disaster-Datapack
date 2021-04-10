@@ -10,7 +10,7 @@ tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"N
 schedule clear 2mal3:nadi/natural_disasters/doline/tick
 
 # Saves that no natural disaster is off
-scoreboard players set $nadi.natural_disaster_on nadi.data 0
+scoreboard players set .natural_disaster_on nadi.data 0
 
 # Deletes the anchor
 kill @e[type=minecraft:area_effect_cloud,tag=nadi.doline]

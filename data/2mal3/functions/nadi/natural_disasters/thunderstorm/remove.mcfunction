@@ -7,16 +7,16 @@ tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"N
 
 
 # Sends a message to all players when enabled
-execute if score $nadi.notifications nadi.config matches 1 run tellraw @a {"text":"The thunderstorm stops.","color":"gray"}
+execute if score $notifications nadi.config matches 1 run tellraw @a {"text":"The thunderstorm stops.","color":"gray"}
 
 # Stops the loops from the thunderstorm
 schedule clear 2mal3:nadi/natural_disasters/thunderstorm/ticks/5_seconds
 schedule clear 2mal3:nadi/natural_disasters/thunderstorm/ticks/minute
 
 # Saves that no natural disaster is off
-scoreboard players set $nadi.natural_disaster_on nadi.data 0
+scoreboard players set .natural_disaster_on nadi.data 0
 # Saves that the bed can be used
-scoreboard players set $nadi.prevent_sleep nadi.data 0
+scoreboard players set .prevent_sleep nadi.data 0
 
 # Makes the weather back to normal
 weather clear

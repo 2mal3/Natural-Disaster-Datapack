@@ -10,5 +10,5 @@ execute as @e[type=minecraft:area_effect_cloud,tag=nadi.doline] at @s run functi
 schedule function 2mal3:nadi/natural_disasters/doline/tick 5t
 
 # Count down the time and then stop the acid rain
-scoreboard players remove $nadi.time nadi.data 1
-execute if score $nadi.time nadi.data matches 0 run function 2mal3:nadi/natural_disasters/doline/remove
+scoreboard players remove .time nadi.data 1
+execute if score .time nadi.data matches 0 run function 2mal3:nadi/natural_disasters/doline/remove

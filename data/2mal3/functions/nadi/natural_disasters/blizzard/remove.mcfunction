@@ -15,10 +15,10 @@ schedule clear 2mal3:nadi/natural_disasters/blizzard/ticks/second
 schedule clear 2mal3:nadi/natural_disasters/blizzard/ticks/tick
 
 # Stops the sound library loop
-schedule clear 2mal3:nadi/libraries/sound/loop
+schedule clear 2mal3:nadi/utilities/sound/loop
 
 # Saves that natural disaster and blizzard are off
-scoreboard players set $nadi.natural_disaster_on nadi.data 0
+scoreboard players set .natural_disaster_on nadi.data 0
 
 # Deletes all marker entitys
 kill @e[type=minecraft:armor_stand,tag=nadi.blizzard]

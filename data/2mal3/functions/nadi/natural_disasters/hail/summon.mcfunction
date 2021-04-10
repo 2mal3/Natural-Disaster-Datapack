@@ -3,8 +3,8 @@
 # Datapack by 2mal3
 
 # Creates a configured number of anchor entities
-scoreboard players operation $nadi.temp_0 nadi.data = $nadi.hail.anchor_entities nadi.config
-function 2mal3:nadi/libraries/summon_anchors
+scoreboard players operation .temp_0 nadi.data = $hail.anchor_entities nadi.config
+function 2mal3:nadi/utilities/summon_anchors
 
 # Spreads the anchor entitys and creates hail at the maximum building height above them
 spreadplayers ~ ~ 8 30 false @e[type=minecraft:area_effect_cloud,tag=nadi.anchor,distance=..0.1]

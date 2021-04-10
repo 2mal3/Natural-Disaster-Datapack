@@ -3,8 +3,8 @@
 # Datapack by 2mal3
 
 # Creates a configured number of anchor entities
-scoreboard players operation $nadi.temp_0 nadi.data = $nadi.blizzard.anchor_entities nadi.config
-function 2mal3:nadi/libraries/summon_anchors
+scoreboard players operation .temp_0 nadi.data = $blizzard.anchor_entities nadi.config
+function 2mal3:nadi/utilities/summon_anchors
 
 # -
 spreadplayers ~ ~ 2 10 false @e[type=minecraft:area_effect_cloud,tag=nadi.anchor,distance=..0.1]
