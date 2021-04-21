@@ -19,6 +19,6 @@ data modify storage 2mal3:nadi temp set from storage 2mal3:nadi natural_disaster
 function 2mal3:nadi/choose_disaster/loop
 
 # Executes the start function of the selected natural disaster 
-data modify block 1000 64 1002 Command set from storage 2mal3:nadi temp[0]
+data modify block 7162814 1 5656277 Command set from storage 2mal3:nadi temp[0]
 # Resets the command block in the next tick
 schedule function 2mal3:nadi/choose_disaster/clear 2t

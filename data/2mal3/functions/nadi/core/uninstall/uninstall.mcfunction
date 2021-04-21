@@ -20,8 +20,13 @@ scoreboard objectives remove nadi.config
 # Deletes the storage
 data merge storage 2mal3:nadi {}
 
+# Removes the active command block
+forceload remove 7162814 5656277
+setblock 7162814 1 5656277 minecraft:stone
 # Remove volcanoes makers
 kill @e[type=minecraft:armor_stand,tag=nadi.volcano]
+# Reset gamerules
+gamerule commandBlockOutput true
 
 # Sends an uninstallation message to all players
 tellraw @a [{"text":"Natural Disaster Datapack v2.0.0 by 2mal3 was successfully uninstalled."}]
