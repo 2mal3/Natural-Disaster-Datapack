@@ -16,6 +16,7 @@ execute if score .first_run nadi.data matches 1 unless score $version nadi.data 
 
 
 # Updates the datapack storage
+#declare storage 2mal3:nadi
 data merge storage 2mal3:nadi {temp: {}, plugins: [], natural_disasters: []}
 # Updated natural disasters
 scoreboard players set $natural_disasters nadi.data 0

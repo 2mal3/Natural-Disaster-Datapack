@@ -15,4 +15,4 @@ tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"N
 function #nadi_api:new_time
 
 # Output debug message in chat, if enabled (INFO)
-tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]: ","color":"gray"},{"text":"The next natural disaster will begin in ","color":"green"},{"score":{"name":".time","objective":"nadi.data"},"color":"gray"},{"text":" minutes.","color":"green"}] 
+tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]: ","color":"gray"},{"text":"The next natural disaster will begin in ","color":"green"},{"score":{"name":".time","objective":"nadi.data"},"color":"gray"},{"text":" minutes.","color":"green"}]

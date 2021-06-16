@@ -10,7 +10,6 @@ tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"N
 scoreboard objectives add nadi.data dummy
 scoreboard objectives add nadi.debug_mode dummy
 scoreboard objectives add nadi.config dummy
-
 # Set the version in format: xx.xx.xx
 scoreboard players set $version nadi.data 020000
 
