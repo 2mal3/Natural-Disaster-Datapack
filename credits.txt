@@ -17,7 +17,8 @@
 
          Datapack Utils by ImCoolYeah105        
           Block ID Packager by Cloudwolf
-             Lantern Load by Alluet            
+             Lantern Load by LanternMC
+          Skylight detection by Cloudwolf        
 
 
 ----------------- Helpful Tools -----------------
