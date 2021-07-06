@@ -9,7 +9,7 @@ schedule function 2mal3:nadi/menu/send_command_feedback_true 1t
 playsound minecraft:ui.button.click master @s
 
 
-# Display text
+### Display text
 tellraw @s {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
 tellraw @s [{"text":"Natural Disaster Config","bold":true,"color":"yellow"}]
 tellraw @s [{"text":"<","color":"yellow"},{"text":" --------- ","color":"yellow"},{"text":"1 / 4","color":"gold"},{"text":" --------- ","color":"yellow"},{"text":">","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/display_config/page_2"},"hoverEvent":{"action":"show_text","contents":"*click*"}}]
@@ -34,16 +34,16 @@ execute if score $random_natural_disasters nadi.config matches 1 run tellraw @s 
 tellraw @s {"text":""}
 
 # Acid Rain
-#execute if score $acid_rain nadi.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/acid_rain/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Acid Rain active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of acid rain."}}]
-#execute if score $acid_rain nadi.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/acid_rain/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Acid Rain active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of acid rain."}}]
+execute if score $acid_rain nadi.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/acid_rain/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Acid Rain active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of acid rain."}}]
+execute if score $acid_rain nadi.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/acid_rain/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Acid Rain active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of acid rain."}}]
 tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $acid_rain.time nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Length of the acid rain: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Length of acid rain in minutes (default: 10)."}},{"score":{"name":"$acid_rain.time","objective":"nadi.config"},"color":"red"}]
 tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $acid_rain.anchor_entities nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Number of deleted blocks per second: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Number of blocks to be deleted per second by the acid rain (default: 2)."}},{"score":{"name":"$acid_rain.anchor_entities","objective":"nadi.config"},"color":"red"}]
 
 tellraw @s {"text":""}
 
 # Blizzard
-#execute if score $blizzard nadi.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/blizzard/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Blizzard active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of blizzard."}}]
-#execute if score $blizzard nadi.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/blizzard/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Blizzard active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of blizzard."}}]
+execute if score $blizzard nadi.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/blizzard/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Blizzard active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of blizzard."}}]
+execute if score $blizzard nadi.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/blizzard/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Blizzard active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of blizzard."}}]
 tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $blizzard.time nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Length of the blizzard: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Length of blizzard in minutes (default: 10)."}},{"score":{"name":"$blizzard.time","objective":"nadi.config"},"color":"red"}]
 tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $blizzard.anchor_entities nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Snow count: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Number of snowflakes that are created per second (default: 5)."}},{"score":{"name":"$blizzard.anchor_entities","objective":"nadi.config"},"color":"red"}]
 

@@ -1,5 +1,4 @@
 # Description: Starts a hail
-# AS: server, AT: server
 # Called from function: 2mal3:nadi/choose_disaster
 # Datapack by 2mal3
 
@@ -25,5 +24,5 @@ schedule function 2mal3:nadi/natural_disasters/hail/ticks/second 61s replace
 schedule function 2mal3:nadi/natural_disasters/hail/ticks/minute 120s replace
 
 
-# Calls a function from the api to modify the natural disaster
+# Calls the corresponding function of the api
 function #nadi_api:hail_time

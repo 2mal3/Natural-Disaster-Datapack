@@ -1,5 +1,4 @@
 # Description: The thunderstorm tick every 5 seconds
-# AS: server, AT: server
 # Called from function: 2mal3:nadi/natural_disasters/thunderstorm/create, 2mal3:nadi/natural_disasters/thunderstorm/ticks/5_seconds
 # Datapack by 2mal3
 

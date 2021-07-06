@@ -1,5 +1,4 @@
-# Description: Displays the hurricane with particles above the anchor cow
-# AS: hurricane anchor cow, AT: @s
+# Description: Displays the hurricane with particles above the anchor pig
 # Called from function: 2mal3:nadi/natural_disasters/hurricane/ticks/tick
 # Datapack by 2mal3
 

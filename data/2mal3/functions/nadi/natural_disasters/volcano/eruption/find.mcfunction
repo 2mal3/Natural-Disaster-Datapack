@@ -1,5 +1,4 @@
 # Description: Starts an eruption at a random loaded volcano
-# AS: server, AT: server
 # Called from function: 2mal3:nadi/choose_disaster
 # Datapack by 2mal3
 

@@ -1,5 +1,4 @@
 # Description: Removes the hail
-# AS: server, AT: server
 # Called from: 2mal3:nadi/natural_disasters/hail/tick
 # Datapack by 2mal3
 

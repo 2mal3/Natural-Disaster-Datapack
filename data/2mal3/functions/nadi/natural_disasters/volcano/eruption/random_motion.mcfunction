@@ -1,5 +1,4 @@
 # Description: Gives random direction to the falling block
-# AS: falling blocks from the volcano, AT: @s
 # Called from function: 2mal3:nadi/natural_disasters/volcano/eruption/eruption
 # Datapack by 2mal3
 

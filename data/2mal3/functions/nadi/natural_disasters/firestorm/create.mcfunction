@@ -15,9 +15,9 @@ scoreboard players operation .time nadi.data = $firestorm.time nadi.config
 scoreboard players set .natural_disaster_on nadi.data 1
 
 # Starts the loops
-schedule function 2mal3:nadi/natural_disasters/firestorm/ticks/minute 120s replace
-schedule function 2mal3:nadi/natural_disasters/firestorm/ticks/second 61s replace
-schedule function 2mal3:nadi/natural_disasters/firestorm/ticks/tick 1201t replace
+schedule function 2mal3:nadi/natural_disasters/firestorm/ticks/minute 120s
+schedule function 2mal3:nadi/natural_disasters/firestorm/ticks/second 61s
+schedule function 2mal3:nadi/natural_disasters/firestorm/ticks/tick 1201t
 
-# Calls a function from the api to modify the natural disaster
+# Calls the corresponding function of the api
 function #nadi_api:firestorm_time

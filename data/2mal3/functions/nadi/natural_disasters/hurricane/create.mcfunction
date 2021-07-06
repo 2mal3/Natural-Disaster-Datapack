@@ -1,5 +1,4 @@
 # Description: Starts a hurricane
-# AS: server, AT: server
 # Called from function: 2mal3:nadi/choose_disaster
 # Datapack by 2mal3
 
@@ -30,5 +29,5 @@ schedule function 2mal3:nadi/natural_disasters/hurricane/ticks/minute 120s repla
 # Starts the sound library loop
 function 2mal3:nadi/utilities/sound/loop
 
-# Calls a function from the api to modify the natural disaster
+# Calls the corresponding function of the api
 function #nadi_api:hurricane_time

@@ -1,6 +1,5 @@
 # Description: Starts a sandstorm
-# AS: server, AT: server
-# Called from function: 2mal3:nadi/choose_disaster
+# Called from: function 2mal3:nadi/choose_disaster
 # Datapack by 2mal3
 
 # Output debug message in chat, if enabled (INFO)
@@ -16,13 +15,13 @@ scoreboard players operation .time nadi.data = $sandstorm.time nadi.config
 scoreboard players set .natural_disaster_on nadi.data 1
 
 # Starts the sandstorm loop in 4 seconds
-schedule function 2mal3:nadi/natural_disasters/sandstorm/ticks/minute 120s replace
-schedule function 2mal3:nadi/natural_disasters/sandstorm/ticks/second 61s replace
-schedule function 2mal3:nadi/natural_disasters/sandstorm/ticks/tick 1201t replace
+schedule function 2mal3:nadi/natural_disasters/sandstorm/ticks/minute 120s
+schedule function 2mal3:nadi/natural_disasters/sandstorm/ticks/second 61s
+schedule function 2mal3:nadi/natural_disasters/sandstorm/ticks/tick 1201t
 
 # Starts the sound library loop
 function 2mal3:nadi/utilities/sound/loop
 
 
-# Calls a function from the api to modify the natural disaster
+# Calls the corresponding function of the api
 function #nadi_api:sandstorm_time

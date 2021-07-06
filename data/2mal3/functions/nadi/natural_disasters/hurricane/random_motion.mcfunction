@@ -1,6 +1,5 @@
 # Description: Gives the block that is thrown away by the hurricane a random direction of movement
-# AS: falling block in the center of the hurricane, AT: @s
-# Called from function: 2mal3:nadi/natural_disasters/hurricane/catch
+# Called from function: 2mal3:nadi/natural_disasters/hurricane/ticks/tick
 # Datapack by 2mal3
 
 # Gennerates a random x speed from -1.50 to 1.50 and stores it in the falling block

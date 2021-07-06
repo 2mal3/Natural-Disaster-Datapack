@@ -1,5 +1,4 @@
 # Description: Installs the Datapack on first start
-# AS: server, AT: server
 # Called from function: 2mal3:nadi/core/reload
 # Datapack by 2mal3
 

@@ -1,11 +1,11 @@
 # Description: Break blocks and convert them to falling blocks
-# AS: anchor cow, AT: @s
 # Called from function: 2mal3:nadi/natural_disasters/hurricane/ticks/tick
 # Datapack by 2mal3
 
 # Creates a configured number of anchor entities
 scoreboard players operation .temp_0 nadi.data = $hurricane.anchor_entities nadi.config
 function 2mal3:nadi/utilities/summon_anchors
+
 # Distributes the anchor entities in a certain radius
 spreadplayers ~ ~ 5 20 false @e[type=minecraft:area_effect_cloud,tag=nadi.anchor]
 

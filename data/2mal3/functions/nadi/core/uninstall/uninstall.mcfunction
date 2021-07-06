@@ -1,5 +1,4 @@
 # Description: Uninstalls the Datapack
-# AS: player, AT: player
 # Called from function: core/uninstall/uninstall_ask
 # Datapack by 2mal3
 
@@ -8,9 +7,10 @@ tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"N
 
 # Stop all natural disasters
 function #2mal3:nadi/stop_natural_disasters
+
 # Uninstalls the libraries
 function 2mal3:random/uninstall
-# Stops the loop
+# Stops the loops
 schedule clear 2mal3:nadi/core/loop
 
 # Deletes the scoreboards

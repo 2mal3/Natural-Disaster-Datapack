@@ -12,7 +12,7 @@ In addition, the datapack menu has been greatly simplified and improved, so that
   - Links to the website and wiki
   - Nicer
   - Faster 
-- Datapack icon
+- Datapck icon
 - Debug system
 - Drought:
   - A few smoke particles for a better ambience

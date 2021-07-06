@@ -1,7 +1,6 @@
 # Description: Stops the doline and resets it to the beginning
-# AS: server, AT: server
 # Called from function: 2mal:nadi/natural_disasters/doline/tick
-# Datapack by 2mal3
+# Datapck by 2mal3
 
 # Output debug message in chat, if enabled (INFO)
 tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]: ","color":"gray"},{"text":"The doline has stopped.","color":"green"}]

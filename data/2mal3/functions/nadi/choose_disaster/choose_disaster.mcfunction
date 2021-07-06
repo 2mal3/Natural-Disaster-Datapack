@@ -7,7 +7,7 @@
 tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]: ","color":"gray"},{"text":"Randomly select a natural disaster ...","color":"green"}] 
 
 
-# Selects a random number between 0 and the number of natural disasters
+# Selects a random number between zero and the number of natural disasters
 scoreboard players set .in_0 2mal3.random 1
 
 scoreboard players operation .in_1 2mal3.random = $natural_disasters nadi.data

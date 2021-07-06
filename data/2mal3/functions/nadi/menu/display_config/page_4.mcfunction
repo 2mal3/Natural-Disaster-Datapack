@@ -9,7 +9,7 @@ schedule function 2mal3:nadi/menu/send_command_feedback_true 1t
 playsound minecraft:ui.button.click master @s
 
 
-# Display text
+### Display text
 tellraw @s {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
 tellraw @s [{"text":"Natural Disaster Config","bold":true,"color":"yellow"}]
 tellraw @s [{"text":"<","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/display_config/page_3"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" --------- ","color":"yellow"},{"text":"4 / 4","color":"gold"},{"text":" --------- ","color":"yellow"},{"text":">","color":"yellow"}]
@@ -19,8 +19,8 @@ tellraw @s {"text":""}
 execute if score $volcano_generate nadi.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/volcano_generate/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Generate volcanoes","color":"gold","hoverEvent":{"action":"show_text","contents":"In newly generated areas can generate volcanoes."}}]
 execute if score $volcano_generate nadi.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/volcano_generate/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Generate volcanoes","color":"gold","hoverEvent":{"action":"show_text","contents":"In newly generated areas can generate volcanoes."}}]
 
-#execute if score $volcano_eruptions nadi.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/volcano_eruptions/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Volcano eruptions","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of volcano eruptions."}}]
-#execute if score $volcano_eruptions nadi.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/volcano_eruptions/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Volcano eruptions","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of volcano eruptions."}}]
+execute if score $volcano_eruptions nadi.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/volcano_eruptions/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Volcano eruptions","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of volcano eruptions."}}]
+execute if score $volcano_eruptions nadi.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/volcano_eruptions/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Volcano eruptions","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of volcano eruptions."}}]
 
 tellraw @s {"text":"\n\n\n\n\n\n\n\n\n\n\n\n"}
 
