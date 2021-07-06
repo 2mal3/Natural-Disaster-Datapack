@@ -1,6 +1,6 @@
 # Description: Commands when reloading the datapack
 # AS: server, AT: server
-# Called from function tag: minecraft:reaload
+# Called from function tag: load:post_load
 # Datapack by 2mal3
 
 # Output debug message in chat, if enabled (INFO)
@@ -15,7 +15,7 @@ execute unless score .first_run nadi.data matches 1 run function 2mal3:nadi/core
 execute if score .first_run nadi.data matches 1 unless score $version nadi.data matches 020000 run function 2mal3:nadi/core/first_run/update
 
 
-# Updates the datapack storage
+# Updates plugins and natural disasters
 #declare storage 2mal3:nadi
 data merge storage 2mal3:nadi {temp: {}, plugins: [], natural_disasters: []}
 # Updated natural disasters
@@ -25,5 +25,5 @@ function #2mal3:nadi/register/natural_disasters
 function #2mal3:nadi/register/plugins
 
 
-# Starts the loops
+# Starts the loop
 schedule function 2mal3:nadi/core/loop 60s replace

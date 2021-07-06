@@ -1,10 +1,11 @@
 # Description: Creates the firestorm entitys at a random position 20 blocks around a player in the air
+# AS: every player in the overworld, AT: @s
 # Called from function: 2mal3:nadi/natural_disasters/firestorm/ticks/second
 # Datapack by 2mal3
 
 # Creates a configured number of anchor entities
 scoreboard players operation .temp_0 nadi.data = $firestorm.anchor_entities nadi.config
-function 2mal3:nadi/libraries/summon_anchors
+function 2mal3:nadi/utilities/summon_anchors
 
 # Spreads the anchor entitys in 20 block radius
 spreadplayers ~ ~ 10 20 false @e[type=minecraft:area_effect_cloud,tag=nadi.anchor,distance=..0.1]

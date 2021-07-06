@@ -1,4 +1,5 @@
 # Description: Stops the sandstorm and resets it to the beginning
+# AS: server, AT: server
 # Called from function: 2mal3:nadi/natural_disasters/acid_rain/tick
 # Datapack by 2mal3
 
@@ -7,7 +8,7 @@ tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"N
 
 
 # Sends a message to all players when enabled
-execute if score nadi.notifications nadi.config matches 1 run tellraw @a {"translate":"The sandstorm stops.","color":"gray"}
+execute if score nadi.notifications nadi.config matches 1 run tellraw @a {"text":"The sandstorm stops.","color":"gray"}
 
 # Stops the loops from the sandstorm
 schedule clear 2mal3:nadi/natural_disasters/sandstorm/ticks/minute

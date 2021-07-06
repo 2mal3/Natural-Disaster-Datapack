@@ -75,7 +75,7 @@ That's why there is this beta version, which contains the newest but still unfin
 
 ## 🔽 Installation:
 - Option 1:
-  - Download the datapck file [here](https://bit.ly/NaturalDisasterDatapack)
+  - Download the Datapack file [here](https://bit.ly/NaturalDisasterDatapack)
   - Follow [this](https://youtu.be/zhWVPYD9hy4) video tutorial
 - Option 2: Follow [this](https://www.planetminecraft.com/blog/how-to-download-and-install-minecraft-data-packs/) text tutorial
 

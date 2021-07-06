@@ -1,6 +1,7 @@
 # Description: Starts a acid rain
+# AS: server, AT: server
 # Called from function: 2mal3:nadi/choose_disaster
-# Datapck by 2mal3
+# Datapack by 2mal3
 
 # Output debug message in chat, if enabled (INFO)
 tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]: ","color":"gray"},{"text":"A acid rain is started.","color":"green"}]
@@ -20,10 +21,10 @@ scoreboard players set .prevent_sleep nadi.data 1
 weather rain 99999
 
 # Starts the loops
-schedule function 2mal3:nadi/natural_disasters/acid_rain/ticks/minute 120s
-schedule function 2mal3:nadi/natural_disasters/acid_rain/ticks/second 61s
-schedule function 2mal3:nadi/natural_disasters/acid_rain/ticks/tick 1201t
+schedule function 2mal3:nadi/natural_disasters/acid_rain/ticks/minute 120s replace
+schedule function 2mal3:nadi/natural_disasters/acid_rain/ticks/second 61s replace
+schedule function 2mal3:nadi/natural_disasters/acid_rain/ticks/tick 1201t replace
 
 
-# Calls the corresponding function of the api
+# Calls a function from the api to modify the natural disaster
 function #nadi_api:acid_rain_time

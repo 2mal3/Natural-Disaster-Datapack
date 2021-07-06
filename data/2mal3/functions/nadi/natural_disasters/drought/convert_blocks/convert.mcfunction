@@ -1,4 +1,5 @@
 # Description: "dries out" all blocks of the chunk from 32 to 192 blocks
+# AS: erver chunk anchor, AT: @s
 # Called from: 2mal3:nadi/natural_disasters/drought/ticks/second
 # Datapack by 2mal3
 

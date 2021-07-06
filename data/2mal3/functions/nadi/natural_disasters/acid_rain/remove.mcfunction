@@ -1,4 +1,5 @@
 # Description: Stops the acid rain and resets it to the beginning
+# AS: server, AT: server
 # Called from function: 2mal3:nadi/natural_disasters/acid_rain/ticks/minute
 # Datapack by 2mal3
 
