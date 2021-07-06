@@ -12,7 +12,7 @@ playsound minecraft:ui.button.click master @s
 # Display text
 tellraw @s {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
 tellraw @s [{"text":"Natural Disaster Config","bold":true,"color":"yellow"}]
-tellraw @s [{"text":"<","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/display_config/page_1"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" --------- ","color":"yellow"},{"text":"2 / 4","color":"gold"},{"text":" --------- ","color":"yellow"},{"text":">","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/display_config/page_3"},"hoverEvent":{"action":"show_text","contents":"*click*"}}]
+tellraw @s [{"text":"<","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/display_config/page_1"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" --------- ","color":"yellow"},{"text":"2 / 3","color":"gold"},{"text":" --------- ","color":"yellow"},{"text":">","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/display_config/page_3"},"hoverEvent":{"action":"show_text","contents":"*click*"}}]
 tellraw @s {"text":""}
 
 # Doline
@@ -43,7 +43,15 @@ execute if score $hail nadi.config matches 1 run tellraw @s [{"text":"[\u2714]",
 tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $hail.time nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Length of the hail: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Length of hail in minutes (default: 10)."}},{"score":{"name":"$hail.time","objective":"nadi.config"},"color":"red"}]
 tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $hail.anchor_entities nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Hail count: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Number of new hailstones created per second (default: 5)."}},{"score":{"name":"$hail.anchor_entities","objective":"nadi.config"},"color":"red"}]
 
+tellraw @s {"text":""}
+
+# Hurricane
+#execute if score $hurricane nadi.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/hurricane/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Hurricane active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of hurricane."}}]
+#execute if score $hurricane nadi.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/hurricane/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Hurricane active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of hurricane."}}]
+tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $hurricane.time nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Length of the hurricane: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Length of hurricane in minutes (default: 10)."}},{"score":{"name":"$hurricane.time","objective":"nadi.config"},"color":"red"}]
+tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $hurricane.anchor_entities nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Number of blocks destroyed: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Number of blocks that are picked up by the hurricane with a certain probability per tick (default: 2)."}},{"score":{"name":"$hurricane.anchor_entities","objective":"nadi.config"},"color":"red"}]
+
+
 tellraw @s {"text":"\n"}
-
-
 tellraw @s {"text":"\u25c0 Go back","color":"red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/display_menu"},"hoverEvent":{"action":"show_text","contents":"*click*"}}
+tellraw @s {"text":""}

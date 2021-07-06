@@ -12,7 +12,7 @@ playsound minecraft:ui.button.click master @s
 # Display text
 tellraw @s {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
 tellraw @s [{"text":"Natural Disaster Config","bold":true,"color":"yellow"}]
-tellraw @s [{"text":"<","color":"yellow"},{"text":" --------- ","color":"yellow"},{"text":"1 / 4","color":"gold"},{"text":" --------- ","color":"yellow"},{"text":">","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/display_config/page_2"},"hoverEvent":{"action":"show_text","contents":"*click*"}}]
+tellraw @s [{"text":"<","color":"yellow"},{"text":" --------- ","color":"yellow"},{"text":"1 / 3","color":"gold"},{"text":" --------- ","color":"yellow"},{"text":">","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/display_config/page_2"},"hoverEvent":{"action":"show_text","contents":"*click*"}}]
 tellraw @s {"text":""}
 
 # Notifications
@@ -47,7 +47,7 @@ tellraw @s {"text":""}
 tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $blizzard.time nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Length of the blizzard: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Length of blizzard in minutes (default: 10)."}},{"score":{"name":"$blizzard.time","objective":"nadi.config"},"color":"red"}]
 tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $blizzard.anchor_entities nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Snow count: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Number of snowflakes that are created per second (default: 5)."}},{"score":{"name":"$blizzard.anchor_entities","objective":"nadi.config"},"color":"red"}]
 
-tellraw @s {"text":""}
 
-
+tellraw @s {"text":"\n"}
 tellraw @s {"text":"\u25c0 Go back","color":"red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/display_menu"},"hoverEvent":{"action":"show_text","contents":"*click*"}}
+tellraw @s {"text":""}

@@ -1,9 +1,9 @@
 # Description: Disables volcano_generate
-# Called from function: 2mal3:nadi/menu/display_config/page_4
+# Called from function: 2mal3:nadi/menu/display_config/page_3
 # Datapack by 2mal3
 
 # Saves the setting
 scoreboard players set $volcano_generate nadi.config 0
 
 # Displays the updated config menu
-function 2mal3:nadi/menu/display_config/page_4
+function 2mal3:nadi/menu/display_config/page_3

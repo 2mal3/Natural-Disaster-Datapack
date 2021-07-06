@@ -12,15 +12,7 @@ playsound minecraft:ui.button.click master @s
 # Display text
 tellraw @s {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
 tellraw @s [{"text":"Natural Disaster Config","bold":true,"color":"yellow"}]
-tellraw @s [{"text":"<","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/display_config/page_2"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" --------- ","color":"yellow"},{"text":"3 / 4","color":"gold"},{"text":" --------- ","color":"yellow"},{"text":">","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/display_config/page_4"},"hoverEvent":{"action":"show_text","contents":"*click*"}}]
-tellraw @s {"text":""}
-
-# Hurricane
-#execute if score $hurricane nadi.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/hurricane/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Hurricane active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of hurricane."}}]
-#execute if score $hurricane nadi.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/hurricane/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Hurricane active","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of hurricane."}}]
-tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $hurricane.time nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Length of the hurricane: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Length of hurricane in minutes (default: 10)."}},{"score":{"name":"$hurricane.time","objective":"nadi.config"},"color":"red"}]
-tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $hurricane.anchor_entities nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Number of blocks destroyed: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Number of blocks that are picked up by the hurricane with a certain probability per tick (default: 2)."}},{"score":{"name":"$hurricane.anchor_entities","objective":"nadi.config"},"color":"red"}]
-
+tellraw @s [{"text":"<","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/display_config/page_2"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" --------- ","color":"yellow"},{"text":"3 / 3","color":"gold"},{"text":" --------- ","color":"yellow"},{"text":">","color":"yellow"}]
 tellraw @s {"text":""}
 
 # Meteoroid
@@ -43,7 +35,16 @@ tellraw @s {"text":""}
 tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $thunderstorm.time nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Length of the thunderstorm: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Length of thunderstorm in in seconds * 5 (default: 150)."}},{"score":{"name":"$thunderstorm.time","objective":"nadi.config"},"color":"red"}]
 tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $sandstorm.anchor_entities nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Lightning bolt count: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Number of lightning bolt created per second (default: 1)."}},{"score":{"name":"$sandstorm.anchor_entities","objective":"nadi.config"},"color":"red"}]
 
-tellraw @s {"text":"\n"}
+tellraw @s {"text":""}
 
+# volcano
+execute if score $volcano_generate nadi.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/volcano_generate/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Generate volcanoes","color":"gold","hoverEvent":{"action":"show_text","contents":"In newly generated areas can generate volcanoes."}}]
+execute if score $volcano_generate nadi.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/volcano_generate/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Generate volcanoes","color":"gold","hoverEvent":{"action":"show_text","contents":"In newly generated areas can generate volcanoes."}}]
+#execute if score $volcano_eruptions nadi.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/volcano_eruptions/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Volcano eruptions","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of volcano eruptions."}}]
+#execute if score $volcano_eruptions nadi.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/volcano_eruptions/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Volcano eruptions","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of volcano eruptions."}}]
+
+
+tellraw @s {"text":"\n\n\n\n\n\n"}
 
 tellraw @s {"text":"\u25c0 Go back","color":"red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/display_menu"},"hoverEvent":{"action":"show_text","contents":"*click*"}}
+tellraw @s {"text":""}
