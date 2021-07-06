@@ -1,2 +1,2 @@
-execute if block ~ ~ ~ minecraft:birch_trapdoor run function bsc:nadi.convert_block/l0/p/l0_224
-execute if block ~ ~ ~ minecraft:jungle_trapdoor run function bsc:nadi.convert_block/l0/p/l0_225
+execute if block ~ ~ ~ minecraft:potted_azalea_bush[] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:potted_azalea_bush",Properties:{}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:potted_flowering_azalea_bush[] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:potted_flowering_azalea_bush",Properties:{}},Time:1,NoGravity:1b}

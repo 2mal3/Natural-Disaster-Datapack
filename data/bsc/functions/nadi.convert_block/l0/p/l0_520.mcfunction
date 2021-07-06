@@ -1,6 +1,3 @@
-execute if block ~ ~ ~ minecraft:purple_shulker_box[facing=north] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:purple_shulker_box",Properties:{facing:north}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:purple_shulker_box[facing=east] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:purple_shulker_box",Properties:{facing:east}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:purple_shulker_box[facing=south] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:purple_shulker_box",Properties:{facing:south}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:purple_shulker_box[facing=west] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:purple_shulker_box",Properties:{facing:west}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:purple_shulker_box[facing=up] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:purple_shulker_box",Properties:{facing:up}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:purple_shulker_box[facing=down] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:purple_shulker_box",Properties:{facing:down}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:bone_block[axis=x] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:bone_block",Properties:{axis:x}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:bone_block[axis=y] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:bone_block",Properties:{axis:y}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:bone_block[axis=z] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:bone_block",Properties:{axis:z}},Time:1,NoGravity:1b}

@@ -1,12 +1,4 @@
-execute if block ~ ~ ~ minecraft:cocoa[age=0,facing=north] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:cocoa",Properties:{age:0,facing:north}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:cocoa[age=0,facing=south] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:cocoa",Properties:{age:0,facing:south}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:cocoa[age=0,facing=west] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:cocoa",Properties:{age:0,facing:west}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:cocoa[age=0,facing=east] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:cocoa",Properties:{age:0,facing:east}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:cocoa[age=1,facing=north] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:cocoa",Properties:{age:1,facing:north}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:cocoa[age=1,facing=south] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:cocoa",Properties:{age:1,facing:south}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:cocoa[age=1,facing=west] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:cocoa",Properties:{age:1,facing:west}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:cocoa[age=1,facing=east] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:cocoa",Properties:{age:1,facing:east}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:cocoa[age=2,facing=north] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:cocoa",Properties:{age:2,facing:north}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:cocoa[age=2,facing=south] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:cocoa",Properties:{age:2,facing:south}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:cocoa[age=2,facing=west] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:cocoa",Properties:{age:2,facing:west}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:cocoa[age=2,facing=east] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:cocoa",Properties:{age:2,facing:east}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:nether_wart[age=0] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:nether_wart",Properties:{age:0}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:nether_wart[age=1] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:nether_wart",Properties:{age:1}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:nether_wart[age=2] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:nether_wart",Properties:{age:2}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:nether_wart[age=3] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:nether_wart",Properties:{age:3}},Time:1,NoGravity:1b}

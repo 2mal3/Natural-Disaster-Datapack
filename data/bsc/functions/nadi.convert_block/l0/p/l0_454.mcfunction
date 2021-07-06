@@ -1,6 +1,4 @@
-execute if block ~ ~ ~ minecraft:birch_slab[type=top,waterlogged=true] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:birch_slab",Properties:{type:top,waterlogged:true}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:birch_slab[type=top,waterlogged=false] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:birch_slab",Properties:{type:top,waterlogged:false}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:birch_slab[type=bottom,waterlogged=true] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:birch_slab",Properties:{type:bottom,waterlogged:true}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:birch_slab[type=bottom,waterlogged=false] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:birch_slab",Properties:{type:bottom,waterlogged:false}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:birch_slab[type=double,waterlogged=true] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:birch_slab",Properties:{type:double,waterlogged:true}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:birch_slab[type=double,waterlogged=false] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:birch_slab",Properties:{type:double,waterlogged:false}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:light_gray_wall_banner[facing=north] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:light_gray_wall_banner",Properties:{facing:north}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:light_gray_wall_banner[facing=south] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:light_gray_wall_banner",Properties:{facing:south}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:light_gray_wall_banner[facing=west] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:light_gray_wall_banner",Properties:{facing:west}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:light_gray_wall_banner[facing=east] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:light_gray_wall_banner",Properties:{facing:east}},Time:1,NoGravity:1b}

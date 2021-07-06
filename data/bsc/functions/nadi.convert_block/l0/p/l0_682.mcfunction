@@ -1,4 +1,12 @@
-execute if block ~ ~ ~ minecraft:sweet_berry_bush[age=0] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:sweet_berry_bush",Properties:{age:0}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:sweet_berry_bush[age=1] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:sweet_berry_bush",Properties:{age:1}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:sweet_berry_bush[age=2] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:sweet_berry_bush",Properties:{age:2}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:sweet_berry_bush[age=3] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:sweet_berry_bush",Properties:{age:3}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:barrel[facing=north,open=true] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:barrel",Properties:{facing:north,open:true}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:barrel[facing=north,open=false] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:barrel",Properties:{facing:north,open:false}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:barrel[facing=east,open=true] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:barrel",Properties:{facing:east,open:true}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:barrel[facing=east,open=false] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:barrel",Properties:{facing:east,open:false}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:barrel[facing=south,open=true] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:barrel",Properties:{facing:south,open:true}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:barrel[facing=south,open=false] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:barrel",Properties:{facing:south,open:false}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:barrel[facing=west,open=true] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:barrel",Properties:{facing:west,open:true}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:barrel[facing=west,open=false] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:barrel",Properties:{facing:west,open:false}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:barrel[facing=up,open=true] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:barrel",Properties:{facing:up,open:true}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:barrel[facing=up,open=false] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:barrel",Properties:{facing:up,open:false}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:barrel[facing=down,open=true] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:barrel",Properties:{facing:down,open:true}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:barrel[facing=down,open=false] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:barrel",Properties:{facing:down,open:false}},Time:1,NoGravity:1b}

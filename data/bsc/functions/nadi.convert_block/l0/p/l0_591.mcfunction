@@ -1,2 +1,12 @@
-execute if block ~ ~ ~ minecraft:dead_fire_coral[waterlogged=true] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:dead_fire_coral",Properties:{waterlogged:true}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:dead_fire_coral[waterlogged=false] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:dead_fire_coral",Properties:{waterlogged:false}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:turtle_egg[eggs=1,hatch=0] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:turtle_egg",Properties:{eggs:1,hatch:0}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:turtle_egg[eggs=1,hatch=1] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:turtle_egg",Properties:{eggs:1,hatch:1}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:turtle_egg[eggs=1,hatch=2] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:turtle_egg",Properties:{eggs:1,hatch:2}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:turtle_egg[eggs=2,hatch=0] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:turtle_egg",Properties:{eggs:2,hatch:0}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:turtle_egg[eggs=2,hatch=1] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:turtle_egg",Properties:{eggs:2,hatch:1}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:turtle_egg[eggs=2,hatch=2] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:turtle_egg",Properties:{eggs:2,hatch:2}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:turtle_egg[eggs=3,hatch=0] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:turtle_egg",Properties:{eggs:3,hatch:0}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:turtle_egg[eggs=3,hatch=1] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:turtle_egg",Properties:{eggs:3,hatch:1}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:turtle_egg[eggs=3,hatch=2] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:turtle_egg",Properties:{eggs:3,hatch:2}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:turtle_egg[eggs=4,hatch=0] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:turtle_egg",Properties:{eggs:4,hatch:0}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:turtle_egg[eggs=4,hatch=1] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:turtle_egg",Properties:{eggs:4,hatch:1}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:turtle_egg[eggs=4,hatch=2] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:turtle_egg",Properties:{eggs:4,hatch:2}},Time:1,NoGravity:1b}

@@ -1,4 +1,6 @@
-execute if block ~ ~ ~ minecraft:loom[facing=north] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:loom",Properties:{facing:north}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:loom[facing=south] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:loom",Properties:{facing:south}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:loom[facing=west] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:loom",Properties:{facing:west}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:loom[facing=east] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:loom",Properties:{facing:east}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:diorite_slab[type=top,waterlogged=true] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:diorite_slab",Properties:{type:top,waterlogged:true}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:diorite_slab[type=top,waterlogged=false] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:diorite_slab",Properties:{type:top,waterlogged:false}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:diorite_slab[type=bottom,waterlogged=true] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:diorite_slab",Properties:{type:bottom,waterlogged:true}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:diorite_slab[type=bottom,waterlogged=false] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:diorite_slab",Properties:{type:bottom,waterlogged:false}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:diorite_slab[type=double,waterlogged=true] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:diorite_slab",Properties:{type:double,waterlogged:true}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:diorite_slab[type=double,waterlogged=false] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:diorite_slab",Properties:{type:double,waterlogged:false}},Time:1,NoGravity:1b}

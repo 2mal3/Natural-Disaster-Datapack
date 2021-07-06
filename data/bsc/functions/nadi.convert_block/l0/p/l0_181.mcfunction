@@ -1,2 +1,2 @@
-execute if block ~ ~ ~ minecraft:redstone_torch[lit=true] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:redstone_torch",Properties:{lit:true}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:redstone_torch[lit=false] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:redstone_torch",Properties:{lit:false}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:oak_pressure_plate[powered=true] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:oak_pressure_plate",Properties:{powered:true}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:oak_pressure_plate[powered=false] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:oak_pressure_plate",Properties:{powered:false}},Time:1,NoGravity:1b}

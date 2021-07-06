@@ -1,6 +1,3 @@
-execute if block ~ ~ ~ minecraft:crimson_slab[type=top,waterlogged=true] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:crimson_slab",Properties:{type:top,waterlogged:true}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:crimson_slab[type=top,waterlogged=false] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:crimson_slab",Properties:{type:top,waterlogged:false}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:crimson_slab[type=bottom,waterlogged=true] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:crimson_slab",Properties:{type:bottom,waterlogged:true}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:crimson_slab[type=bottom,waterlogged=false] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:crimson_slab",Properties:{type:bottom,waterlogged:false}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:crimson_slab[type=double,waterlogged=true] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:crimson_slab",Properties:{type:double,waterlogged:true}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:crimson_slab[type=double,waterlogged=false] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:crimson_slab",Properties:{type:double,waterlogged:false}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:crimson_stem[axis=x] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:crimson_stem",Properties:{axis:x}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:crimson_stem[axis=y] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:crimson_stem",Properties:{axis:y}},Time:1,NoGravity:1b}
+execute if block ~ ~ ~ minecraft:crimson_stem[axis=z] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:crimson_stem",Properties:{axis:z}},Time:1,NoGravity:1b}
