@@ -3,8 +3,7 @@
 # Called from function: core/uninstall/uninstall_ask
 # Datapack by 2mal3
 
-# Output debug message in chat, if enabled (INFO)
-tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]: ","color":"gray"},{"text":"Datapack uninstalled!","color":"green"}]
+tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text": "/","color": "gray"},{"text":"Server", "color": "green"},{"text":"]: ","color":"gray"},{"text":"Datapack uninstalled","color":"green"}]
 
 # Stop all natural disasters
 function #2mal3:nadi/stop_natural_disasters

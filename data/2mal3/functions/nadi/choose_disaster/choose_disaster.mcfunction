@@ -3,8 +3,7 @@
 # Called from function: 2mal3:nadi/core/loops/minute
 # Datapack by 2mal3
 
-# Output debug message in chat, if enabled (INFO)
-tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]: ","color":"gray"},{"text":"Randomly select a natural disaster ...","color":"green"}] 
+tellraw @a[scores={nadi.debug_mode=4..}] [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"aqua"},{"text":"/","color":"gray"},{"text":"DEBUG","color":"aqua"},{"text": "/","color": "gray"},{"text":"Server", "color": "aqua"},{"text":"]: ","color":"gray"},{"text":"Randomly select a natural disaster ...","color":"aqua"}]
 
 
 # Selects a random number between 0 and the number of natural disasters

@@ -9,11 +9,8 @@ scoreboard players operation .in_1 2mal3.random = $time.max nadi.config
 function 2mal3:random/random
 scoreboard players operation .time nadi.data = .out_0 2mal3.random
 
-# Output debug message in chat, if enabled (INFO)
-tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]: ","color":"gray"},{"text":"Generate random time from ","color":"green"},{"score":{"name":".in_0","objective":"2mal3.random"},"color":"gray"},{"text":" to ","color":"green"},{"score":{"name":".in_1","objective":"2mal3.random"},"color":"gray"},{"text":" minutes until next natural disaster ...","color":"green"}]
+tellraw @a[scores={nadi.debug_mode=4..}] [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"aqua"},{"text":"/","color":"gray"},{"text":"INFO","color":"aqua"},{"text": "/","color": "gray"},{"text": "Server","color": "auqa"},{"text":"]: ","color":"gray"},{"text":"Generate random time from ","color":"aqua"},{"score":{"name":".in_0","objective":"2mal3.random"},"color":"gray"},{"text":" to ","color":"aqua"},{"score":{"name":".in_1","objective":"2mal3.random"},"color":"gray"},{"text":" minutes until next natural disaster ...","color":"aqua"}]
+tellraw @a[scores={nadi.debug_mode=4..}] [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"aqua"},{"text":"/","color":"gray"},{"text":"INFO","color":"aqua"},{"text": "/","color": "gray"},{"text": "Server","color": "auqa"},{"text":"]: ","color":"gray"},{"text":"The next natural disaster will begin in ","color":"aqua"},{"score":{"name":".time","objective":"nadi.data"},"color":"gray"},{"text":" minutes","color":"aqua"}]
 
 # Calls the api function to modify the time unt
 function #nadi_api:new_time
-
-# Output debug message in chat, if enabled (INFO)
-tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]: ","color":"gray"},{"text":"The next natural disaster will begin in ","color":"green"},{"score":{"name":".time","objective":"nadi.data"},"color":"gray"},{"text":" minutes.","color":"green"}]

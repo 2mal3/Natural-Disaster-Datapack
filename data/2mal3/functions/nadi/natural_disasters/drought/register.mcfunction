@@ -3,6 +3,8 @@
 # Called from function tag: 2mal3:nadi/register
 # Datapack by 2mal3
 
+tellraw @a[scores={nadi.debug_mode=4..}] [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"aqua"},{"text":"/","color":"gray"},{"text":"DEBUG","color":"aqua"},{"text": "/","color": "gray"},{"text":"Server", "color": "aqua"},{"text":"]: ","color":"gray"},{"text":"Registerd drought","color":"aqua"}]
+
 # Counts the number of natural disasters
 scoreboard players add $natural_disasters nadi.data 1
 # Saves the start function of the natural disaster

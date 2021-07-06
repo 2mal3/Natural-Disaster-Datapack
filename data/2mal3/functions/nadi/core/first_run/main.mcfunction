@@ -3,9 +3,7 @@
 # Called from function: 2mal3:nadi/core/reload
 # Datapack by 2mal3
 
-# Output debug message in chat, if enabled (INFO)
-tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]: ","color":"gray"},{"text":"Datapack installed!","color":"green"}]
-
+tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text": "/","color": "gray"},{"text":"Server", "color": "green"},{"text":"]: ","color":"gray"},{"text":"Datapack installed","color":"green"}]
 
 # Adds scoreboards
 scoreboard objectives add nadi.data dummy

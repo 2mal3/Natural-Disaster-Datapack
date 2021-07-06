@@ -5,6 +5,6 @@
         }
     },
     "rewards": {
-        "function": "2mal3:nadi/core/first_join"
+        "function": "2mal3:nadi/core/first_join/join"
     }
 }

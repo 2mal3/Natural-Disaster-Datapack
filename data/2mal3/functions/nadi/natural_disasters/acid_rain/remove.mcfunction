@@ -3,8 +3,7 @@
 # Called from function: 2mal3:nadi/natural_disasters/acid_rain/ticks/minute
 # Datapack by 2mal3
 
-# Output debug message in chat, if enabled (INFO)
-tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]: ","color":"gray"},{"text":"The acid rain has stopped.","color":"green"}]
+tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text": "/","color": "gray"},{"text":"Server", "color": "green"},{"text":"]: ","color":"gray"},{"text":"The acid rain has stopped","color":"green"}]
 
 # Sends a message to all players when enabled
 execute if score $notifications nadi.config matches 1 run tellraw @a {"text":"The acid rain stops.","color":"gray"}
