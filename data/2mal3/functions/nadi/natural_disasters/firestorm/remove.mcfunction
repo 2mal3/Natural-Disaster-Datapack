@@ -1,4 +1,5 @@
 # Description: Stops the firestorm and resets it to the beginning
+# AS: server, AT: server
 # Called from function: 2mal3:nadi/natural_disasters/firestorm/ticks/minute
 # Datapack by 2mal3
 
@@ -17,7 +18,7 @@ schedule clear 2mal3:nadi/natural_disasters/firestorm/ticks/tick
 # Saves that no natural disaster is off
 scoreboard players set .natural_disaster_on nadi.data 0
 
-# remove firetails
+# Remove all firetails
 tp @e[tag=nadi.firestorm.s,type=minecraft:slime] ~ -1000 ~
 
 # Sets a new time until the next natural disaster begins

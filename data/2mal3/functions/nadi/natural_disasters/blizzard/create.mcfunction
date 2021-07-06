@@ -14,14 +14,14 @@ scoreboard players operation .time nadi.data = $blizzard.time nadi.config
 # Saves that a natural disaster and the blizzard are active
 scoreboard players set .natural_disaster_on nadi.data 1
 
-# Starts the blizzard loop in 4 seconds
-schedule function 2mal3:nadi/natural_disasters/blizzard/ticks/minute 120s
-schedule function 2mal3:nadi/natural_disasters/blizzard/ticks/second 61s
-schedule function 2mal3:nadi/natural_disasters/blizzard/ticks/tick 1201t
+# Starts the blizzard loops
+schedule function 2mal3:nadi/natural_disasters/blizzard/ticks/minute 120s replace
+schedule function 2mal3:nadi/natural_disasters/blizzard/ticks/second 61s replace
+schedule function 2mal3:nadi/natural_disasters/blizzard/ticks/tick 1201t replace
 
 # Starts the sound library loop
 function 2mal3:nadi/utilities/sound/loop
 
 
-# Calls the corresponding function of the api
+# Calls a function from the api to modify the natural disaster
 function #nadi_api:blizzard_time

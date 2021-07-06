@@ -1,4 +1,5 @@
 # Description: Pulls all entitys to the center of the hurricane and deals damage to them there
+# AS: hurricane anchor cow, AT: @s
 # Called from function: 2mal3:nadi/natural_disasters/hurricane/ticks/tick
 # Datapack by 2mal3
 

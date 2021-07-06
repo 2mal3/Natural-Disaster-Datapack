@@ -1,8 +1,7 @@
 # Description: Summons a set number of entity anchors
-# Called from function: ...
-# Datapck by 2mal3
+# Datapack by 2mal3
 
-# Summons the anchor
+# Summons a new anchor
 summon minecraft:area_effect_cloud ~ ~ ~ {Tags: ["nadi.anchor"]}
 
 # Calls the function again if not all anchors have been created yet

@@ -1,4 +1,5 @@
 # Description: Performs all kinds of things for players who are under the free sky
+# AS: every player under the sky, AT: @s
 # Called from function: 2mal3:nadi/natural_disasters/sandstorm/ticks/second
 # Datapack by 2mal3
 

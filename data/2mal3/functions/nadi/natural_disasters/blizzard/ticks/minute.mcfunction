@@ -3,7 +3,7 @@
 # Datapack by 2mal3
 
 # Calls this function again in one minute
-schedule function 2mal3:nadi/natural_disasters/blizzard/ticks/minute 60s
+schedule function 2mal3:nadi/natural_disasters/blizzard/ticks/minute 60s replace
 
 # Count down the time and then stop the blizzard
 scoreboard players remove .time nadi.data 1

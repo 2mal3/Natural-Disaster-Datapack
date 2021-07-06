@@ -1,4 +1,5 @@
 # Description: Stops the thunderstorm and resets it to the beginning
+# AS: server, AT: server
 # Called from function: 2mal3:nadi/natural_disasters/thunderstorm/ticks/minute
 # Datapack by 2mal3
 

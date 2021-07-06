@@ -1,4 +1,5 @@
 # Description: Creates hail at each player that falls down
+# AS: every player in the overworld, AT: @s
 # Called from function: 2mal3:nadi/natural_disasters/acid_rain/ticks/second
 # Datapack by 2mal3
 

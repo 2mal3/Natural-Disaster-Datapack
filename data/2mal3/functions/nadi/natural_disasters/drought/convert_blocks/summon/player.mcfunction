@@ -1,5 +1,6 @@
 # Description: Creates anchor entitys at the corners of the surrounding chunks
-# Called from: 2mal3:nadi/natural_disasters/drought/ticks/second
+# AS: every player in the overworld, AT: ~ 32 ~
+# Called from function: 2mal3:nadi/natural_disasters/drought/ticks/second
 # Datapack by 2mal3
 
 # Summon start anchor

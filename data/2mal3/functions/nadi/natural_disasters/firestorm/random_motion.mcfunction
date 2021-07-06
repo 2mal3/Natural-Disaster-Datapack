@@ -1,8 +1,9 @@
 # Description: Gives each new fireball a slight random sideways movement speed
+# AS: every new fireball, AT: server
 # Called from function: 2mal3:nadi/natural_disasters/firestorm/ticks/second
 # Datapack by 2mal3
 
-# Correctly sets the random number generator
+# Sets the variables for the random number generator
 scoreboard players set .in_0 2mal3.random -5
 scoreboard players set .in_1 2mal3.random 5
 
