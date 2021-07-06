@@ -14,6 +14,8 @@ scoreboard objectives add nadi.data dummy
 execute unless score .first_run nadi.data matches 1 run function 2mal3:nadi/core/first_run/main
 execute if score .first_run nadi.data matches 1 unless score $version nadi.data matches 020000 run function 2mal3:nadi/core/first_run/update
 
+# Saves that the datapack was started
+scoreboard players set natural-disasters load.status 1
 
 # Updates plugins and natural disasters
 #declare storage 2mal3:nadi

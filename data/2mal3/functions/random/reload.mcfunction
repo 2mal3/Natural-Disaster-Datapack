@@ -1,5 +1,4 @@
 # Description: Init the datapack library
-# Called by: ...
 # Datapack library by 2mal3
 
 # add scoreboards
