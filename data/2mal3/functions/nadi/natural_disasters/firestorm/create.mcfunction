@@ -19,4 +19,4 @@ schedule function 2mal3:nadi/natural_disasters/firestorm/ticks/second 61s replac
 schedule function 2mal3:nadi/natural_disasters/firestorm/ticks/tick 1201t replace
 
 # Calls a function from the api to modify the natural disaster
-function #nadi_api:firestorm_time
+function #2mal3:nadi/api/natural_disasters/firestorm

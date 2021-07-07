@@ -27,6 +27,9 @@ kill @e[type=minecraft:armor_stand,tag=nadi.volcano]
 # Reset gamerules
 gamerule commandBlockOutput true
 
+# Call api function to uninstall installed extensions and plugins
+function #2mal3:nadi/api/uninstall
+
 # Sends an uninstallation message to all players
 tellraw @a [{"text":"Natural Disaster Datapack v2.0.0 by 2mal3 was successfully uninstalled."}]
 

@@ -15,3 +15,6 @@ execute as @r[gamemode=!spectator,tag=!global.ignore,predicate=2mal3:nadi/in_ove
 
 # Starts the loops
 schedule function 2mal3:nadi/natural_disasters/meteoroid/tick 2s replace
+
+# Calls a function from the api to modify the natural disaster
+function #2mal3:nadi/api/natural_disasters/meteoroid

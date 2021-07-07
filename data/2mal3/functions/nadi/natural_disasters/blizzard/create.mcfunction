@@ -23,4 +23,4 @@ function 2mal3:nadi/utilities/sound/loop
 
 
 # Calls a function from the api to modify the natural disaster
-function #nadi_api:blizzard_time
+function #2mal3:nadi/api/natural_disasters/blizzard

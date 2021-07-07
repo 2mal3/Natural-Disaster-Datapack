@@ -24,4 +24,4 @@ execute as @e[type=minecraft:area_effect_cloud,tag=nadi.doline] at @s run playso
 schedule function 2mal3:nadi/natural_disasters/doline/tick 5s replace
 
 # Calls a function from the api to modify the natural disaster
-function #nadi_api:doline_time
+function #2mal3:nadi/api/natural_disasters/doline

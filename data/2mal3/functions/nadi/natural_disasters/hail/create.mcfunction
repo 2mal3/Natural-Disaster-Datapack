@@ -25,4 +25,4 @@ schedule function 2mal3:nadi/natural_disasters/hail/ticks/minute 120s replace
 
 
 # Calls a function from the api to modify the natural disaster
-function #nadi_api:hail_time
+function #2mal3:nadi/api/natural_disasters/hail

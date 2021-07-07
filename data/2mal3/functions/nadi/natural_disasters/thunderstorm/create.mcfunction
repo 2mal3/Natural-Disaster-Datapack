@@ -23,4 +23,4 @@ schedule function 2mal3:nadi/natural_disasters/thunderstorm/ticks/minute 120s re
 weather thunder 999999
 
 # Calls a function from the api to modify the natural disaster
-function #nadi_api:thunderstorm_timee
+function #2mal3:nadi/api/natural_disasters/thunderstorm

@@ -13,4 +13,4 @@ tellraw @a[scores={nadi.debug_mode=4..}] [{"text":"[","color":"gray"},{"text":"N
 tellraw @a[scores={nadi.debug_mode=4..}] [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"aqua"},{"text":"/","color":"gray"},{"text":"INFO","color":"aqua"},{"text": "/","color": "gray"},{"text": "Server","color": "auqa"},{"text":"]: ","color":"gray"},{"text":"The next natural disaster will begin in ","color":"aqua"},{"score":{"name":".time","objective":"nadi.data"},"color":"gray"},{"text":" minutes","color":"aqua"}]
 
 # Calls the api function to modify the time unt
-function #nadi_api:new_time
+function #2mal3:nadi/api/new_time

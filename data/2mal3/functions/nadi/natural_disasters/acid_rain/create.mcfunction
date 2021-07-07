@@ -25,4 +25,4 @@ schedule function 2mal3:nadi/natural_disasters/acid_rain/ticks/tick 1201t replac
 
 
 # Calls a function from the api to modify the natural disaster
-function #nadi_api:acid_rain_time
+function #2mal3:nadi/api/natural_disasters/acid_rain

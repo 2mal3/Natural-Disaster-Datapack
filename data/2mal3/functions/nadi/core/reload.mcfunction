@@ -20,9 +20,9 @@ scoreboard players set natural-disasters load.status 1
 data merge storage 2mal3:nadi {temp: {}, plugins: [], natural_disasters: []}
 # Updated natural disasters
 scoreboard players set $natural_disasters nadi.data 0
-function #2mal3:nadi/register/natural_disasters
+function #2mal3:nadi/api/register/natural_disasters
 # Updated plugins
-function #2mal3:nadi/register/plugins
+function #2mal3:nadi/api/register/plugins
 
 
 # Starts the loop

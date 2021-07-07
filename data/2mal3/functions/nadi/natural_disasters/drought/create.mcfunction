@@ -26,4 +26,4 @@ kill @e[type=minecraft:area_effect_cloud,tag=nadi.drought_converted]
 
 
 # Calls a function from the api to modify the natural disaster
-function #nadi_api:drought_time
+function #2mal3:nadi/api/natural_disasters/drought
