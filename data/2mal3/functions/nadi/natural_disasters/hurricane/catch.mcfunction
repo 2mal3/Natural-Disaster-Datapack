@@ -10,7 +10,7 @@ execute positioned ~-30 ~-5 ~-30 run tag @e[dx=60,dy=55,dz=60,tag=!global.ignore
 # Prevents players pulled by the hurricane from falling down
 effect give @a[tag=nadi.catch] minecraft:levitation 3 255 true
 # Deals damage to all entities that are in the center of the hurricane
-execute positioned ~-30 ~25 ~-30 run effect give @e[dx=60,dy=10,dz=60,tag=!global.ignore] minecraft:wither 2 0 true
+execute positioned ~-30 ~25 ~-30 run effect give @e[dx=60,dy=10,dz=60,tag=!global.ignore] minecraft:wither 2 2 true
 
 # Creates an anchor entity
 summon minecraft:area_effect_cloud ~ ~25 ~ {Tags: ["nadi.anchor_1"]}
