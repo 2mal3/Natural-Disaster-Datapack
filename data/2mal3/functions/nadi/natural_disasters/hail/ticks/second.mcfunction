@@ -7,4 +7,4 @@
 schedule function 2mal3:nadi/natural_disasters/hail/ticks/second 1s replace
 
 # Summon hail balls at every player
-execute as @a[gamemode=!spectator,predicate=2mal3:nadi/in_overworld] at @s run function 2mal3:nadi/natural_disasters/hail/summon
+execute as @a[tag=!global.ignore,gamemode=!spectator,predicate=2mal3:nadi/in_overworld] at @s run function 2mal3:nadi/natural_disasters/hail/summon

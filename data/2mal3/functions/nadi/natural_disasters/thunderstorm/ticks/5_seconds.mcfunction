@@ -4,7 +4,7 @@
 # Datapack by 2mal3
 
 # Creates blize in a radius of 40 blocks for every player in the overworld
-execute as @e[gamemode=!spectator,predicate=2mal3:nadi/in_overworld] at @s run function 2mal3:nadi/natural_disasters/thunderstorm/lightning_bolt
+execute as @e[tag=!global.ignore,gamemode=!spectator,predicate=2mal3:nadi/in_overworld] at @s run function 2mal3:nadi/natural_disasters/thunderstorm/lightning_bolt
 execute as @e[type=minecraft:area_effect_cloud,tag=nadi.anchor] at @s run summon minecraft:lightning_bolt ~ ~ ~
 
 # Calls this function again in 5 seconds
