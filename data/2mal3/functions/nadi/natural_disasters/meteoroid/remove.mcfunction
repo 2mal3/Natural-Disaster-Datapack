@@ -12,9 +12,9 @@ schedule clear 2mal3:nadi/natural_disasters/meteoroid/tick
 scoreboard players set .natural_disaster_on nadi.data 0
 
 # Moves the meteorite one last time into the ground
-execute as @e[type=minecraft:area_effect_cloud,tag=nadi.meteoroid] at @s run clone ~-4 ~-4 ~-4 ~4 ~4 ~4 ~-4 ~-9 ~-4 masked move
+execute as @e[type=minecraft:marker,tag=nadi.meteoroid] at @s run clone ~-4 ~-4 ~-4 ~4 ~4 ~4 ~-4 ~-9 ~-4 masked move
 # Deletes the anchor entity
-kill @e[type=minecraft:area_effect_cloud,tag=nadi.meteoroid]
+kill @e[type=minecraft:marker,tag=nadi.meteoroid]
 
 # Sets a new time until the next natural disaster begins
 function 2mal3:nadi/new_time

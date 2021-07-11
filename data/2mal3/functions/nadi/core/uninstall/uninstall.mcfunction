@@ -23,7 +23,7 @@ data merge storage 2mal3:nadi {}
 forceload remove 7162814 5656277
 setblock 7162814 1 5656277 minecraft:stone
 # Remove volcanoes makers
-kill @e[type=minecraft:armor_stand,tag=nadi.volcano]
+kill @e[type=minecraft:marker,tag=nadi.volcano]
 # Reset gamerules
 gamerule commandBlockOutput true
 

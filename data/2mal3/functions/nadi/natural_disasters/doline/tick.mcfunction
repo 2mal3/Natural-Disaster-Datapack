@@ -7,7 +7,7 @@
 schedule function 2mal3:nadi/natural_disasters/doline/tick 5t replace
 
 # Moves the bottom of the doline down one block
-execute as @e[type=minecraft:area_effect_cloud,tag=nadi.doline] at @s run function 2mal3:nadi/natural_disasters/doline/doline
+execute as @e[type=minecraft:marker,tag=nadi.doline] at @s run function 2mal3:nadi/natural_disasters/doline/doline
 
 # Count down the time and then stop the acid rain
 scoreboard players remove .time nadi.data 1

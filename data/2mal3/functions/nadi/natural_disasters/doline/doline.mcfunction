@@ -1,5 +1,5 @@
 # Description: Moves the bottom of the doline down one block
-# AS: @e[type=minecraft:area_effect_cloud,tag=nadi.doline], AT: @s
+# AS: @e[type=minecraft:marker,tag=nadi.doline], AT: @s
 # Called from function: 2mal3:nadi/natural_disasters/doline/tick
 # Datapack by 2mal3
 
