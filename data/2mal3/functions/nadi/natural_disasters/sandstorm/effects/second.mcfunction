@@ -11,7 +11,6 @@ function 2mal3:nadi/utilities/summon_anchors
 
 # Spreads the anchors entitys and creates sand above them at maximum building height
 spreadplayers ~ ~ 2 10 false @e[type=minecraft:area_effect_cloud,tag=nadi.anchor,distance=..0.1]
-execute as @e[type=minecraft:area_effect_cloud,tag=nadi.anchor] at @s run summon falling_block ~ 255 ~ {BlockState: {Name: "minecraft:sand"}, Time: 1}
 
 # Saves that the wind sound is played to the player
 tag @s add nadi.sound
