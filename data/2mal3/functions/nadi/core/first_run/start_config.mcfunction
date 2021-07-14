@@ -60,3 +60,7 @@ scoreboard players set $thunderstorm.anchor_entities nadi.config 1
 # volcano
 scoreboard players set $volcano_generate nadi.config 1
 #scoreboard players set $volcano_eruptions nadi.config 1
+
+# zombie apocalypse
+#scoreboard players set $zombie_apocalypse nadi.config 1
+scoreboard players set $zombie_apocalypse.time nadi.config 10

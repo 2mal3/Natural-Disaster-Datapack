@@ -2,7 +2,7 @@
     "display": {
         "title": "Natural Disasters v2.0.0",
         "description": {
-            "text": "Adds over 10 different natural disasters that can occur randomly in the world."
+            "text": "Adds over 11 different natural disasters that can occur randomly in the world."
         },
         "icon": {
             "item": "minecraft:lava_bucket"

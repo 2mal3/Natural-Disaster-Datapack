@@ -43,8 +43,13 @@ execute if score $volcano_generate nadi.config matches 1 run tellraw @s [{"text"
 #execute if score $volcano_eruptions nadi.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/volcano_eruptions/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Volcano eruptions","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of volcano eruptions."}}]
 #execute if score $volcano_eruptions nadi.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/buttons/volcano_eruptions/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Volcano eruptions","color":"gold","hoverEvent":{"action":"show_text","contents":"There is a possibility of volcano eruptions."}}]
 
+tellraw @s {"text":""}
 
-tellraw @s {"text":"\n\n\n\n\n\n"}
+# zombie_apocalypse
+tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $zombie_apocalypse.time nadi.config "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Length of the zombie apocalypse: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Length of the zombie apocalypse in minutes (default: 10)."}},{"score":{"name":"$zombie_apocalypse.time","objective":"nadi.config"},"color":"red"}]
+
+
+tellraw @s {"text":"\n\n\n\n"}
 
 tellraw @s {"text":"\u25c0 Go back","color":"red","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/menu/display_menu"},"hoverEvent":{"action":"show_text","contents":"*click*"}}
 tellraw @s {"text":""}

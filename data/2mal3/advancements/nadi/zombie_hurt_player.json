@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "blocked": false,
+                    "source_entity": {
+                        "type": "minecraft:zombie"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "2mal3:nadi/natural_disasters/zombie_apocalypse/zombie_hurt_player"
+    }
+}

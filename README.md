@@ -28,6 +28,7 @@ In addition, there is also a [wiki](https://bit.ly/NaturalDisasterDatapackWiki) 
 - Sandstorm
 - Thunderstorm
 - Randomly generated volcanoes with eruptions
+- Zombie Apocalypse
 
 ***
 
