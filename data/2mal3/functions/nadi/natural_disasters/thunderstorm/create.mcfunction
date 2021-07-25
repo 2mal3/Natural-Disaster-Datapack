@@ -16,7 +16,7 @@ scoreboard players set .natural_disaster_on nadi.data 1
 scoreboard players set .prevent_sleep nadi.data 1
 
 # Starts the loops
-schedule function 2mal3:nadi/natural_disasters/thunderstorm/ticks/5_seconds 65s replace
+schedule function 2mal3:nadi/natural_disasters/thunderstorm/ticks/second 65s replace
 schedule function 2mal3:nadi/natural_disasters/thunderstorm/ticks/minute 120s replace
 
 # Sets the weather to endless thunderstorm

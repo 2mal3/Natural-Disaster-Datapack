@@ -11,7 +11,7 @@ tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"N
 execute if score $notifications nadi.config matches 1 run tellraw @a {"text":"The thunderstorm stops.","color":"gray"}
 
 # Stops the loops from the thunderstorm
-schedule clear 2mal3:nadi/natural_disasters/thunderstorm/ticks/5_seconds
+schedule clear 2mal3:nadi/natural_disasters/thunderstorm/ticks/second
 schedule clear 2mal3:nadi/natural_disasters/thunderstorm/ticks/minute
 
 # Saves that no natural disaster is off
