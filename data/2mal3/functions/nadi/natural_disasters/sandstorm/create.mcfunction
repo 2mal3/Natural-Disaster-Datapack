@@ -22,6 +22,5 @@ schedule function 2mal3:nadi/natural_disasters/sandstorm/ticks/tick 1201t replac
 # Starts the sound library loop
 function 2mal3:nadi/utilities/sound/loop
 
-
 # Calls a function from the api to modify the natural disaster
 function #2mal3:nadi/api/natural_disasters/sandstorm

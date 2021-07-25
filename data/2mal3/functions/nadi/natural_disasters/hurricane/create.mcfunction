@@ -19,7 +19,7 @@ scoreboard players set .prevent_sleep nadi.data 1
 # Sets the weather to endless thunder
 weather thunder 99999
 # Choose a random player for the hurricane and summon an ancor entity there
-execute as @r[gamemode=!spectator,predicate=2mal3:nadi/in_overworld] at @s run summon minecraft:cow ~ 255 ~ {Silent: 1b, Invulnerable: 1b, PersistenceRequired: 1b, Tags: ["nadi.hurricane", "global.ignore"], ActiveEffects: [{Id: 14b, Amplifier: 1b, Duration: 99999, ShowParticles: 0b}], Attributes: [{Name: "generic.movement_speed", Base: 0.3d}]}
+execute as @r[gamemode=!spectator,predicate=2mal3:nadi/in_overworld] at @s run summon minecraft:cow ~ 255 ~ {Silent: 1b, Invulnerable: 1b, Tags: ["nadi.hurricane", "global.ignore"], ActiveEffects: [{Id: 14b, Amplifier: 1b, Duration: 99999, ShowParticles: 0b}], Attributes: [{Name: "generic.movement_speed", Base: 0.3d}]}
 
 # Starts the loops
 schedule function 2mal3:nadi/natural_disasters/hurricane/ticks/tick 1201t replace

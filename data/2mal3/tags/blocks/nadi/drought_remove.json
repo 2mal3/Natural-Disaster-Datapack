@@ -10,6 +10,9 @@
     "minecraft:seagrass",
     "minecraft:tall_seagrass",
     "minecraft:kelp",
-    "minecraft:kelp_plant"
+    "minecraft:kelp_plant",
+    "minecraft:snow",
+    "minecraft:snow_block",
+    "minecraft:powder_snow"
   ]
 }

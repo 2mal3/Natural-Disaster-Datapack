@@ -5,7 +5,8 @@
 
 # Temporarily stores which entitys can be pulled in by the hurricane
 tag @e[tag=nadi.catch] remove nadi.catch
-execute positioned ~-30 ~-5 ~-30 run tag @e[dx=60,dy=55,dz=60,tag=!global.ignore,tag=!global.ignore.pos,tag=!nadi.hurricane.ignore] add nadi.catch
+execute positioned ~-30 ~-5 ~-30 run tag @e[dx=60,dy=55,dz=60,tag=!global.ignore,tag=!global.ignore.pos,tag=!nadi.hurricane.ignore,team=!this_team_does_not_exist] add nadi.catch
+execute positioned ~-30 ~-5 ~-30 run tag @e[dx=60,dy=55,dz=60,tag=!global.ignore,tag=!global.ignore.pos,tag=!nadi.hurricane.ignore,type=minecraft:falling_block] add nadi.catch
 
 # Prevents players pulled by the hurricane from falling down
 effect give @a[tag=nadi.catch] minecraft:levitation 3 255 true
