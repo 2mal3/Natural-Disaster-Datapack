@@ -10,7 +10,7 @@ scoreboard players operation .temp_0 nadi.data = $sandstorm.anchor_entities nadi
 function 2mal3:nadi/utilities/summon_anchors
 
 # Spreads the anchors entitys and creates sand above them at maximum building height
-spreadplayers ~ ~ 2 10 false @e[type=minecraft:area_effect_cloud,tag=nadi.anchor,distance=..0.1]
+spreadplayers ~ ~ 2 20 false @e[type=minecraft:area_effect_cloud,tag=nadi.anchor,distance=..0.1]
 
 # Saves that the wind sound is played to the player
 tag @s add nadi.sound
