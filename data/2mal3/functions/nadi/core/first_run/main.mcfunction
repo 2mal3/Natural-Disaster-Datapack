@@ -9,14 +9,18 @@ tellraw @a[scores={nadi.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"N
 scoreboard objectives add nadi.data dummy
 scoreboard objectives add nadi.debug_mode dummy
 scoreboard objectives add nadi.config dummy
-# Set the version in format: xx.xx.xx
-scoreboard players set $version nadi.data 020000
+# Adds teams
+team add nadi.zombies
+# Set gamerules
+gamerule commandBlockOutput false
 
 # Install libraries
 function 2mal3:random/reload
 # Load start config
 function 2mal3:nadi/core/first_run/start_config
 
+# Set the version in format: xx.xx.xx
+scoreboard players set $version nadi.data 020000
 # Init disaster scoreboards
 scoreboard players set .natural_disaster_on nadi.data 0
 function 2mal3:nadi/new_time
@@ -24,9 +28,6 @@ function 2mal3:nadi/new_time
 # Creates an active command block somewhere in the world
 forceload add 7162814 5656277
 setblock 7162814 1 5656277 minecraft:repeating_command_block{auto: 1b}
-
-# Set gamerules
-gamerule commandBlockOutput false
 
 # Sends Insatlations message after 4 sekonds
 schedule function 2mal3:nadi/core/first_run/send_message 4s

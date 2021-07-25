@@ -16,6 +16,8 @@ schedule clear 2mal3:nadi/core/loop
 scoreboard objectives remove nadi.data
 scoreboard objectives remove nadi.debug_mode
 scoreboard objectives remove nadi.config
+# Remove teams
+team remove nadi.zombies
 # Deletes the storage
 data merge storage 2mal3:nadi {}
 

@@ -7,6 +7,11 @@
 tag @s remove nadi.block
 
 # Remove stunning
-effect clear @s minecraft:slowness
+#effect clear @s minecraft:slowness
 # Remove shulker
-tp @e[type=minecraft:shulker,tag=nadi.block,distance=0] ~ -1000 ~
+#tp @e[type=minecraft:shulker,tag=nadi.block,distance=..0.1] ~ -1000 ~
+
+# Remove block
+setblock ~ ~ ~ minecraft:air
+# Remove stunning
+data modify entity @s NoAI set value 0b

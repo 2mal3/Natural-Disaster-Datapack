@@ -7,6 +7,11 @@
 tag @s add nadi.block
 
 # Stops the movement of the zombie
-effect give @s minecraft:slowness 999999 255 true
+#effect give @s minecraft:slowness 999999 255 true
 # Summon invisible shulker so other zombies can stap on
-summon minecraft:shulker ~ ~ ~ {Silent: 1b, Invulnerable: 1b, NoAI: 1b, AttachFace: 0b, Tags: ["nadi.block"], ActiveEffects: [{Id: 14b, Amplifier: 1b, Duration: 999999, ShowParticles: 0b}]}
+#summon minecraft:shulker ~ ~ ~ {Silent: 1b, Invulnerable: 1b, NoAI: 1b, AttachFace: 0b, Tags: ["nadi.block"], ActiveEffects: [{Id: 14b, Amplifier: 1b, Duration: 999999, ShowParticles: 0b}]}
+
+# Place block
+setblock ~ ~ ~ minecraft:green_stained_glass
+# Stops the movement of the zombie
+data modify entity @s NoAI set value 1b
