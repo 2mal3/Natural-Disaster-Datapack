@@ -14,7 +14,7 @@ scoreboard players set $random_natural_disasters nadi.config 1
 # acid rain
 #scoreboard players set $acid_rain nadi.config 1
 scoreboard players set $acid_rain.time nadi.config 10
-scoreboard players set $acid_rain.anchor_entities nadi.config 2
+scoreboard players set $acid_rain.anchor_entities nadi.config 5
 
 # blizzard
 #scoreboard players set $blizzard nadi.config 1
