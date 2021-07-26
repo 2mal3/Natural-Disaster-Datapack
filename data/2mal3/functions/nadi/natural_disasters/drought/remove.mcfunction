@@ -15,7 +15,7 @@ schedule clear 2mal3:nadi/natural_disasters/drought/ticks/second
 schedule clear 2mal3:nadi/natural_disasters/drought/ticks/minute
 
 # Saves that no natural disaster is off
-scoreboard players set .natural_disaster_on nadi.data 0
+scoreboard players set %natural_disaster_on nadi.data 0
 
 # Resets the radom tick speed back to 3
 gamerule randomTickSpeed 3

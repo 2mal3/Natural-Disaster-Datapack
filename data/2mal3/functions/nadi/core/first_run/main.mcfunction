@@ -22,7 +22,7 @@ function 2mal3:nadi/core/first_run/start_config
 # Set the version in format: xx.xx.xx
 scoreboard players set $version nadi.data 020000
 # Init disaster scoreboards
-scoreboard players set .natural_disaster_on nadi.data 0
+scoreboard players set %natural_disaster_on nadi.data 0
 function 2mal3:nadi/new_time
 
 # Creates an active command block somewhere in the world
@@ -33,4 +33,4 @@ setblock 7162814 1 5656277 minecraft:repeating_command_block{auto: 1b}
 schedule function 2mal3:nadi/core/first_run/send_message 4s
 
 # Remembers that the Datapack was installed
-scoreboard players set .first_run nadi.data 1
+scoreboard players set %first_run nadi.data 1

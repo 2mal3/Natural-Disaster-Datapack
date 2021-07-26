@@ -8,4 +8,4 @@ tellraw @a[scores={nadi.debug_mode=4..}] [{"text":"[","color":"gray"},{"text":"N
 advancement revoke @s only 2mal3:nadi/slept_in_bed
 
 # Prevents sleeping in bed when activated
-execute if score .prevent_sleep nadi.data matches 1 run tp @s[tag=!global.ignore] ~ ~ ~
+execute if score %prevent_sleep nadi.data matches 1 run tp @s[tag=!global.ignore] ~ ~ ~

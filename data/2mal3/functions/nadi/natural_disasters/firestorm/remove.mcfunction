@@ -15,10 +15,7 @@ schedule clear 2mal3:nadi/natural_disasters/firestorm/ticks/second
 schedule clear 2mal3:nadi/natural_disasters/firestorm/ticks/tick
 
 # Saves that no natural disaster is off
-scoreboard players set .natural_disaster_on nadi.data 0
-
-# Remove all firetails
-tp @e[tag=nadi.firestorm.s,type=minecraft:slime] ~ -1000 ~
+scoreboard players set %natural_disaster_on nadi.data 0
 
 # Sets a new time until the next natural disaster begins
 function 2mal3:nadi/new_time

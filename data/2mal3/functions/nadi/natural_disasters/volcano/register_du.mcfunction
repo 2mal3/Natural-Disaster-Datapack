@@ -14,4 +14,4 @@ scoreboard players set $world.in_2 du_data 0
 # Returns -1 if registering ore failed. Otherwise, returns generated structure registry ID.
 function du:world/registry/register_struct
 # Keep track of this number in a scoreboard value. 
-scoreboard players operation .volcano nadi.data = $world.out_0 du_data
+scoreboard players operation %volcano nadi.data = $world.out_0 du_data

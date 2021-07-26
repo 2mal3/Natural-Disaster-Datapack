@@ -12,5 +12,5 @@ execute as @a[tag=!global.ignore,gamemode=!spectator,predicate=2mal3:nadi/in_ove
 execute as @e[type=minecraft:area_effect_cloud,tag=nadi.anchor] at @s run summon minecraft:zombie ~ ~ ~
 
 # Count down the time and then stop the acid rain
-scoreboard players remove .time nadi.data 1
-execute if score .time nadi.data matches 0 run function 2mal3:nadi/natural_disasters/zombie_apocalypse/remove
+scoreboard players remove %time nadi.data 1
+execute if score %time nadi.data matches 0 run function 2mal3:nadi/natural_disasters/zombie_apocalypse/remove

@@ -14,9 +14,9 @@ schedule clear 2mal3:nadi/natural_disasters/acid_rain/ticks/second
 schedule clear 2mal3:nadi/natural_disasters/acid_rain/ticks/tick
 
 # Saves that no natural disaster is off
-scoreboard players set .natural_disaster_on nadi.data 0
+scoreboard players set %natural_disaster_on nadi.data 0
 # Saves that the bed can be used
-scoreboard players set .prevent_sleep nadi.data 0
+scoreboard players set %prevent_sleep nadi.data 0
 
 # Makes the weather back to normal
 weather clear

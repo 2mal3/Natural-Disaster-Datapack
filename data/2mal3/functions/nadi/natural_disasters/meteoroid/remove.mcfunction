@@ -9,7 +9,7 @@ tellraw @a[scores={nadi.debug_mode=4..}] [{"text":"[","color":"gray"},{"text":"N
 # Stops the loops from the meteoroid
 schedule clear 2mal3:nadi/natural_disasters/meteoroid/tick
 # Saves that no natural disaster is off
-scoreboard players set .natural_disaster_on nadi.data 0
+scoreboard players set %natural_disaster_on nadi.data 0
 
 # Moves the meteorite one last time into the ground
 execute as @e[type=minecraft:marker,tag=nadi.meteoroid] at @s run clone ~-4 ~-4 ~-4 ~4 ~4 ~4 ~-4 ~-9 ~-4 masked move

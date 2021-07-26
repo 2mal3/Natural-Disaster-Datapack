@@ -18,7 +18,7 @@ schedule clear 2mal3:nadi/natural_disasters/sandstorm/ticks/tick
 schedule clear 2mal3:nadi/utilities/sound/loop
 
 # Saves that natural disaster and sandstorm are off
-scoreboard players set .natural_disaster_on nadi.data 0
+scoreboard players set %natural_disaster_on nadi.data 0
 
 # Sets a new time until the next natural disaster begins
 function 2mal3:nadi/new_time

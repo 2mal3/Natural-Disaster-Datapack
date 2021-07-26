@@ -8,6 +8,7 @@
         "2mal3:nadi/natural_disasters/hail/remove",
         "2mal3:nadi/natural_disasters/hurricane/remove",
         "2mal3:nadi/natural_disasters/sandstorm/remove",
-        "2mal3:nadi/natural_disasters/thunderstorm/remove"
+        "2mal3:nadi/natural_disasters/thunderstorm/remove",
+        "2mal3:nadi/natural_disasters/zombie_apocalypse/remove"
     ]
 }

@@ -13,13 +13,13 @@ schedule clear 2mal3:nadi/natural_disasters/zombie_apocalypse/ticks/minute
 schedule clear 2mal3:nadi/natural_disasters/zombie_apocalypse/ticks/second
 
 # Saves that no natural disaster is off
-scoreboard players set .natural_disaster_on nadi.data 0
+scoreboard players set %natural_disaster_on nadi.data 0
 
 # Resets the difficulty
-execute if score .difficulty nadi.data matches 0 run difficulty peaceful
-execute if score .difficulty nadi.data matches 1 run difficulty easy
-execute if score .difficulty nadi.data matches 2 run difficulty normal
-execute if score .difficulty nadi.data matches 3 run difficulty hard
+execute if score %difficulty nadi.data matches 0 run difficulty peaceful
+execute if score %difficulty nadi.data matches 1 run difficulty easy
+execute if score %difficulty nadi.data matches 2 run difficulty normal
+execute if score %difficulty nadi.data matches 3 run difficulty hard
 # Remove all tags from zombies
 tag @e[tag=nadi.processed] remove nadi.processed
 tag @e[tag=nadi.block] remove nadi.block

@@ -18,9 +18,9 @@ schedule clear 2mal3:nadi/natural_disasters/hurricane/ticks/minute
 schedule clear 2mal3:nadi/utilities/sound/loop
 
 # Saves that no natural disaster is off
-scoreboard players set .natural_disaster_on nadi.data 0
+scoreboard players set %natural_disaster_on nadi.data 0
 # Saves that the bed can be used
-scoreboard players set .prevent_sleep nadi.data 0
+scoreboard players set %prevent_sleep nadi.data 0
 
 # Remove all fallig blocks
 execute as @e[type=minecraft:cow,tag=nadi.hurricane] at @s run kill @e[type=minecraft:falling_block,distance=..100]
