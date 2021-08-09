@@ -3,16 +3,16 @@
 
 This datapack adds over 10 partly unique natural disasters to the game, which can occur randomly in the world.                                        
 These natural disasters occur in the world with an interval of 1 to 4 Minecraft weeks, but they can also be started immediately with an easy to use in-game gui. It can be opened with the command `/function #2mal3:nadi/menu`. This can also be used to perform various other actions and configure many parts of the datapack.                                         
-In addition, there is also a [wiki](https://bit.ly/NaturalDisasterDatapackWiki) for all other questions, which is currently being worked on.
+In addition, there is also a [wiki](https://rebrand.ly/NaturalDisasterDatapackWiki) for all other questions, which is currently being worked on.
 
 ## 📖 Features:
 - 11 different and unique natural disasters
 - Easy in-game gui with many settings and options
-- Own [wiki](https://bit.ly/NaturalDisasterDatapackWiki) for help (Currently being reworked)
+- Own [wiki](https://rebrand.ly/NaturalDisasterDatapackWiki) for help (Currently being reworked)
 - Good compatibility with other datapacks
 - Also works in multiplayer mode
 - Easy bug help
-- Own API (More about this in the [wiki](https://bit.ly/NaturalDisasterDatapackWiki))
+- Own API (More about this in the [wiki](https://rebrand.ly/NaturalDisasterDatapackWiki))
 
 ### To generate volcanoes in the world, the datapack library [Datapack Utils](https://www.planetminecraft.com/data-pack/datapack-utils/) by ImCoolYeah105 is required, which must also be installed in the world.
 
@@ -38,7 +38,7 @@ You can do this either on the [Planet Minecraft](https://www.planetminecraft.com
 To help me better, it would also be handy if you debug the datapack. You can do this by simply clicking on Debug datapack in the datapack menu and write the displayed message into the bug report.
 
 ## 💾 Versions:
-| ✔   | 1.16+        |
+| ✔   | 1.17+        |
 | --- | ------------ |
 | ✔   | Singleplayer |
 | ✔   | Multiplayer  |
@@ -67,7 +67,7 @@ The datapack is under continuous development, but it takes time before a new ver
 That's why there is this beta version, which contains the newest but still unfinished and maybe buggy function. So use it at your own risk.
 
 ### Installation:
-- Go to [this](http://bit.ly/NaturalDisasterDatapackBeta) webiste
+- Go to [this](https://rebrand.ly/NaturalDisasterDatapackBeta) webiste
 - Click on **Code** and then on **Download ZIP**
 - Extract the folder in the .zip file from it
 - Continue with the folder like the normal datapack 
@@ -76,7 +76,7 @@ That's why there is this beta version, which contains the newest but still unfin
 
 ## 🔽 Installation:
 - Option 1:
-  - Download the Datapack file [here](https://bit.ly/NaturalDisasterDatapack)
+  - Download the Datapack file [here](https://rebrand.ly/NaturalDisasterDatapack)
   - Follow [this](https://youtu.be/zhWVPYD9hy4) video tutorial
 - Option 2: Follow [this](https://www.planetminecraft.com/blog/how-to-download-and-install-minecraft-data-packs/) text tutorial
 

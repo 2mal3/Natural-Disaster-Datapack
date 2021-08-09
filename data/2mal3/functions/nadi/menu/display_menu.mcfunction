@@ -11,7 +11,7 @@ playsound minecraft:ui.button.click master @s
 
 # Displays the text
 tellraw @s {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
-tellraw @s [{"text":"Natural Disaster Datapack v2.0.0","bold":true,"color":"yellow"},{"text":"\n--------------------------------","color":"yellow"}]
+tellraw @s [{"text":"Natural Disaster Datapack v2.1.0","bold":true,"color":"yellow"},{"text":"\n--------------------------------","color":"yellow"}]
 
 tellraw @s {"text":""}
 

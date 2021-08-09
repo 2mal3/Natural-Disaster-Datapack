@@ -1,4 +1,39 @@
 
+## Update v2.1.0 (9.8.2021)
+
+Sorry for the delay, but here is the new version for 1.17. I decided in this update to add only a new natural disaster (the Zombie Apocalypse), but to improve and balance the existing ones.
+I have also completely reworked the API so that others (or otherwise only I) can more easily add new natural disasters and modify existing ones.
+I will update the wiki in the next days.
+
+### Added:
+- Error message if command blocks are not enabled on a server
+- Zombie apocalypse (more infos in the wiki)
+
+### Changed:
+- Updated the datapack to 1.17
+- The hurricane does more damage
+- Acid rain:
+  - Damage has been changed to wither damage, so that you can now also die from the rain
+  - The rain now gives damage to all entities
+  - Etching effect slightly increased
+- Explosion radius from meteorites reduced
+- Radius from sandstorms increased
+- Lightning strikes from thunderstorm made more random
+- Better pack description
+- Improved natural Disasters start menu
+- Better performance
+- Improved compatibility with other datapacks
+- Completely new API (more infos in the wiki)
+- [Internal] Datapack libraries updated
+- [Internal] Improved debug messages
+- [Internal] Better variable names
+- [Internal] Code cleanup
+
+### Bug fixes:
+- [Internal] For some natural disasters the sky detection was not yet updated
+
+----------------------------------------------------------------
+
 ## Update v2.0.0 (15.3.2021)
 
 After a very long time finally an update.                                                                           

@@ -12,4 +12,4 @@ setblock 7162814 1 5656277 minecraft:repeating_command_block{auto: 1b}
 scoreboard players set $zombie_apocalypse.time nadi.config 10
 
 # Set version variable in format xx.xx.xx
-scoreboard players set $version nola.data 020000
+scoreboard players set $version nola.data 020100

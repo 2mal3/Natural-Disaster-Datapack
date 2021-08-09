@@ -33,8 +33,8 @@ gamerule commandBlockOutput true
 function #2mal3:nadi/api/uninstall
 
 # Sends an uninstallation message to all players
-tellraw @a [{"text":"Natural Disaster Datapack v2.0.0 by 2mal3 was successfully uninstalled."}]
+tellraw @a [{"text":"Natural Disaster Datapack v2.1.0 by 2mal3 was successfully uninstalled."}]
 
 # Disables the datapack
-datapack disable "file/Natural-Disaster-Datapack-v2.0.0"
-datapack disable "file/Natural-Disaster-Datapack-v2.0.0.zip"
+datapack disable "file/Natural-Disaster-Datapack-v2.1.0"
+datapack disable "file/Natural-Disaster-Datapack-v2.1.0.zip"

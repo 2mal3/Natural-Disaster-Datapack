@@ -20,7 +20,7 @@ function 2mal3:random/reload
 function 2mal3:nadi/core/first_run/start_config
 
 # Set the version in format: xx.xx.xx
-scoreboard players set $version nadi.data 020000
+scoreboard players set $version nadi.data 020100
 # Init disaster scoreboards
 scoreboard players set %natural_disaster_on nadi.data 0
 function 2mal3:nadi/new_time
