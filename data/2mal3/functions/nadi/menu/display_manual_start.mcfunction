@@ -27,7 +27,7 @@ tellraw @s {"text":"Hurricane","color":"gold","clickEvent":{"action":"run_comman
 tellraw @s {"text":"Meteoroid","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/natural_disasters/meteoroid/create/create"},"hoverEvent":{"action":"show_text","value":"*click*"}}
 tellraw @s {"text":"Sandstorm","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/natural_disasters/sandstorm/create"},"hoverEvent":{"action":"show_text","value":"*click*"}}
 tellraw @s {"text":"Thunderstorm","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/natural_disasters/thunderstorm/create"},"hoverEvent":{"action":"show_text","value":"*click*"}}
-tellraw @s {"text":"Volcano","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/natural_disasters/volcano/eruption/1"},"hoverEvent":{"action":"show_text","value":"*click*"}}
+tellraw @s {"text":"Volcano","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/natural_disasters/volcano/eruption/find"},"hoverEvent":{"action":"show_text","value":"*click*"}}
 tellraw @s {"text":"Zombie apocalypse","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:nadi/natural_disasters/zombie_apocalypse/create"},"hoverEvent":{"action":"show_text","value":"*click*"}}
 
 tellraw @s {"text":""}
