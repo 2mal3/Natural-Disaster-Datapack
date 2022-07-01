@@ -1,8 +1,0 @@
-execute if block ~ ~ ~ minecraft:ender_chest[facing=north,waterlogged=true] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:ender_chest",Properties:{facing:north,waterlogged:true}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:ender_chest[facing=north,waterlogged=false] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:ender_chest",Properties:{facing:north,waterlogged:false}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:ender_chest[facing=south,waterlogged=true] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:ender_chest",Properties:{facing:south,waterlogged:true}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:ender_chest[facing=south,waterlogged=false] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:ender_chest",Properties:{facing:south,waterlogged:false}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:ender_chest[facing=west,waterlogged=true] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:ender_chest",Properties:{facing:west,waterlogged:true}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:ender_chest[facing=west,waterlogged=false] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:ender_chest",Properties:{facing:west,waterlogged:false}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:ender_chest[facing=east,waterlogged=true] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:ender_chest",Properties:{facing:east,waterlogged:true}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:ender_chest[facing=east,waterlogged=false] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:ender_chest",Properties:{facing:east,waterlogged:false}},Time:1,NoGravity:1b}

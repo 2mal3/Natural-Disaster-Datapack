@@ -1,8 +1,0 @@
-execute if block ~ ~ ~ minecraft:ladder[facing=north,waterlogged=true] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:ladder",Properties:{facing:north,waterlogged:true}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:ladder[facing=north,waterlogged=false] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:ladder",Properties:{facing:north,waterlogged:false}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:ladder[facing=south,waterlogged=true] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:ladder",Properties:{facing:south,waterlogged:true}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:ladder[facing=south,waterlogged=false] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:ladder",Properties:{facing:south,waterlogged:false}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:ladder[facing=west,waterlogged=true] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:ladder",Properties:{facing:west,waterlogged:true}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:ladder[facing=west,waterlogged=false] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:ladder",Properties:{facing:west,waterlogged:false}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:ladder[facing=east,waterlogged=true] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:ladder",Properties:{facing:east,waterlogged:true}},Time:1,NoGravity:1b}
-execute if block ~ ~ ~ minecraft:ladder[facing=east,waterlogged=false] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:ladder",Properties:{facing:east,waterlogged:false}},Time:1,NoGravity:1b}
