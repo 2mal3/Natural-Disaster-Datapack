@@ -1,0 +1,9 @@
+CROSS_RUN.json
+
+data/global
+data/minecraft
+
+data/nadi/advancements
+data/nadi/functions
+data/nadi/predicates
+data/nadi/tags
