@@ -6,6 +6,7 @@ functions register {
   nadi:disasters/doline/api/register
   nadi:disasters/blizzard/api/register
   nadi:disasters/meteoroid/api/select
+  nadi:disasters/hail/api/select
 }
 
 functions select {
@@ -14,6 +15,7 @@ functions select {
   nadi:disasters/doline/api/select
   nadi:disasters/blizzard/api/select
   nadi:disasters/meteoroid/api/select
+  nadi:disasters/hail/api/select
 }
 
 
