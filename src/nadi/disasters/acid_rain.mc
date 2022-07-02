@@ -64,8 +64,8 @@ dir clock {
 
   function second {
     schedule function $block 1s replace
-  
-    # Removes blocks from the overwold survace
+
+    # Removes blocks from the overword surface
     execute as @a[predicate=nadi:utilities/in_overworld,gamemode=!spectator] at @s run {
       LOOP(10, i) {
         summon minecraft:area_effect_cloud ~ ~ ~ {Tags: ["nadi.acidRain"]}
@@ -86,7 +86,7 @@ dir clock {
 
   function 5_second {
     schedule function $block 5s replace
-    
+
     execute as @e[team=!thisTeamDoesNotExist,predicate=nadi:utilities/in_overworld,predicate=check_sky:check_sky_rain] run effect give @s minecraft:wither 5 1 true
   }
 
