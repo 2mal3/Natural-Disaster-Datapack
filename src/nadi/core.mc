@@ -18,7 +18,7 @@ function clock {
 
   # Starts a random disaster after the time runs out and if a player is in a valid position for a disaster
   execute if score %time nadi.data matches ..0 run {
-    # Selects a random disaster id from the existing disasters 
+    # Selects a random disaster id from the existing disasters
     name select
     log NaturalDisaster info server <Select a random disaster>
 
@@ -31,7 +31,7 @@ function clock {
     function nadi:core/random_time
   }
 }
-  
+
 
 ## Commands to load up the datapack
 function load {
@@ -61,10 +61,13 @@ function load {
     scoreboard players set $rng.multiplier nadi.data 1664525
     scoreboard players set $rng.increment nadi.data 1013904223
     scoreboard players set .rng.bitSwap nadi.data 0
+    # Create storage
+    #declare storage nadi:data
+    data merge storage nadi:data {root:{temp:0}}
 
     # Generate a first start time
     function nadi:core/random_time
-    
+
     # Init disasters
     scoreboard players set %disasterCount nadi.data 0
     scoreboard players reset * nadi.disasters
@@ -127,6 +130,8 @@ function uninstall {
   scoreboard objectives remove nadi.disasters
   scoreboard objectives remove 2mal3.debugMode
   scoreboard objectives remove nadi.blizzard.soundTime
+  # Deletes storage
+  data remove storage nadi:data root
 
   # Sends an uninstallation message to all players
   tellraw @a {"text":"Natural Disaster Datapack v3.0.0 by 2mal3 was successfully uninstalled.","color": "green"}

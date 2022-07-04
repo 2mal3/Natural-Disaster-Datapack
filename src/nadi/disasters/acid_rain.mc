@@ -87,7 +87,21 @@ dir clock {
   function 5_second {
     schedule function $block 5s replace
 
+    # Gives poisoning to any creature that can be reached by the rain to simulate the etching effect
     execute as @e[team=!thisTeamDoesNotExist,predicate=nadi:utilities/in_overworld,predicate=check_sky:check_sky_rain] run effect give @s minecraft:wither 5 1 true
+
+    # If players wear a helmet, however, they do not receive any damage because the helmet keeps the acid away
+    execute as @a[predicate=nadi:disasters/acid_rain/has_wither,predicate=nadi:disasters/acid_rain/wears_helmet] run {
+      effect clear @s minecraft:wither
+
+      # Helmets of players in creative mode and spectator mode are not destroyed, as the players are not affected by the effects anyway
+      execute if entity @s[gamemode=!spectator,gamemode=!creative] run {
+        execute store result score .damage nadi.data run data get entity @s Inventory[{Slot: 103b}].tag.Damage
+        scoreboard players add .damage nadi.data 1
+        execute store result storage nadi:data root.temp int 1 run scoreboard players get .damage nadi.data
+        item modify entity @s armor.head nadi:disasters/acid_rain/store_damage
+      }
+    }
   }
 
   function minute {
@@ -99,6 +113,55 @@ dir clock {
   }
 }
 
+
+predicate has_wither {
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "effects": {
+      "minecraft:wither": {}
+    }
+  }
+}
+
+predicate wears_helmet {
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "head": {
+        "tag": "nadi:disasters/acid_rain/helmet"
+      }
+    }
+  }
+}
+
+items helmet {
+  minecraft:leather_helmet
+  minecraft:iron_helmet
+  minecraft:chainmail_helmet
+  minecraft:golden_helmet
+  minecraft:diamond_helmet
+  minecraft:netherite_helmet
+  minecraft:turtle_helmet
+}
+
+modifier store_damage {
+  "function": "minecraft:copy_nbt",
+  "source": {
+    "type": "minecraft:storage",
+    "source": "nadi:data"
+  },
+  "ops": [
+    {
+      "source": "root.temp",
+      "target": "Damage",
+      "op": "replace"
+    }
+  ]
+}
+
+# Blocks that cannot be destroyed by acid rain because they are either technical blocks or cannot otherwise be destroyed by the player
 blocks ignore {
   minecraft:barrier
   minecraft:bedrock
