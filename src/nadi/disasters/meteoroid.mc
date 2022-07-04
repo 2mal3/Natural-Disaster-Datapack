@@ -33,6 +33,8 @@ function start {
 }
 
 function stop {
+  scoreboard players set %disasterTime nadi.data 0
+
   execute as 910fb361-682f-4f5d-a98c-717fcc4c9bcc at @s run {
     clone ~-4 ~-4 ~-4 ~4 ~4 ~4 ~-4 ~-8 ~-4 masked move
     kill @s

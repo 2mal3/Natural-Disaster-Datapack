@@ -38,6 +38,8 @@ function start {
 function stop {
   log NaturalDisaster info server <Stop doline>
 
+  scoreboard players set %disasterTime nadi.data 0
+
   kill f9764ddd-6ec6-4195-825a-cf4fcc4c437c
 
   # Stop clocks

@@ -40,6 +40,8 @@ function start {
 function stop {
   log NaturalDisaster info server <Stop hail>
 
+  scoreboard players set %disasterTime nadi.data 0
+
   # Enable sleeping
   scoreboard players remove %preventSleep nadi.data 1
   # Clear weather

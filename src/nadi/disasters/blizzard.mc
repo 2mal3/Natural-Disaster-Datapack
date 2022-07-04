@@ -35,6 +35,8 @@ function start {
 function stop {
   log NaturalDisaster info server <Stop blizzard>
 
+  scoreboard players set %disasterTime nadi.data 0
+
   # Stop diaster loops
   schedule clear nadi:disasters/blizzard/clock/minute
   schedule clear nadi:disasters/blizzard/clock/second

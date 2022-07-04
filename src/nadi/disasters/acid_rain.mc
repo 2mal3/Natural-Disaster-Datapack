@@ -39,6 +39,8 @@ function start {
 function stop {
   log NaturalDisaster info server <Stop acid rain>
 
+  scoreboard players set %disasterTime nadi.data 0
+
   # Clear weather
   weather clear
 
