@@ -70,7 +70,7 @@ dir clock {
     # Count depth of the doline
     scoreboard players remove %disasterTime nadi.data 1
     execute if score %disasterTime nadi.data matches 0 run function nadi:disasters/doline/stop
-    
+
   }
 }
 

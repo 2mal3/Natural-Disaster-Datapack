@@ -36,8 +36,8 @@ I will update the wiki in the next days.
 
 ## Update v2.0.0 (15.3.2021)
 
-After a very long time finally an update.                                                                           
-This one is mainly about improvements, adjustments and bug fixes, for which almost the entire datapack was reworked. More detailed information can be found below.                                                                
+After a very long time finally an update.
+This one is mainly about improvements, adjustments and bug fixes, for which almost the entire datapack was reworked. More detailed information can be found below.
 In addition, the datapack menu has been greatly simplified and improved, so that the datapack is much easier to control and customize.
 
 ### Added:
@@ -46,7 +46,7 @@ In addition, the datapack menu has been greatly simplified and improved, so that
   - Many more configuration options
   - Links to the website and wiki
   - Nicer
-  - Faster 
+  - Faster
 - Datapack icon
 - Debug system
 - Drought:

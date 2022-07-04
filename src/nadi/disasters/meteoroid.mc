@@ -25,7 +25,7 @@ function start {
     place template nadi:meteoroid/meteoroid ~-4 ~ ~-4
     # "910fb361-682f-4f5d-a98c-717fcc4c9bcc"
     summon minecraft:marker ~ ~4 ~ {UUID: [I; -1861242015, 1747930973, -1450413697, -867394612], Tags: ["global.ignore"]}
-    summon minecraft:fireball ~ ~-16 ~ {ExplosionPower:32b,power:[0.0,-0.3,0.0],Item:{id:"minecraft:air",Count:1b}}
+    summon minecraft:fireball ~ ~-16 ~ {ExplosionPower: 32b, power: [0.0d, -0.3d, 0.0d], Item: {id: "minecraft:air", Count: 1b}}
   }
 
   # Start the datapack clock

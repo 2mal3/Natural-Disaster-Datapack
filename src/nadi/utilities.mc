@@ -12,7 +12,7 @@ function random {
   scoreboard players operation .rng.bitSwap nadi.data /= $65536 nadi.data
   scoreboard players operation .rng nadi.data *= $65536 nadi.data
   scoreboard players operation .rng nadi.data += .rng.bitSwap nadi.data
-  
+
   # Return output
   scoreboard players operation .temp0 nadi.data = .in1 nadi.data
   scoreboard players operation .temp0 nadi.data -= .in0 nadi.data
@@ -41,7 +41,7 @@ dir random {
 dir prevent_sleep {
   function sleep {
     advancement revoke @s only nadi:utilities/prevent_sleep/sleep
-    
+
     execute if score %preventSleep nadi.data matches 1.. run {
       log NaturalDisaster debug entity <Prevent sleep>
 

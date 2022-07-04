@@ -35,5 +35,3 @@ advancement 2mal3 {
     }
   }
 }
-
-

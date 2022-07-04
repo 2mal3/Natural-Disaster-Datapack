@@ -63,7 +63,7 @@ function load {
     scoreboard players set .rng.bitSwap nadi.data 0
     # Create storage
     #declare storage nadi:data
-    data merge storage nadi:data {root:{temp:0}}
+    data merge storage nadi:data {root: {temp: 0}}
 
     # Generate a first start time
     function nadi:core/random_time

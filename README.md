@@ -1,8 +1,8 @@
 # Natural Disaster Datapack
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/2mal3/Natural-Disaster-Datapack?style=flat-square) ![GitHub all releases](https://img.shields.io/github/downloads/2mal3/Natural-Disaster-Datapack/total?style=flat-square) ![GitHub](https://img.shields.io/github/license/2mal3/Natural-Disaster-Datapack?style=flat-square)
 
-This datapack adds over 10 partly unique natural disasters to the game, which can occur randomly in the world.                                        
-These natural disasters occur in the world with an interval of 1 to 4 Minecraft weeks, but they can also be started immediately with an easy to use in-game gui. It can be opened with the command `/function #2mal3:nadi/menu`. This can also be used to perform various other actions and configure many parts of the datapack.                                         
+This datapack adds over 10 partly unique natural disasters to the game, which can occur randomly in the world.
+These natural disasters occur in the world with an interval of 1 to 4 Minecraft weeks, but they can also be started immediately with an easy to use in-game gui. It can be opened with the command `/function #2mal3:nadi/menu`. This can also be used to perform various other actions and configure many parts of the datapack.
 In addition, there is also a [wiki](https://rebrand.ly/NaturalDisasterDatapackWiki) for all other questions, which is currently being worked on.
 
 ## 📖 Features:
@@ -33,8 +33,8 @@ In addition, there is also a [wiki](https://rebrand.ly/NaturalDisasterDatapackWi
 ***
 
 ## 📊 Bug reports:
-If you find a bug in the datapack, it would be very helpful to report it to me.                                                          
-You can do this either on the [Planet Minecraft](https://www.planetminecraft.com/data-pack/natural-disaster-4574511/) website as a comment or on the [GitHub](https://github.com/2mal3/Natural-Disaster-Datapack/issues) website as an issue.                                        
+If you find a bug in the datapack, it would be very helpful to report it to me.
+You can do this either on the [Planet Minecraft](https://www.planetminecraft.com/data-pack/natural-disaster-4574511/) website as a comment or on the [GitHub](https://github.com/2mal3/Natural-Disaster-Datapack/issues) website as an issue.
 To help me better, it would also be handy if you debug the datapack. You can do this by simply clicking on Debug datapack in the datapack menu and write the displayed message into the bug report.
 
 ## 💾 Versions:
@@ -53,7 +53,7 @@ To help me better, it would also be handy if you debug the datapack. You can do 
 ## ⚡ Performance:
 During the development we tried to make the datapack as performant as possible.
 
-If no natural disaster is active, the datapack consumes almost no resurses, regardless of the number of players.                               
+If no natural disaster is active, the datapack consumes almost no resurses, regardless of the number of players.
 The natural disasters can, because of the nature, unfortunately lead to server and graphics lag. Nevertheless, the game should still be playable on single-player worlds and smaller servers, as long as you don't use completely outdated hardware.
 
 ## ✅ Compatibility with other datapacks:
@@ -62,15 +62,15 @@ The datapack should be compatible with other datapacks. However, the datapack is
 
 ## 🧪 Beta:
 ![GitHub last commit](https://img.shields.io/github/last-commit/2mal3/Natural-Disaster-Datapack?style=flat-square) ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/2mal3/Natural-Disaster-Datapack/latest?style=flat-square)
- 
-The datapack is under continuous development, but it takes time before a new version is released. 
+
+The datapack is under continuous development, but it takes time before a new version is released.
 That's why there is this beta version, which contains the newest but still unfinished and maybe buggy function. So use it at your own risk.
 
 ### Installation:
 - Go to [this](https://rebrand.ly/NaturalDisasterDatapackBeta) webiste
 - Click on **Code** and then on **Download ZIP**
 - Extract the folder in the .zip file from it
-- Continue with the folder like the normal datapack 
+- Continue with the folder like the normal datapack
 
 ***
 

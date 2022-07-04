@@ -84,7 +84,7 @@ dir clock {
 
     execute as @e[type=minecraft:marker,tag=nadi.hail,tag=nadi.init] at @s run {
       tag @s remove nadi.init
-      summon falling_block ~ 319 ~ {BlockState:{Name:"minecraft:ice"},Time:1,HurtEntities:1b,FallHurtMax:30,FallHurtAmount:2f}
+      summon falling_block ~ 319 ~ {BlockState: {Name: "minecraft:ice"}, Time: 1, HurtEntities: 1b, FallHurtMax: 30, FallHurtAmount: 2f}
     }
   }
 
