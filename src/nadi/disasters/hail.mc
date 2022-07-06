@@ -27,7 +27,7 @@ function start {
   scoreboard players operation %disasterTime nadi.data = .out0 nadi.data
 
   # Disable sleeping
-  scoreboard players add %preventSleep nadi.data 1
+  scoreboard players set %preventSleep nadi.data 1
   # Set weather to thunder
   weather rain 999999
 
@@ -43,7 +43,7 @@ function stop {
   scoreboard players set %disasterTime nadi.data 0
 
   # Enable sleeping
-  scoreboard players remove %preventSleep nadi.data 1
+  scoreboard players set %preventSleep nadi.data 0
   # Clear weather
   weather clear
 
