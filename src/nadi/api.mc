@@ -18,6 +18,14 @@ functions select {
   nadi:disasters/hail/api/select
 }
 
+functions stop {
+  nadi:disasters/thunderstorm/stop
+  nadi:disasters/acid_rain/stop
+  nadi:disasters/doline/stop
+  nadi:disasters/blizzard/stop
+  nadi:disasters/meteoroid/stop
+  nadi:disasters/hail/stop
+}
 
 # Functions needed for the api
 function register {
