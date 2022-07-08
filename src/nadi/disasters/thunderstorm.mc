@@ -6,12 +6,27 @@ dir api {
   # Registers the natural disaster
   function register {
     function nadi:api/register
-    scoreboard players operation $thunderstorm nadi.disasters = .out0 nadi.data
+    scoreboard players operation $thunderstorm nadi.thunderstorm = .out0 nadi.data
   }
 
   # Starts the natural disaster when selected
   function select {
-    execute if score .out0 nadi.data = $thunderstorm nadi.disasters run function nadi:disasters/thunderstorm/start
+    execute if score .out0 nadi.data = $thunderstorm nadi.thunderstorm run function nadi:disasters/thunderstorm/start
+  }
+
+  function install {
+    scoreboard objectives add nadi.thunderstorm dummy
+
+    scoreboard players set %time nadi.thunderstorm 0
+    scoreboard players set %active nadi.thunderstorm 0
+
+    scoreboard players set $enabled nadi.thunderstorm 1
+    scoreboard players set $minTime nadi.thunderstorm 10
+    scoreboard players set $maxTime nadi.thunderstorm 15
+  }
+
+  function uninstall {
+    scoreboard objectives remove nadi.thunderstorm
   }
 }
 
@@ -19,12 +34,14 @@ dir api {
 ## Disaster
 function start {
   log NaturalDisaster info server <Start thunderstorm>
+  scoreboard players set %active nadi.thunderstorm 1
+  scoreboard players set %disasterActive nadi.data 0
 
   # Generate a random duration for the disaster
-  scoreboard players set .in0 nadi.data 10
-  scoreboard players set .in1 nadi.data 15
+  scoreboard players operation .in0 nadi.data = $minTime nadi.thunderstorm
+  scoreboard players operation .in1 nadi.data = $maxTime nadi.thunderstorm
   function nadi:utilities/random
-  scoreboard players operation %disasterTime nadi.data = .out0 nadi.data
+  scoreboard players operation %time nadi.thunderstorm = .out0 nadi.data
 
   # Disable sleeping
   scoreboard players set %preventSleep nadi.data 1
@@ -38,8 +55,10 @@ function start {
 
 function stop {
   log NaturalDisaster info server <Stop thunderstorm>
+  scoreboard players set %active nadi.thunderstorm 0
+  scoreboard players set %disasterActive nadi.data 0
 
-  scoreboard players set %disasterTime nadi.data 0
+  scoreboard players set %time nadi.thunderstorm 0
 
   # Enable sleeping
   scoreboard players set %preventSleep nadi.data 0
@@ -69,7 +88,7 @@ dir clock {
     schedule function $block 60s replace
 
     # Count time
-    scoreboard players remove %disasterTime nadi.data 1
-    execute if score %disasterTime nadi.data matches 0 run function nadi:disasters/thunderstorm/stop
+    scoreboard players remove %time nadi.thunderstorm 1
+    execute if score %time nadi.thunderstorm matches 0 run function nadi:disasters/thunderstorm/stop
   }
 }

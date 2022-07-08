@@ -6,12 +6,24 @@ dir api {
   # Registers the natural disaster
   function register {
     function nadi:api/register
-    scoreboard players operation $meteoroid nadi.disasters = .out0 nadi.data
+    scoreboard players operation $meteoroid nadi.meteoroid = .out0 nadi.data
   }
 
   # Starts the natural disaster when selected
   function select {
-    execute if score .out0 nadi.data = $meteoroid nadi.disasters run function nadi:disasters/meteorite/start
+    execute if score .out0 nadi.data = $meteoroid nadi.meteoroid run function nadi:disasters/meteorite/start
+  }
+
+  function install {
+    scoreboard objectives add nadi.meteoroid dummy
+
+    scoreboard players set %active nadi.meteoroid 0
+
+    scoreboard players set $enabled nadi.meteoroid 1
+  }
+
+  function uninstall {
+    scoreboard objectives remove nadi.meteoroid
   }
 }
 
@@ -19,6 +31,8 @@ dir api {
 ## Disaster
 function start {
   log NaturalDisaster info server <Start meteorite>
+  scoreboard players set %active nadi.meteoroid 1
+  scoreboard players set %disasterActive nadi.data 1
 
   # Chooses a random player to spawn the meteoroid at
   execute as @r[gamemode=!spectator] at @s positioned ~ 300 ~ run {
@@ -33,7 +47,8 @@ function start {
 }
 
 function stop {
-  scoreboard players set %disasterTime nadi.data 0
+  scoreboard players set %active nadi.meteoroid 0
+  scoreboard players set %disasterActive nadi.data 0
 
   execute as 910fb361-682f-4f5d-a98c-717fcc4c9bcc at @s run {
     clone ~-4 ~-4 ~-4 ~4 ~4 ~4 ~-4 ~-8 ~-4 masked move

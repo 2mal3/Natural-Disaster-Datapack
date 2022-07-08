@@ -6,12 +6,27 @@ dir api {
   # Registers the natural disaster
   function register {
     function nadi:api/register
-    scoreboard players operation $acidRain nadi.disasters = .out0 nadi.data
+    scoreboard players operation $acidRain nadi.acidRain = .out0 nadi.data
   }
 
   # Starts the natural disaster when selected
   function select {
-    execute if score .out0 nadi.data = $acidRain nadi.disasters run function nadi:disasters/acid_rain/start
+    execute if score .out0 nadi.data = $acidRain nadi.acidRain run function nadi:disasters/acid_rain/start
+  }
+
+  function install {
+    scoreboard objectives add nadi.acidRain dummy
+
+    scoreboard players set %time nadi.acidRain 0
+    scoreboard players set %active nadi.acidRain 0
+
+    scoreboard players set $enabled nadi.acidRain 1
+    scoreboard players set $minTime nadi.acidRain 10
+    scoreboard players set $maxTime nadi.acidRain 15
+  }
+
+  function uninstall {
+    scoreboard objectives remove nadi.acidRain
   }
 }
 
@@ -19,12 +34,14 @@ dir api {
 ## Start / Stop
 function start {
   log NaturalDisaster info server <Start acid rain>
+  scoreboard players set %active nadi.acidRain 1
+  scoreboard players set %disasterActive nadi.data 1
 
   # Generate a random duration for the disaster
-  scoreboard players set .in0 nadi.data 10
-  scoreboard players set .in1 nadi.data 15
+  scoreboard players operation .in0 nadi.data = $minTime nadi.acidRain
+  scoreboard players operation .in1 nadi.data = $maxTime nadi.acidRain
   function nadi:utilities/random
-  scoreboard players operation %disasterTime nadi.data = .out0 nadi.data
+  scoreboard players operation %time nadi.acidRain = .out0 nadi.data
 
   # Set weather to thunder
   weather rain 999999
@@ -38,8 +55,10 @@ function start {
 
 function stop {
   log NaturalDisaster info server <Stop acid rain>
+  scoreboard players set %active nadi.acidRain 0
+  scoreboard players set %disasterActive nadi.data 0
 
-  scoreboard players set %disasterTime nadi.data 0
+  scoreboard players set %time nadi.acidRain 0
 
   # Clear weather
   weather clear
@@ -110,8 +129,8 @@ dir clock {
     schedule function $block 60s replace
 
     # Count time
-    scoreboard players remove %disasterTime nadi.data 1
-    execute if score %disasterTime nadi.data matches 0 run function nadi:disasters/acid_rain/stop
+    scoreboard players remove %time nadi.acidRain 1
+    execute if score %time nadi.acidRain matches 0 run function nadi:disasters/acid_rain/stop
   }
 }
 

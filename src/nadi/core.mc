@@ -47,14 +47,12 @@ function load {
 
     # Add scoreboards
     scoreboard objectives add nadi.data dummy
-    scoreboard objectives add nadi.disasters dummy
     scoreboard objectives add 2mal3.debugMode dummy
-    scoreboard objectives add nadi.blizzard.soundTime dummy
     # Set the version in format: xx.xx.xx
     scoreboard players set $version nadi.data 030000
     # Init variables
-    scoreboard players set %disasterTime nadi.data 0
     scoreboard players set %preventSleep nadi.data 0
+    scoreboard players set %disasterActive nadi.data 0
     # Set up random number generator
     execute store result score .rng nadi.data run seed
     scoreboard players set $65536 nadi.data 65536
@@ -64,6 +62,9 @@ function load {
     # Create storage
     #declare storage nadi:data
     data merge storage nadi:data {root: {temp: 0}}
+
+    # Install natural disasters
+    function #nadi:api/install
 
     # Generate a first start time
     function nadi:core/random_time
@@ -125,11 +126,12 @@ advancement nadi {
 function uninstall {
   log NaturalDisaster info server <Datapack uninstalled>
 
+  # Uninstall natural disasters
+  function #nadi:api/uninstall
+
   # Deletes the scoreboards
   scoreboard objectives remove nadi.data
-  scoreboard objectives remove nadi.disasters
   scoreboard objectives remove 2mal3.debugMode
-  scoreboard objectives remove nadi.blizzard.soundTime
   # Deletes storage
   data remove storage nadi:data root
 

@@ -6,12 +6,27 @@ dir api {
   # Registers the natural disaster
   function register {
     function nadi:api/register
-    scoreboard players operation $doline nadi.disasters = .out0 nadi.data
+    scoreboard players operation $doline nadi.doline = .out0 nadi.data
   }
 
   # Starts the natural disaster when selected
   function select {
-    execute if score .out0 nadi.data = $doline nadi.disasters run function nadi:disasters/doline/start
+    execute if score .out0 nadi.data = $doline nadi.doline run function nadi:disasters/doline/start
+  }
+
+  function install {
+    scoreboard objectives add nadi.doline dummy
+
+    scoreboard players set %depth nadi.doline 0
+    scoreboard players set %active nadi.doline 0
+
+    scoreboard players set $enabled nadi.doline 1
+    scoreboard players set $minDepth nadi.doline 15
+    scoreboard players set $maxDepth nadi.doline 30
+  }
+
+  function uninstall {
+    scoreboard objectives remove nadi.doline
   }
 }
 
@@ -19,12 +34,14 @@ dir api {
 ## Disaster
 function start {
   log NaturalDisaster info server <Start doline>
+  scoreboard players set %active nadi.doline 1
+  scoreboard players set %disasterActive nadi.data 1
 
   # Generate a random duration for the disaster
-  scoreboard players set .in0 nadi.data 15
-  scoreboard players set .in1 nadi.data 30
+  scoreboard players operation .in0 nadi.data = $minDepth nadi.doline
+  scoreboard players operation .in1 nadi.data = $maxDepth nadi.doline
   function nadi:utilities/random
-  scoreboard players operation %disasterTime nadi.data = .out0 nadi.data
+  scoreboard players operation %depth nadi.doline = .out0 nadi.data
 
   # f9764ddd-6ec6-4195-825a-cf4fcc4c437c
   execute as @r[gamemode=!spectator,predicate=nadi:utilities/in_overworld,predicate=nadi:disasters/doline/over_0] at @s run summon minecraft:marker ~ ~ ~ {UUID: [I; -109687331, 1858486677, -2107977905, -867417220]}
@@ -37,8 +54,10 @@ function start {
 
 function stop {
   log NaturalDisaster info server <Stop doline>
+  scoreboard players set %active nadi.doline 0
+  scoreboard players set %disasterActive nadi.data 0
 
-  scoreboard players set %disasterTime nadi.data 0
+  scoreboard players set %depth nadi.doline 0
 
   kill f9764ddd-6ec6-4195-825a-cf4fcc4c437c
 
@@ -70,8 +89,8 @@ dir clock {
     }
 
     # Count depth of the doline
-    scoreboard players remove %disasterTime nadi.data 1
-    execute if score %disasterTime nadi.data matches 0 run function nadi:disasters/doline/stop
+    scoreboard players remove %depth nadi.doline 1
+    execute if score %depth nadi.doline matches 0 run function nadi:disasters/doline/stop
 
   }
 }

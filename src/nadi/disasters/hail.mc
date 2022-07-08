@@ -6,12 +6,27 @@ dir api {
   # Registers the natural disaster
   function register {
     function nadi:api/register
-    scoreboard players operation $hail nadi.disasters = .out0 nadi.data
+    scoreboard players operation $hail nadi.hail = .out0 nadi.data
   }
 
   # Starts the natural disaster when selected
   function select {
-    execute if score .out0 nadi.data = $hail nadi.disasters run function nadi:disasters/hail/start
+    execute if score .out0 nadi.data = $hail nadi.hail run function nadi:disasters/hail/start
+  }
+
+  function install {
+    scoreboard objectives add nadi.hail dummy
+
+    scoreboard players set %time nadi.hail 0
+    scoreboard players set %active nadi.hail 0
+
+    scoreboard players set $enabled nadi.hail 1
+    scoreboard players set $minTime nadi.hail 10
+    scoreboard players set $maxTime nadi.hail 15
+  }
+
+  function uninstall {
+    scoreboard objectives remove nadi.hail
   }
 }
 
@@ -19,12 +34,14 @@ dir api {
 ## Disaster
 function start {
   log NaturalDisaster info server <Start hail>
+  scoreboard players set %active nadi.hail 1
+  scoreboard players set %disasterActive nadi.data 1
 
   # Generate a random duration for the disaster
-  scoreboard players set .in0 nadi.data 10
-  scoreboard players set .in1 nadi.data 15
+  scoreboard players operation .in0 nadi.data = $minTime nadi.hail
+  scoreboard players operation .in1 nadi.data = $maxTime nadi.hail
   function nadi:utilities/random
-  scoreboard players operation %disasterTime nadi.data = .out0 nadi.data
+  scoreboard players operation %time nadi.hail = .out0 nadi.data
 
   # Disable sleeping
   scoreboard players set %preventSleep nadi.data 1
@@ -39,8 +56,10 @@ function start {
 
 function stop {
   log NaturalDisaster info server <Stop hail>
+  scoreboard players set %active nadi.hail 0
+  scoreboard players set %disasterActive nadi.data 0
 
-  scoreboard players set %disasterTime nadi.data 0
+  scoreboard players set %time nadi.hail 0
 
   # Enable sleeping
   scoreboard players set %preventSleep nadi.data 0
@@ -94,8 +113,8 @@ dir clock {
     schedule function $block 60s replace
 
     # Count time and stop the disaster
-    scoreboard players remove %disasterTime nadi.data 1
-    execute if score %disasterTime nadi.data matches 0 run function nadi:disasters/hail/stop
+    scoreboard players remove %time nadi.hail 1
+    execute if score %time nadi.hail matches 0 run function nadi:disasters/hail/stop
   }
 }
 

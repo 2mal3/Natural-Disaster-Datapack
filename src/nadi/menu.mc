@@ -23,7 +23,7 @@ dir pages {
 
     # Info about the world
     tellraw @s [{"text": "⌚", "color": "yellow"}, {"text": " Next natural disaster in ", "color": "gold"}, {"score": {"name": "%time", "objective": "nadi.data"}, "color": "red"}, {"text": " minutes", "color": "gold"}]
-    execute if score %disasterTime nadi.data matches 1.. run tellraw @s [{"text": "⏳", "color": "yellow"}, {"text": " Natural disaster over in ", "color": "gold"}, {"score": {"name": "%disasterTime", "objective": "nadi.data"}, "color": "red"}, {"text": " minutes", "color": "gold"}]
+    # execute if score %disasterTime nadi.data matches 1.. run tellraw @s [{"text": "⏳", "color": "yellow"}, {"text": " Natural disaster over in ", "color": "gold"}, {"score": {"name": "%disasterTime", "objective": "nadi.data"}, "color": "red"}, {"text": " minutes", "color": "gold"}]
     tellraw @s {"text": ""}
 
     # Actions
@@ -65,10 +65,10 @@ dir buttons {
   function stop_disaster {
     function nadi:menu/click
 
-    execute unless score %disasterTime nadi.data matches 1.. run {
+    execute if score %disasterActive nadi.data matches 0 run {
       title @s actionbar {"text": "No natural diasters active"}
     }
-    execute if score %disasterTime nadi.data matches 1.. run {
+    execute if score %disasterActive nadi.data matches 1 run {
       title @s actionbar {"text": "Stopped natural diaster"}
       function #nadi:api/stop
     }
@@ -127,20 +127,20 @@ dir buttons {
   function start_disaster {
     function nadi:menu/click
 
-    execute unless score %disasterTime nadi.data matches 1.. run {
+    execute if score %disasterActive nadi.data matches 0 run {
       function nadi:menu/pages/start_disaster
     }
-    execute if score %disasterTime nadi.data matches 1.. run title @s actionbar {"text": "You can't start a second natural disaster when another one is in progress"}
+    execute if score %disasterActive nadi.data matches 1 run title @s actionbar {"text": "You can't start a second natural disaster when another one is in progress"}
   }
 
   function start_random_disaster {
     function nadi:menu/click
 
-    execute unless score %disasterTime nadi.data matches 1.. run {
+    execute if score %disasterActive nadi.data matches 0 run {
       title @s actionbar {"text": "Started random natural disaster"}
       function nadi:core/select
     }
-    execute if score %disasterTime nadi.data matches 1.. run title @s actionbar {"text": "You can't start a second natural disaster when another one is in progress"}
+    execute if score %disasterActive nadi.data matches 1 run title @s actionbar {"text": "You can't start a second natural disaster when another one is in progress"}
 
   }
 

@@ -27,6 +27,24 @@ functions stop {
   nadi:disasters/hail/stop
 }
 
+functions install {
+  nadi:disasters/thunderstorm/api/install
+  nadi:disasters/acid_rain/api/install
+  nadi:disasters/doline/api/install
+  nadi:disasters/blizzard/api/install
+  nadi:disasters/meteoroid/api/install
+  nadi:disasters/hail/api/install
+}
+
+functions uninstall {
+  nadi:disasters/thunderstorm/api/uninstall
+  nadi:disasters/acid_rain/api/uninstall
+  nadi:disasters/doline/api/uninstall
+  nadi:disasters/blizzard/api/uninstall
+  nadi:disasters/meteoroid/api/uninstall
+  nadi:disasters/hail/api/uninstall
+}
+
 # Functions needed for the api
 function register {
   # Generates a new id for a natural disaster

@@ -6,12 +6,29 @@ dir api {
   # Registers the natural disaster
   function register {
     function nadi:api/register
-    scoreboard players operation $blizzard nadi.disasters = .out0 nadi.data
+    scoreboard players operation $blizzard nadi.blizzard = .out0 nadi.data
   }
 
   # Starts the natural disaster when selected
   function select {
-    execute if score .out0 nadi.data = $blizzard nadi.disasters run function nadi:disasters/blizzard/start
+    execute if score .out0 nadi.data = $blizzard nadi.blizzard run function nadi:disasters/blizzard/start
+  }
+
+  function install {
+    scoreboard objectives add nadi.blizzard dummy
+    scoreboard objectives add nadi.blizzard.soundTime dummy
+
+    scoreboard players set %time nadi.blizzard 0
+    scoreboard players set %active nadi.blizzard 0
+
+    scoreboard players set $enabled nadi.blizzard 1
+    scoreboard players set $minTime nadi.blizzard 10
+    scoreboard players set $maxTime nadi.blizzard 15
+  }
+
+  function uninstall {
+    scoreboard objectives remove nadi.blizzard
+    scoreboard objectives remove nadi.blizzard.soundTime
   }
 }
 
@@ -19,12 +36,14 @@ dir api {
 ## Disaster
 function start {
   log NaturalDisaster info server <Start blizzard>
+  scoreboard players set %active nadi.blizzard 1
+  scoreboard players set %disasterActive nadi.data 1
 
   # Generate a random duration for the disaster
-  scoreboard players set .in0 nadi.data 10
-  scoreboard players set .in1 nadi.data 15
+  scoreboard players operation .in0 nadi.data = $minTime nadi.blizzard
+  scoreboard players operation .in1 nadi.data = $maxTime nadi.blizzard
   function nadi:utilities/random
-  scoreboard players operation %disasterTime nadi.data = .out0 nadi.data
+  scoreboard players operation %time nadi.blizzard = .out0 nadi.data
 
   # Start diaster loops
   schedule function nadi:disasters/blizzard/clock/minute 60s replace
@@ -34,8 +53,10 @@ function start {
 
 function stop {
   log NaturalDisaster info server <Stop blizzard>
+  scoreboard players set %active nadi.blizzard 0
+  scoreboard players set %disasterActive nadi.data 0
 
-  scoreboard players set %disasterTime nadi.data 0
+  scoreboard players set %time nadi.blizzard 0
 
   # Stop diaster loops
   schedule clear nadi:disasters/blizzard/clock/minute
@@ -97,8 +118,8 @@ dir clock {
     schedule function $block 60s replace
 
     # Count time and stop the disaster
-    scoreboard players remove %disasterTime nadi.data 1
-    execute if score %disasterTime nadi.data matches 0 run function nadi:disasters/blizzard/stop
+    scoreboard players remove %time nadi.blizzard 1
+    execute if score %time nadi.blizzard matches 0 run function nadi:disasters/blizzard/stop
   }
 }
 
