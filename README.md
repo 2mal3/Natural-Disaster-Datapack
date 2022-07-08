@@ -1,6 +1,8 @@
 # Natural Disaster Datapack {BETA}
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/2mal3/Natural-Disaster-Datapack?style=flat-square) ![version](https://img.shields.io/badge/Minecraft-1.19-orange?style=flat-square) ![GitHub all releases](https://img.shields.io/github/downloads/2mal3/Natural-Disaster-Datapack/total?style=flat-square)
 
+> **Currently, the datapack is still in the beta phase and is being actively further developed, so not all of the features mentioned have been implemented yet.**
+
 This datapack tries to make the game a bit more exciting and risky by adding over 5 (more or less) real natural disasters, each with their own little twist.
 You either choose the relaxed normal mode with few natural disasters (perfect for survival worlds), or test yourself in the challenge mode with rapid succession of natural disasters.
 But if you still don't like something, or if you only want to test individual natural disasters, or if you want to customize certain ones to your liking, you can easily do this via the in-game GUI, which you can access with the command `/function #nadi:menu`.
