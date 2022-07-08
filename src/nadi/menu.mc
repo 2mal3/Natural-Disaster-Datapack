@@ -80,7 +80,7 @@ dir buttons {
 
       title @s actionbar {"text": "Starting an acid rain"}
       function nadi:menu/pages/main
-      function nadi:disasters/acid_rain/start
+      function nadi:disasters/acid_rain/api/start
     }
 
     function blizzard {
@@ -88,7 +88,7 @@ dir buttons {
 
       title @s actionbar {"text": "Starting an blizzard"}
       function nadi:menu/pages/main
-      function nadi:disasters/blizzard/start
+      function nadi:disasters/blizzard/api/start
     }
 
     function doline {
@@ -96,7 +96,7 @@ dir buttons {
 
       title @s actionbar {"text": "Starting an doline"}
       function nadi:menu/pages/main
-      function nadi:disasters/doline/start
+      function nadi:disasters/doline/api/start
     }
 
     function hail {
@@ -104,7 +104,7 @@ dir buttons {
 
       title @s actionbar {"text": "Starting an hail"}
       function nadi:menu/pages/main
-      function nadi:disasters/hail/start
+      function nadi:disasters/hail/api/start
     }
 
     function meteoroid {
@@ -112,7 +112,7 @@ dir buttons {
 
       title @s actionbar {"text": "Starting an meteoroid"}
       function nadi:menu/pages/main
-      function nadi:disasters/meteoroid/start
+      function nadi:disasters/meteoroid/api/start
     }
 
     function thunderstorm {
@@ -120,7 +120,7 @@ dir buttons {
 
       title @s actionbar {"text": "Starting an thunderstorm"}
       function nadi:menu/pages/main
-      function nadi:disasters/thunderstorm/start
+      function nadi:disasters/thunderstorm/api/start
     }
   }
 

@@ -11,7 +11,12 @@ dir api {
 
   # Starts the natural disaster when selected
   function select {
-    execute if score .out0 nadi.data = $meteoroid nadi.meteoroid run function nadi:disasters/meteorite/start
+    execute if score .out0 nadi.data = $meteoroid nadi.meteoroid run function nadi:disasters/meteoroid/api/start
+  }
+
+  # Starts the natural disaster only if it is not yet active
+  function start {
+    execute if score %active nadi.meteoroid matches 0 run function nadi:disasters/meteoroid/start
   }
 
   function install {

@@ -11,7 +11,12 @@ dir api {
 
   # Starts the natural disaster when selected
   function select {
-    execute if score .out0 nadi.data = $doline nadi.doline run function nadi:disasters/doline/start
+    execute if score .out0 nadi.data = $doline nadi.doline run function nadi:disasters/doline/api/start
+  }
+
+  # Starts the natural disaster only if it is not yet active
+  function start {
+    execute if score %active nadi.doline matches 0 run function nadi:disasters/doline/start
   }
 
   function install {

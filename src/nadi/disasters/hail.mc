@@ -11,7 +11,12 @@ dir api {
 
   # Starts the natural disaster when selected
   function select {
-    execute if score .out0 nadi.data = $hail nadi.hail run function nadi:disasters/hail/start
+    execute if score .out0 nadi.data = $hail nadi.hail run function nadi:disasters/hail/api/start
+  }
+
+  # Starts the natural disaster only if it is not yet active
+  function start {
+    execute if score %active nadi.hail matches 0 run function nadi:disasters/hail/start
   }
 
   function install {

@@ -11,7 +11,12 @@ dir api {
 
   # Starts the natural disaster when selected
   function select {
-    execute if score .out0 nadi.data = $acidRain nadi.acidRain run function nadi:disasters/acid_rain/start
+    execute if score .out0 nadi.data = $acidRain nadi.acidRain run function nadi:disasters/acid_rain/api/start
+  }
+
+  # Starts the natural disaster only if it is not yet active
+  function start {
+    execute if score %active nadi.acidRain matches 0 run function nadi:disasters/acid_rain/start
   }
 
   function install {

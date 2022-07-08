@@ -11,7 +11,12 @@ dir api {
 
   # Starts the natural disaster when selected
   function select {
-    execute if score .out0 nadi.data = $thunderstorm nadi.thunderstorm run function nadi:disasters/thunderstorm/start
+    execute if score .out0 nadi.data = $thunderstorm nadi.thunderstorm run function nadi:disasters/thunderstorm/api/start
+  }
+
+  # Starts the natural disaster only if it is not yet active
+  function start {
+    execute if score %active nadi.thunderstorm matches 0 run function nadi:disasters/thunderstorm/start
   }
 
   function install {

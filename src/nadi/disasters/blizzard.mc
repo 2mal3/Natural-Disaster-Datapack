@@ -11,7 +11,12 @@ dir api {
 
   # Starts the natural disaster when selected
   function select {
-    execute if score .out0 nadi.data = $blizzard nadi.blizzard run function nadi:disasters/blizzard/start
+    execute if score .out0 nadi.data = $blizzard nadi.blizzard run function nadi:disasters/blizzard/api/start
+  }
+
+  # Starts the natural disaster only if it is not yet active
+  function start {
+    execute if score %active nadi.blizzard matches 0 run function nadi:disasters/blizzard/start
   }
 
   function install {
