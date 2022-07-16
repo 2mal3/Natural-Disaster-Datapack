@@ -140,6 +140,5 @@ function uninstall {
 
   # Disables the datapack
   datapack disable "file/Natural-Disaster-Datapack"
-  datapack disable "file/Natural-Disaster-Datapack-v3.0.0"
-  datapack disable "file/Natural-Disaster-Datapack-v3.0.0.zip"
+  datapack disable "file/Natural-Disaster-Datapack.zip"
 }
