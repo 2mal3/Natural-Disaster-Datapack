@@ -24,6 +24,7 @@ jobs:
         with:
           source: /home/runner/work/Natural-Disaster-Datapack/Natural-Disaster-Datapack
           minecraft: "1.19"
+          version: "0.54.8"
 
   json:
     runs-on: ubuntu-latest
