@@ -70,7 +70,7 @@ dir buttons {
     }
     execute if score %disasterActive nadi.data matches 1 run {
       title @s actionbar {"text": "Stopped natural diaster"}
-      function #nadi:api/stop
+      function #nadi:api/v1/stop
     }
   }
 
