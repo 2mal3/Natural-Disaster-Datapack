@@ -126,6 +126,12 @@ advancement nadi {
 function uninstall {
   log NaturalDisaster info server <Datapack uninstalled>
 
+  # Stop loops
+  schedule clear nadi:core/clock
+
+  # Stop natural disasters
+  function #nadi:api/v1/stop
+
   # Uninstall natural disasters
   function #nadi:api/v1/uninstall
 
