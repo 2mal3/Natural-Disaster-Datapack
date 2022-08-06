@@ -25,7 +25,7 @@ function clock {
     scoreboard players set .in0 nadi.data 1
     scoreboard players operation .in1 nadi.data = %disasterCount nadi.data
     function nadi:utilities/random
-    function #nadi:api/select
+    function #nadi:api/v1/select
 
     # Generate a new random time
     function nadi:core/random_time
@@ -64,7 +64,7 @@ function load {
     data merge storage nadi:data {root: {temp: 0}}
 
     # Install natural disasters
-    function #nadi:api/install
+    function #nadi:api/v1/install
 
     # Generate a first start time
     function nadi:core/random_time
@@ -72,7 +72,7 @@ function load {
     # Init disasters
     scoreboard players set %disasterCount nadi.data 0
     scoreboard players reset * nadi.disasters
-    function #nadi:api/register
+    function #nadi:api/v1/register
 
     # Start main clock
     function nadi:core/clock
@@ -127,7 +127,7 @@ function uninstall {
   log NaturalDisaster info server <Datapack uninstalled>
 
   # Uninstall natural disasters
-  function #nadi:api/uninstall
+  function #nadi:api/v1/uninstall
 
   # Deletes the scoreboards
   scoreboard objectives remove nadi.data
