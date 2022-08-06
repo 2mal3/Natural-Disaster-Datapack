@@ -124,6 +124,27 @@ advancement nadi {
   }
 }
 
+function reinstall {
+  log NaturalDisaster info server <Datapack reinstalled>
+
+  # Stop loops
+  schedule clear nadi:core/clock
+  # Stop natural disasters
+  function #nadi:api/v1/stop
+  # Uninstall natural disasters
+  function #nadi:api/v1/uninstall
+  # Deletes the scoreboards
+  scoreboard objectives remove nadi.data
+  scoreboard objectives remove 2mal3.debugMode
+  # Deletes storage
+  data remove storage nadi:data root
+
+  # Installs the datapack after a second
+  schedule 1s replace {
+    function nadi:core/install
+  }
+}
+
 function uninstall {
   log NaturalDisaster info server <Datapack uninstalled>
 

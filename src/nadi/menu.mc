@@ -38,8 +38,10 @@ dir pages {
     # tellraw @s [{"text": "?", "color": "dark_aqua", "bold": true}, {"text": " Wiki", "color": "aqua", "bold": false, "clickEvent": {"action": "open_url", "value": "https://github.com/2mal3/Natural-Disaster-Datapack/wiki"}, "hoverEvent": {"action": "show_text", "contents": "§7click to open link"}}]
     tellraw @s {"text": ""}
 
+    # Reinstall datapack
+    tellraw @s [{"text": "♻", "color": "dark_red"}, {"text": " Reinstall datapack ➤", "color": "red", "clickEvent": {"action": "run_command", "value": "/function nadi:menu/buttons/reinstall"}, "hoverEvent": {"action": "show_text", "contents": "§7*click*"}}]
     # Uninstall the datapack
-    tellraw @s [{"text": "⚠", "color": "dark_red"}, {"text": " Uninstall the datapack ➤", "color": "red", "clickEvent": {"action": "run_command", "value": "/function nadi:menu/buttons/uninstall"}, "hoverEvent": {"action": "show_text", "contents": "§7*click*"}}]
+    tellraw @s [{"text": "⚠", "color": "dark_red"}, {"text": " Uninstall datapack ➤", "color": "red", "clickEvent": {"action": "run_command", "value": "/function nadi:menu/buttons/uninstall"}, "hoverEvent": {"action": "show_text", "contents": "§7*click*"}}]
     tellraw @s {"text": ""}
   }
 
@@ -62,6 +64,14 @@ dir pages {
 
 # Actions of buttons in the gui
 dir buttons {
+  function reinstall {
+    function nadi:menu/click
+    tellraw @s {"text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
+
+    tellraw @s [{"text": "Do you really want to reinstall the Natural Disaster Datapack?\n", "color": "red"}, {"text": "[ No ]", "color": "dark_green", "clickEvent": {"action": "run_command", "value": "/function nadi:menu/pages/main"}, "hoverEvent":{"action": "show_text", "contents": "§7*click*"}}, {"text": "  [ Yes ]","color":"dark_red", "clickEvent": {"action": "run_command", "value": "/function nadi:core/reinstall"}, "hoverEvent": {"action": "show_text", "contents": "§7*click*"}}]
+    tellraw @s {"text":""}
+  }
+
   function stop_disaster {
     function nadi:menu/click
 
