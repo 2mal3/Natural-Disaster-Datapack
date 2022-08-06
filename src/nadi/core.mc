@@ -41,50 +41,51 @@ function load {
 
   # scoreboard players set %installed nadi.data 0
   # Initializes the datapack at the first startup or new version
-  execute unless score %installed nadi.data matches 1 run {
-    log NaturalDisaster info server <Datapack installed>
-    scoreboard players set %installed nadi.data 1
-
-    # Add scoreboards
-    scoreboard objectives add nadi.data dummy
-    scoreboard objectives add 2mal3.debugMode dummy
-    # Set the version in format: xx.xx.xx
-    scoreboard players set $version nadi.data 030000
-    # Init variables
-    scoreboard players set %preventSleep nadi.data 0
-    scoreboard players set %disasterActive nadi.data 0
-    # Set up random number generator
-    execute store result score .rng nadi.data run seed
-    scoreboard players set $65536 nadi.data 65536
-    scoreboard players set $rng.multiplier nadi.data 1664525
-    scoreboard players set $rng.increment nadi.data 1013904223
-    scoreboard players set .rng.bitSwap nadi.data 0
-    # Create storage
-    #declare storage nadi:data
-    data merge storage nadi:data {root: {temp: 0}}
-
-    # Install natural disasters
-    function #nadi:api/v1/install
-
-    # Generate a first start time
-    function nadi:core/random_time
-
-    # Init disasters
-    scoreboard players set %disasterCount nadi.data 0
-    scoreboard players reset * nadi.disasters
-    function #nadi:api/v1/register
-
-    # Start main clock
-    function nadi:core/clock
-
-    # Sent installation message after 4 seconds
-    schedule 4s replace {
-      tellraw @a {"text":"Natural Disaster Datapack v3.0.0 by 2mal3 was installed!","color":"green"}
-    }
-  }
+  execute unless score %installed nadi.data matches 1 run function nadi:core/install
   execute if score %installed nadi.data matches 1 unless score $version nadi.data matches 030000 run {
     log NaturalDisaster info server <Updated datapack>
     scoreboard players set $version nadi.data 030000
+  }
+}
+
+function install {
+  log NaturalDisaster info server <Datapack installed>
+  scoreboard players set %installed nadi.data 1
+
+  # Add scoreboards
+  scoreboard objectives add nadi.data dummy
+  scoreboard objectives add 2mal3.debugMode dummy
+  # Set the version in format: xx.xx.xx
+  scoreboard players set $version nadi.data 030000
+  # Init variables
+  scoreboard players set %preventSleep nadi.data 0
+  scoreboard players set %disasterActive nadi.data 0
+  # Set up random number generator
+  execute store result score .rng nadi.data run seed
+  scoreboard players set $65536 nadi.data 65536
+  scoreboard players set $rng.multiplier nadi.data 1664525
+  scoreboard players set $rng.increment nadi.data 1013904223
+  scoreboard players set .rng.bitSwap nadi.data 0
+  # Create storage
+  #declare storage nadi:data
+  data merge storage nadi:data {root: {temp: 0}}
+
+  # Install natural disasters
+  function #nadi:api/v1/install
+
+  # Generate a first start time
+  function nadi:core/random_time
+
+  # Init disasters
+  scoreboard players set %disasterCount nadi.data 0
+  function #nadi:api/v1/register
+
+  # Start main clock
+  schedule function nadi:core/clock 60s replace
+
+  # Sent installation message after 4 seconds
+  schedule 4s replace {
+    tellraw @a {"text":"Natural Disaster Datapack v3.0.0 by 2mal3 was installed!","color":"green"}
   }
 }
 
@@ -128,13 +129,10 @@ function uninstall {
 
   # Stop loops
   schedule clear nadi:core/clock
-
   # Stop natural disasters
   function #nadi:api/v1/stop
-
   # Uninstall natural disasters
   function #nadi:api/v1/uninstall
-
   # Deletes the scoreboards
   scoreboard objectives remove nadi.data
   scoreboard objectives remove 2mal3.debugMode
