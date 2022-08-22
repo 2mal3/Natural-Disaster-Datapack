@@ -94,10 +94,10 @@ dir clock {
     # Removes blocks from the overword surface
     execute as @a[predicate=nadi:utilities/in_overworld,gamemode=!spectator] at @s run {
       LOOP(10, i) {
-        summon minecraft:area_effect_cloud ~ ~ ~ {Tags: ["nadi.acidRain"]}
+        summon minecraft:marker ~ ~ ~ {Tags: ["nadi.acidRain"]}
       }
-      spreadplayers ~ ~ 1 64 false @e[type=minecraft:area_effect_cloud,tag=nadi.acidRain,distance=..1]
-      execute as @e[type=minecraft:area_effect_cloud,tag=nadi.acidRain,distance=..1] at @s positioned ~-1 ~-1 ~-1 run {
+      spreadplayers ~ ~ 1 64 false @e[type=minecraft:marker,tag=nadi.acidRain,distance=..1]
+      execute as @e[type=minecraft:marker,tag=nadi.acidRain,distance=..1] at @s positioned ~-1 ~-1 ~-1 run {
         LOOP(3, x) {
           LOOP(3, y) {
             execute positioned ~<%x%> ~ ~<%y%> unless block ~ ~ ~ #nadi:disasters/acid_rain/ignore if block ~ ~1 ~ #nadi:utilities/air_like run setblock ~ ~ ~ minecraft:air

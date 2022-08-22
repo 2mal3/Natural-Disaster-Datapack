@@ -106,11 +106,11 @@ dir clock {
 
       # Falling snow
       LOOP(100, i) {
-        summon minecraft:area_effect_cloud ~ ~ ~ {Tags: ["nadi.snow"]}
+        summon minecraft:marker ~ ~ ~ {Tags: ["nadi.snow"]}
       }
-      spreadplayers ~ ~ 2 64 false @e[type=minecraft:area_effect_cloud,tag=nadi.snow,distance=..1]
+      spreadplayers ~ ~ 2 64 false @e[type=minecraft:marker,tag=nadi.snow,distance=..1]
     }
-    execute as @e[type=minecraft:area_effect_cloud,tag=nadi.snow] at @s run {
+    execute as @e[type=minecraft:marker,tag=nadi.snow] at @s run {
       name test
 
       execute if block ~ ~-0.1 ~ #nadi:disasters/blizzard/replace positioned ~ ~-0.1 ~ run function nadi:disasters/blizzard/place

@@ -81,8 +81,8 @@ dir clock {
     schedule function $block 1s replace
 
     execute as @a[gamemode=!spectator,predicate=nadi:utilities/in_overworld] at @s if predicate nadi:utilities/random/30 run {
-      summon minecraft:area_effect_cloud ~ ~ ~ {Tags: [nadi.thunderstorm]}
-      execute as @e[type=minecraft:area_effect_cloud,tag=nadi.thunderstorm,distance=..1] at @s run {
+      summon minecraft:marker ~ ~ ~ {Tags: [nadi.thunderstorm]}
+      execute as @e[type=minecraft:marker,tag=nadi.thunderstorm,distance=..1] at @s run {
         spreadplayers ~ ~ 0 64 true @s
         execute at @s run summon minecraft:lightning_bolt ~ ~ ~
       }
