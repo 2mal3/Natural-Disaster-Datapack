@@ -1,0 +1,88 @@
+import ../../../macros/log.mcm
+
+
+## API hooks
+dir api {
+  # Registers the natural disaster
+  function register {
+    function nadi:api/register
+    scoreboard players operation $<name> nadi.<name> = .out0 nadi.data
+  }
+
+  # Starts the natural disaster when selected
+  function select {
+    execute if score .out0 nadi.data = $<name> nadi.<name> run function nadi:disasters/<name>/api/start
+  }
+
+  # Starts the natural disaster only if it is not yet active
+  function start {
+    execute if score %active nadi.<name> matches 0 run function nadi:disasters/<name>/start
+  }
+
+  function install {
+    scoreboard objectives add nadi.<name> dummy
+
+    scoreboard players set %time nadi.<name> 0
+    scoreboard players set %active nadi.<name> 0
+
+    scoreboard players set $enabled nadi.<name> 1
+    scoreboard players set $minTime nadi.<name> 10
+    scoreboard players set $maxTime nadi.<name> 15
+  }
+
+  function uninstall {
+    scoreboard objectives remove nadi.<name>
+  }
+}
+
+
+## Disaster
+function start {
+  log NaturalDisaster info server <Start <name>>
+  scoreboard players set %active nadi.<name> 1
+  scoreboard players set %disasterActive nadi.data 0
+
+  # Generate a random duration for the disaster
+  scoreboard players operation .in0 nadi.data = $minTime nadi.<name>
+  scoreboard players operation .in1 nadi.data = $maxTime nadi.<name>
+  function nadi:utilities/random
+  scoreboard players operation %time nadi.<name> = .out0 nadi.data
+
+  # Disable sleeping
+  scoreboard players set %preventSleep nadi.data 1
+
+  # Start clocks
+  schedule function nadi:disasters/<name>/clock/minute 60s replace
+  schedule function nadi:disasters/<name>/clock/second 1s replace
+}
+
+function stop {
+  log NaturalDisaster info server <Stop <name>>
+  scoreboard players set %active nadi.<name> 0
+  scoreboard players set %disasterActive nadi.data 0
+
+  scoreboard players set %time nadi.<name> 0
+
+  # Enable sleeping
+  scoreboard players set %preventSleep nadi.data 0
+
+  # Stop clocks
+  schedule clear nadi:disasters/<name>/clock/minute
+  schedule clear nadi:disasters/<name>/clock/second
+}
+
+# Clocks
+dir clock {
+  function second {
+    schedule function $block 1s replace
+
+  }
+
+  function minute {
+    schedule function $block 60s replace
+
+    # Count time
+    scoreboard players remove %time nadi.<name> 1
+    execute if score %time nadi.<name> matches 0 run function nadi:disasters/<name>/stop
+  }
+}
