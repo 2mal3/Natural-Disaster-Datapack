@@ -54,6 +54,7 @@ function install {
 
   # Add scoreboards
   scoreboard objectives add nadi.data dummy
+  scoreboard objectives add nadi.random dummy
   scoreboard objectives add 2mal3.debugMode dummy
   # Set the version in format: xx.xx.xx
   scoreboard players set $version nadi.data 030000
@@ -61,11 +62,11 @@ function install {
   scoreboard players set %preventSleep nadi.data 0
   scoreboard players set %disasterActive nadi.data 0
   # Set up random number generator
-  execute store result score .rng nadi.data run seed
-  scoreboard players set $65536 nadi.data 65536
-  scoreboard players set $rng.multiplier nadi.data 1664525
-  scoreboard players set $rng.increment nadi.data 1013904223
-  scoreboard players set .rng.bitSwap nadi.data 0
+  execute store result score .rng nadi.random run seed
+  scoreboard players set $65536 nadi.random 65536
+  scoreboard players set $rng.multiplier nadi.random 1664525
+  scoreboard players set $rng.increment nadi.random 1013904223
+  scoreboard players set .rng.bitSwap nadi.random 0
   # Create storage
   #declare storage nadi:data
   data merge storage nadi:data {root: {temp: 0}}
@@ -156,6 +157,7 @@ function uninstall {
   function #nadi:api/v1/uninstall
   # Deletes the scoreboards
   scoreboard objectives remove nadi.data
+  scoreboard objectives remove nadi.random
   scoreboard objectives remove 2mal3.debugMode
   # Deletes storage
   data remove storage nadi:data root

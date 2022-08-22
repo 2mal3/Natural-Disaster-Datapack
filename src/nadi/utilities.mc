@@ -4,20 +4,20 @@ import ../../macros/log.mcm
 ## Random number generator
 function random {
   # Generate random number
-  scoreboard players operation .rng nadi.data *= $rng.multiplier nadi.data
-  scoreboard players operation .rng nadi.data += $rng.increment nadi.data
+  scoreboard players operation .rng nadi.random *= $rng.multiplier nadi.random
+  scoreboard players operation .rng nadi.random += $rng.increment nadi.random
 
   # Swap bits
-  scoreboard players operation .rng.bitSwap nadi.data = .rng nadi.data
-  scoreboard players operation .rng.bitSwap nadi.data /= $65536 nadi.data
-  scoreboard players operation .rng nadi.data *= $65536 nadi.data
-  scoreboard players operation .rng nadi.data += .rng.bitSwap nadi.data
+  scoreboard players operation .rng.bitSwap nadi.random = .rng nadi.random
+  scoreboard players operation .rng.bitSwap nadi.random /= $65536 nadi.random
+  scoreboard players operation .rng nadi.random *= $65536 nadi.random
+  scoreboard players operation .rng nadi.random += .rng.bitSwap nadi.random
 
   # Return output
   scoreboard players operation .temp0 nadi.data = .in1 nadi.data
   scoreboard players operation .temp0 nadi.data -= .in0 nadi.data
   scoreboard players add .temp0 nadi.data 1
-  scoreboard players operation .out0 nadi.data = .rng nadi.data
+  scoreboard players operation .out0 nadi.data = .rng nadi.random
   scoreboard players operation .out0 nadi.data %= .temp0 nadi.data
   scoreboard players operation .out0 nadi.data += .in0 nadi.data
 }
