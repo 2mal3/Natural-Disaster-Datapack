@@ -49,12 +49,12 @@ dir pages {
     function nadi:menu/click
     tellraw @s {"text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
 
-    tellraw @s [{"text": "☁", "color": "yellow"}, {"text": " Acid Rain", "color": "gold", "clickEvent": {"action": "run_command", "value": "/function nadi:menu/buttons/start_disaster/acid_rain"}, "hoverEvent": {"action": "show_text", "contents": "§7*click*"}}]
+    tellraw @s [{"text": "🌧", "color": "yellow"}, {"text": " Acid Rain", "color": "gold", "clickEvent": {"action": "run_command", "value": "/function nadi:menu/buttons/start_disaster/acid_rain"}, "hoverEvent": {"action": "show_text", "contents": "§7*click*"}}]
     tellraw @s [{"text": "❄", "color": "yellow"}, {"text": " Blizzard", "color": "gold", "clickEvent": {"action": "run_command", "value": "/function nadi:menu/buttons/start_disaster/blizzard"}, "hoverEvent": {"action": "show_text", "contents": "§7*click*"}}]
     tellraw @s [{"text": "⏺", "color": "yellow"}, {"text": " Doline", "color": "gold", "clickEvent": {"action": "run_command", "value": "/function nadi:menu/buttons/start_disaster/doline"}, "hoverEvent": {"action": "show_text", "contents": "§7*click*"}}]
-    tellraw @s [{"text": "🌧", "color": "yellow"}, {"text": " Hail", "color": "gold", "clickEvent": {"action": "run_command", "value": "/function nadi:menu/buttons/start_disaster/hail"}, "hoverEvent": {"action": "show_text", "contents": "§7*click*"}}]
+    tellraw @s [{"text": "⬛", "color": "yellow"}, {"text": " Hail", "color": "gold", "clickEvent": {"action": "run_command", "value": "/function nadi:menu/buttons/start_disaster/hail"}, "hoverEvent": {"action": "show_text", "contents": "§7*click*"}}]
     tellraw @s [{"text": "☄", "color": "yellow"}, {"text": " Meteoroid", "color": "gold", "clickEvent": {"action": "run_command", "value": "/function nadi:menu/buttons/start_disaster/meteoroid"}, "hoverEvent": {"action": "show_text", "contents": "§7*click*"}}]
-    tellraw @s [{"text": "⛈", "color": "yellow"}, {"text": " Thunderstorm", "color": "gold", "clickEvent": {"action": "run_command", "value": "/function nadi:menu/buttons/start_disaster/thunderstorm"}, "hoverEvent": {"action": "show_text", "contents": "§7*click*"}}]
+    tellraw @s [{"text": "⚡", "color": "yellow"}, {"text": " Thunderstorm", "color": "gold", "clickEvent": {"action": "run_command", "value": "/function nadi:menu/buttons/start_disaster/thunderstorm"}, "hoverEvent": {"action": "show_text", "contents": "§7*click*"}}]
 
     tellraw @s {"text": ""}
     tellraw @s {"text": "← Back", "color": "red", "clickEvent": {"action": "run_command", "value": "/function nadi:menu/pages/main"}, "hoverEvent": {"action": "show_text", "contents": "§7*click*"}}
