@@ -40,7 +40,7 @@ function start {
   scoreboard players set %disasterActive nadi.data 1
 
   # Chooses a random player to spawn the meteoroid at
-  execute as @r[gamemode=!spectator] at @s positioned ~ 300 ~ run {
+  execute as @r[gamemode=!spectator,predicate=nadi:utilities/in_overworld] at @s positioned ~ 300 ~ run {
     place template nadi:meteoroid/meteoroid ~-4 ~ ~-4
     # "910fb361-682f-4f5d-a98c-717fcc4c9bcc"
     summon minecraft:marker ~ ~4 ~ {UUID: [I; -1861242015, 1747930973, -1450413697, -867394612], Tags: ["global.ignore"]}
