@@ -25,6 +25,11 @@ function random {
 
 ## Random predicates
 dir random {
+  predicate 20 {
+    "condition": "minecraft:random_chance",
+    "chance": 0.2
+  }
+
   predicate 30 {
     "condition": "minecraft:random_chance",
     "chance": 0.3
