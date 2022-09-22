@@ -95,10 +95,6 @@ function convert {
   }
 }
 
-function tick {
-  execute as @e[type=minecraft:falling_block,tag=nadi.block] store result entity @s Air int 1 run time query gametime
-}
-
 
 # Clocks
 dir clock {
@@ -120,6 +116,9 @@ dir clock {
 
       execute as @e[type=minecraft:falling_block,distance=..64] at @s facing entity 817a5b73-5e97-42ba-acea-796462e8eb9c eyes run tp @s ^-0.3 ^0.2 ^
     }
+
+    # Airtoggle tha falling blocks so they move visualy smoothly
+    execute as @e[type=minecraft:falling_block,tag=nadi.block] store result entity @s Air int 1 run time query gametime
   }
 
   function second {
