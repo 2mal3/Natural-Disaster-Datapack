@@ -95,6 +95,28 @@ function convert {
   }
 }
 
+function random_motion {
+  tag @s add nadi.hurricane.ignore
+
+  # x speed from -1.5 to +1.5
+  scoreboard players set .in0 nadi.data -150
+  scoreboard players set .in1 nadi.data 150
+  function nadi:utilities/random
+  execute store result entity @s Motion[0] double 0.01 run scoreboard players get .out0 nadi.data
+  # y speed from -0.5 to +1.15
+  scoreboard players set .in0 nadi.data -50
+  scoreboard players set .in1 nadi.data 150
+  function nadi:utilities/random
+  execute store result entity @s Motion[1] double 0.01 run scoreboard players get .out0 nadi.data
+  # z speed from -1.5 to +1.5
+  scoreboard players set .in0 nadi.data -150
+  scoreboard players set .in1 nadi.data 150
+  function nadi:utilities/random
+  execute store result entity @s Motion[2] double 0.01 run scoreboard players get .out0 nadi.data
+
+  data merge entity @s {NoGravity: 0b, Time: 1, HurtEntities: 1b, FallHurtMax: 40, FallHurtAmount: 0.05f}
+}
+
 
 # Clocks
 dir clock {
@@ -114,7 +136,11 @@ dir clock {
         effect give @s minecraft:levitation 1 255 true
       }
 
-      execute as @e[type=minecraft:falling_block,distance=..64] at @s facing entity 817a5b73-5e97-42ba-acea-796462e8eb9c eyes run tp @s ^-0.3 ^0.2 ^
+      execute as @e[type=minecraft:falling_block,tag=!nadi.hurricane.ignore,distance=..64] at @s run {
+        execute facing entity 817a5b73-5e97-42ba-acea-796462e8eb9c eyes run tp @s ^-0.3 ^0.2 ^
+        # Shoots the block away if it reaches the center of the hurricane
+        execute if predicate nadi:utilities/random/20 positioned ~-1 ~ ~-1 if entity @e[type=minecraft:wandering_trader,tag=nadi.hurricane,dx=4,dy=-50,dz=4] run function nadi:disasters/hurricane/random_motion
+      }
     }
 
     # Airtoggle tha falling blocks so they move visualy smoothly
