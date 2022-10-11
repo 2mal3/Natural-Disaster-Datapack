@@ -49,7 +49,7 @@ function start {
   # Place the hurricane near an player
   # 817a5b73-5e97-42ba-acea-796462e8eb9c
   execute as @r[gamemode=!spectator,predicate=nadi:utilities/in_overworld] at @s run {
-    summon minecraft:wandering_trader ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Offers:{},UUID:[I;-2122687629,1586971322,-1393919644,1659431836],Tags:["nadi.hurricane"]}
+    summon minecraft:wandering_trader ~ ~ ~ {Silent: 1b, Invulnerable: 1b, PersistenceRequired: 1b, Offers: {}, UUID: [I; -2122687629, 1586971322, -1393919644, 1659431836], Tags: ["nadi.hurricane"]}
     spreadplayers ~ ~ 0 64 false 817a5b73-5e97-42ba-acea-796462e8eb9c
   }
 
@@ -82,7 +82,7 @@ function stop {
 
 function convert {
   setblock ~ ~ ~ minecraft:air destroy
-  summon minecraft:falling_block ~ ~1 ~ {Tags:[nadi.init,nadi.block], NoGravity:1b}
+  summon minecraft:falling_block ~ ~1 ~ {Tags: [nadi.init, nadi.block], NoGravity: 1b}
   execute as @e[type=minecraft:falling_block,tag=nadi.block,tag=nadi.init] run {
     tag @s remove nadi.init
 
@@ -164,10 +164,10 @@ dir clock {
       # Randomly explode blocks nearby
       execute if predicate nadi:utilities/random/20 run {
         # bfca680d-0b62-4c8a-b1dc-360bb83a8d3b
-        summon minecraft:marker ~ ~ ~ {UUID:[I;-1077254131,190991498,-1310968309,-1204122309]}
+        summon minecraft:marker ~ ~ ~ {UUID: [I; -1077254131, 190991498, -1310968309, -1204122309]}
         spreadplayers ~ ~ 0 32 false bfca680d-0b62-4c8a-b1dc-360bb83a8d3b
         execute as bfca680d-0b62-4c8a-b1dc-360bb83a8d3b at @s run {
-          summon minecraft:creeper ~ ~ ~ {Fuse:0}
+          summon minecraft:creeper ~ ~ ~ {Fuse: 0}
           kill @s
         }
       }
@@ -181,7 +181,7 @@ dir clock {
     execute as 817a5b73-5e97-42ba-acea-796462e8eb9c at @s run {
       execute as @p[gamemode=!spectator] at @s run {
         # 8b57b450-4efe-4efe-8573-6f0595e45446
-        summon minecraft:marker ~ ~ ~ {UUID:[I;-1957186480,1325289214,-2056032507,-1780198330]}
+        summon minecraft:marker ~ ~ ~ {UUID: [I; -1957186480, 1325289214, -2056032507, -1780198330]}
         spreadplayers ~ ~ 0 32 false 8b57b450-4efe-4efe-8573-6f0595e45446
       }
 

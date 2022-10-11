@@ -61,6 +61,7 @@ function install {
   # Init variables
   scoreboard players set %preventSleep nadi.data 0
   scoreboard players set %disasterActive nadi.data 0
+  scoreboard players set %firstPlayerJoin nadi.data 0
   # Set up random number generator
   execute store result score .rng nadi.random run seed
   scoreboard players set $65536 nadi.random 65536
@@ -91,9 +92,14 @@ function install {
 }
 
 function first_join {
-  ## Warns the player if he uses a not supported minecraft version
-  execute store result score .temp0 nadi.data run data get entity @s DataVersion
-  execute unless score .temp0 nadi.data matches 3095.. run tellraw @s [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"gold"},{"text":"/","color":"gray"},{"text":"WARN","color":"gold"},{"text": "/","color": "gray"},{"text": "Server","color": "gold"},{"text":"]: ","color":"gray"},{"text":"This Minecraft version is not supported by the datapack. Please use the 1.18.x to prevent errors.","color":"gold"}]
+  # Only send the messages to the first player that joins the world
+  execute if score %firstPlayerJoin nadi.data matches 0 run {
+    scoreboard players set %first_join nadi.data 1
+
+    # Warns the player if he uses a not supported minecraft version
+    execute store result score .temp0 nadi.data run data get entity @s DataVersion
+    execute unless score .temp0 nadi.data matches 3095.. run tellraw @s [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"gold"},{"text":"/","color":"gray"},{"text":"WARN","color":"gold"},{"text": "/","color": "gray"},{"text": "Server","color": "gold"},{"text":"]: ","color":"gray"},{"text":"This Minecraft version is not supported by the datapack. Please use the 1.18.x to prevent errors.","color":"gold"}]
+  }
 }
 
 advancement first_join {
