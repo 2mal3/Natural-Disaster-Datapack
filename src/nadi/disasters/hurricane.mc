@@ -143,7 +143,7 @@ dir clock {
       }
     }
 
-    # Airtoggle tha falling blocks so they move visualy smoothly
+    # Airtoggle tha falling blocks so they move visually smoothly
     execute as @e[type=minecraft:falling_block,tag=nadi.block] store result entity @s Air int 1 run time query gametime
   }
 
