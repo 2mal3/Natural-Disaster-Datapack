@@ -4,7 +4,7 @@ import ../../../macros/log.mcm
 ## API hooks
 dir api {
   function register {
-    function nadi:api/register
+    function nadi:api/v1/register
     scoreboard players operation $hurricane nadi.hurricane = .out0 nadi.data
   }
 

@@ -5,7 +5,7 @@ import ../../../macros/log.mcm
 dir api {
   # Registers the natural disaster
   function register {
-    function nadi:api/register
+    function nadi:api/v1/register
     scoreboard players operation $hail nadi.hail = .out0 nadi.data
   }
 
