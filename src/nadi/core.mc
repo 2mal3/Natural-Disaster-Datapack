@@ -46,6 +46,10 @@ function load {
     log NaturalDisaster info server <Updated datapack>
     scoreboard players set $version nadi.data 030000
   }
+
+  # Init disasters
+  scoreboard players set %disasterCount nadi.data 0
+  function #nadi:api/v1/register
 }
 
 function install {
@@ -77,10 +81,6 @@ function install {
 
   # Generate a first start time
   function nadi:core/random_time
-
-  # Init disasters
-  scoreboard players set %disasterCount nadi.data 0
-  function #nadi:api/v1/register
 
   # Start main clock
   schedule function nadi:core/clock 60s replace
