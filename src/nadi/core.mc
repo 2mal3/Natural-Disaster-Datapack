@@ -69,9 +69,9 @@ function install {
   # Set up random number generator
   execute store result score .rng nadi.random run seed
   scoreboard players set $65536 nadi.random 65536
-  scoreboard players set $rng.multiplier nadi.random 1664525
-  scoreboard players set $rng.increment nadi.random 1013904223
-  scoreboard players set .rng.bitSwap nadi.random 0
+  scoreboard players set $multiplier nadi.random 1664525
+  scoreboard players set $increment nadi.random 1013904223
+  scoreboard players set .bitSwap nadi.random 0
   # Create storage
   #declare storage nadi:data
   data merge storage nadi:data {root: {temp: 0}}
