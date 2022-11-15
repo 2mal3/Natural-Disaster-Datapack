@@ -17,7 +17,7 @@ dir pages {
     function nadi:menu/click
     tellraw @s {"text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
 
-    tellraw @s [{"text": "       Natural Disaster Datapack ", "bold": true, "color": "gold", "hoverEvent": {"action": "show_text", "contents": "§7by 2mal3"}}, {"text": "3", "color": "red", "bold": true}, {"text": ".", "color": "gold", "bold": true}, {"text": "0", "color": "red", "bold": true}, {"text": ".", "color": "gold", "bold": true}, {"text": "0", "color": "red", "bold": true}]
+    tellraw @s [{"text": "       Natural Disaster Datapack ", "bold": true, "color": "gold", "hoverEvent": {"action": "show_text", "contents": "§7by 2mal3"}}, {"text": "<%config.version.str%>", "color": "red", "bold": false}]
     tellraw @s {"text" : "                                                                ", "color": "yellow", "strikethrough": true, "clickEvent": {"action": "run_command", "value": "/function nadi:menu/pages/main"}}
     tellraw @s {"text": ""}
 

@@ -42,9 +42,9 @@ function load {
   # scoreboard players set %installed nadi.data 0
   # Initializes the datapack at the first startup or new version
   execute unless score %installed nadi.data matches 1 run function nadi:core/install
-  execute if score %installed nadi.data matches 1 unless score $version nadi.data matches 030000 run {
+  execute if score %installed nadi.data matches 1 unless score $version nadi.data matches <%config.version.int%> run {
     log NaturalDisaster info server <Updated datapack>
-    scoreboard players set $version nadi.data 030000
+    scoreboard players set $version nadi.data <%config.version.int%>
   }
 
   # Init disasters
@@ -61,7 +61,7 @@ function install {
   scoreboard objectives add nadi.random dummy
   scoreboard objectives add 2mal3.debugMode dummy
   # Set the version in format: xx.xx.xx
-  scoreboard players set $version nadi.data 030000
+  scoreboard players set $version nadi.data <%config.version.int%>
   # Init variables
   scoreboard players set %preventSleep nadi.data 0
   scoreboard players set %disasterActive nadi.data 0
@@ -87,7 +87,7 @@ function install {
 
   # Sent installation message after 4 seconds
   schedule 4s replace {
-    tellraw @a {"text":"Natural Disaster Datapack v3.0.0 by 2mal3 was installed!","color":"green"}
+    tellraw @a {"text":"Natural Disaster Datapack <%config.version.str%> by 2mal3 was installed!","color":"green"}
   }
 }
 
@@ -115,7 +115,7 @@ advancement first_join {
 
 advancement nadi {
   "display": {
-    "title": "Natural Disaster v3.0.0",
+    "title": "Natural Disaster <%config.version.str%>",
     "description": "<datapack description>",
     "icon": {
       "item": "minecraft:lava_bucket"
@@ -169,7 +169,7 @@ function uninstall {
   data remove storage nadi:data root
 
   # Sends an uninstallation message to all players
-  tellraw @a {"text":"Natural Disaster Datapack v3.0.0 by 2mal3 was successfully uninstalled.","color": "green"}
+  tellraw @a {"text":"Natural Disaster Datapack <%config.version.str%> by 2mal3 was successfully uninstalled.","color": "green"}
 
   # Disables the datapack
   datapack disable "file/Natural-Disaster-Datapack"
