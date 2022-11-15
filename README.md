@@ -16,7 +16,7 @@ If you still don't like something, or if you only want to test individual natura
 - as performant as possible
 - actively developed
 
-## 💥 Natural disasters
+## 💥 Natural Disasters
 
 - Acid rain
 - Blizzard (snowstorm)
@@ -25,7 +25,7 @@ If you still don't like something, or if you only want to test individual natura
 - Meteorite
 - Thunderstorm
 
-## Planned natural disasters
+## Planned Natural Disasters
 
 - Volcanoes
 - Tsunamis
