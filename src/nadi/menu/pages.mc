@@ -43,7 +43,7 @@ function start_disaster {
   tellraw @s [{"text": "⬛", "color": "yellow"}, {"text": " Hail", "color": "gold", "clickEvent": {"action": "run_command", "value": "/function nadi:menu/buttons/start_disaster/hail"}, "hoverEvent": {"action": "show_text", "contents": "§7*click*"}}]
   tellraw @s [{"text": "☄", "color": "yellow"}, {"text": " Meteoroid", "color": "gold", "clickEvent": {"action": "run_command", "value": "/function nadi:menu/buttons/start_disaster/meteoroid"}, "hoverEvent": {"action": "show_text", "contents": "§7*click*"}}]
   tellraw @s [{"text": "⚡", "color": "yellow"}, {"text": " Thunderstorm", "color": "gold", "clickEvent": {"action": "run_command", "value": "/function nadi:menu/buttons/start_disaster/thunderstorm"}, "hoverEvent": {"action": "show_text", "contents": "§7*click*"}}]
-  tellraw @s [{"text": "≈", "color": "yellow"}, {"text": " Hurricane", "color": "gold", "clickEvent": {"action": "run_command", "value": "/function nadi:menu/buttons/start_disaster/hurricane"}, "hoverEvent": {"action": "show_text", "contents": "§7*click*"}}]
+  # tellraw @s [{"text": "≈", "color": "yellow"}, {"text": " Hurricane", "color": "gold", "clickEvent": {"action": "run_command", "value": "/function nadi:menu/buttons/start_disaster/hurricane"}, "hoverEvent": {"action": "show_text", "contents": "§7*click*"}}]
 
   tellraw @s {"text": ""}
   tellraw @s {"text": "← Back", "color": "red", "clickEvent": {"action": "run_command", "value": "/function nadi:menu/pages/main"}, "hoverEvent": {"action": "show_text", "contents": "§7*click*"}}
