@@ -8,7 +8,6 @@ dir v1 {
     nadi:disasters/blizzard/api/register
     nadi:disasters/meteoroid/api/select
     nadi:disasters/hail/api/select
-    nadi:disasters/hurricane/api/select
   }
 
   functions select {
@@ -18,7 +17,6 @@ dir v1 {
     nadi:disasters/blizzard/api/select
     nadi:disasters/meteoroid/api/select
     nadi:disasters/hail/api/select
-    nadi:disasters/hurricane/api/select
   }
 
   functions stop {
@@ -28,7 +26,6 @@ dir v1 {
     nadi:disasters/blizzard/stop
     nadi:disasters/meteoroid/stop
     nadi:disasters/hail/stop
-    nadi:disasters/hurricane/stop
   }
 
   functions install {
@@ -38,7 +35,6 @@ dir v1 {
     nadi:disasters/blizzard/api/install
     nadi:disasters/meteoroid/api/install
     nadi:disasters/hail/api/install
-    nadi:disasters/hurricane/api/install
   }
 
   functions uninstall {
@@ -48,7 +44,6 @@ dir v1 {
     nadi:disasters/blizzard/api/uninstall
     nadi:disasters/meteoroid/api/uninstall
     nadi:disasters/hail/api/uninstall
-    nadi:disasters/hurricane/api/uninstall
   }
 
   # Functions needed for the api
