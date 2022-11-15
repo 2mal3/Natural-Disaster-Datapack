@@ -95,10 +95,6 @@ function first_join {
   # Only send the messages to the first player that joins the world
   execute if score %firstPlayerJoin nadi.data matches 0 run {
     scoreboard players set %first_join nadi.data 1
-
-    # Warns the player if he uses a not supported minecraft version
-    execute store result score .temp0 nadi.data run data get entity @s DataVersion
-    execute unless score .temp0 nadi.data matches 3095.. run tellraw @s [{"text":"[","color":"gray"},{"text":"NaturalDisaster","color":"gold"},{"text":"/","color":"gray"},{"text":"WARN","color":"gold"},{"text": "/","color": "gray"},{"text": "Server","color": "gold"},{"text":"]: ","color":"gray"},{"text":"This Minecraft version is not supported by the datapack. Please use the 1.18.x to prevent errors.","color":"gold"}]
   }
 }
 
