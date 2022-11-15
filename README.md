@@ -8,7 +8,7 @@ This datapack tries to make the game a bit more exciting and risky by adding ove
 You either choose the relaxed normal mode with few natural disasters (perfect for survival worlds), or test yourself in the challenge mode with rapid succession of disasters.
 If you still don't like something, or if you only want to test individual natural disasters, or if you want to customize certain ones to your liking, you can easily do this via the in-game GUI, which you can access with the command `/function #nadi:menu`.
 
-## 📖 Features:
+## 📖 Features
 
 - 6 different and unique natural disasters
 - easy in-game gui with many settings and options (`/function #nadi:menu`)
@@ -16,7 +16,7 @@ If you still don't like something, or if you only want to test individual natura
 - as performant as possible
 - actively developed
 
-## 💥 Natural disasters:
+## 💥 Natural disasters
 
 - Acid rain
 - Blizzard (snowstorm)
@@ -25,7 +25,7 @@ If you still don't like something, or if you only want to test individual natura
 - Meteorite
 - Thunderstorm
 
-## Planned natural disasters:
+## Planned natural disasters
 
 - Volcanoes
 - Tsunamis
@@ -36,7 +36,7 @@ If you still don't like something, or if you only want to test individual natura
 - Hurricanes
 - Zombie Apocalypses
 
-## Notes:
+## Notes
 
 - tested for Fabric and Vanilla in 1.19
 - not tested with Forge, Bukkti, Spigot and PaperSpigot but probably don't work
