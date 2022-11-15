@@ -12,10 +12,10 @@ function stop_disaster {
   function nadi:menu/click
 
   execute if score %disasterActive nadi.data matches 0 run {
-    title @s actionbar {"text": "No natural diasters active"}
+    title @s actionbar {"text": "No Natural Disasters active"}
   }
   execute if score %disasterActive nadi.data matches 1 run {
-    title @s actionbar {"text": "Stopped natural diaster"}
+    title @s actionbar {"text": "Stopped Natural Diaster"}
     function #nadi:api/v1/stop
   }
 }
@@ -24,7 +24,7 @@ dir start_disaster {
   function acid_rain {
     function nadi:menu/click
 
-    title @s actionbar {"text": "Starting an acid rain"}
+    title @s actionbar {"text": "Starting an Acid Rain"}
     function nadi:menu/pages/main
     function nadi:disasters/acid_rain/api/start
   }
@@ -32,7 +32,7 @@ dir start_disaster {
   function blizzard {
     function nadi:menu/click
 
-    title @s actionbar {"text": "Starting an blizzard"}
+    title @s actionbar {"text": "Starting an Blizzard"}
     function nadi:menu/pages/main
     function nadi:disasters/blizzard/api/start
   }
@@ -40,7 +40,7 @@ dir start_disaster {
   function doline {
     function nadi:menu/click
 
-    title @s actionbar {"text": "Starting an doline"}
+    title @s actionbar {"text": "Starting an Doline"}
     function nadi:menu/pages/main
     function nadi:disasters/doline/api/start
   }
@@ -48,7 +48,7 @@ dir start_disaster {
   function hail {
     function nadi:menu/click
 
-    title @s actionbar {"text": "Starting an hail"}
+    title @s actionbar {"text": "Starting an Hail"}
     function nadi:menu/pages/main
     function nadi:disasters/hail/api/start
   }
@@ -56,7 +56,7 @@ dir start_disaster {
   function meteoroid {
     function nadi:menu/click
 
-    title @s actionbar {"text": "Starting an meteoroid"}
+    title @s actionbar {"text": "Starting an Meteoroid"}
     function nadi:menu/pages/main
     function nadi:disasters/meteoroid/api/start
   }
@@ -64,7 +64,7 @@ dir start_disaster {
   function thunderstorm {
     function nadi:menu/click
 
-    title @s actionbar {"text": "Starting an thunderstorm"}
+    title @s actionbar {"text": "Starting an Thunderstorm"}
     function nadi:menu/pages/main
     function nadi:disasters/thunderstorm/api/start
   }
@@ -84,7 +84,7 @@ function start_disaster {
   execute if score %disasterActive nadi.data matches 0 run {
     function nadi:menu/pages/start_disaster
   }
-  execute if score %disasterActive nadi.data matches 1 run title @s actionbar {"text": "You can't start a second natural disaster when another one is in progress"}
+  execute if score %disasterActive nadi.data matches 1 run title @s actionbar {"text": "You can't start a second Natural Disaster when another one is in progress"}
 }
 
 function start_random_disaster {
@@ -94,7 +94,7 @@ function start_random_disaster {
     title @s actionbar {"text": "Started random natural disaster"}
     function nadi:core/select
   }
-  execute if score %disasterActive nadi.data matches 1 run title @s actionbar {"text": "You can't start a second natural disaster when another one is in progress"}
+  execute if score %disasterActive nadi.data matches 1 run title @s actionbar {"text": "You can't start a second Natural Disaster when another one is in progress"}
 
 }
 
