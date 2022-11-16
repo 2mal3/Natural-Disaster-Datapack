@@ -126,7 +126,7 @@ dir clock {
       # Helmets of players in creative mode and spectator mode are not destroyed, as the players are not affected by the effects anyway
       execute if entity @s[gamemode=!spectator,gamemode=!creative] run {
         execute store result score .temp0 nadi.data run data get entity @s Inventory[{Slot: 103b}].tag.Damage
-        scoreboard players add .temp0 nadi.data 1
+        scoreboard players add .temp0 nadi.data 4
         execute store result storage nadi:data root.temp int 1 run scoreboard players get .temp0 nadi.data
         item modify entity @s armor.head nadi:disasters/acid_rain/store_damage
       }
