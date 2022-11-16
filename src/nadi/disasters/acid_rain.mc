@@ -97,18 +97,19 @@ dir clock {
         summon minecraft:marker ~ ~ ~ {Tags: ["nadi.acidRain"]}
       }
       spreadplayers ~ ~ 1 64 false @e[type=minecraft:marker,tag=nadi.acidRain,distance=..1]
-      execute as @e[type=minecraft:marker,tag=nadi.acidRain] at @s positioned ~-1 ~-1 ~-1 run {
-        LOOP(3, x) {
-          LOOP(3, y) {
-            execute positioned ~<%x%> ~ ~<%y%> unless block ~ ~ ~ #nadi:disasters/acid_rain/ignore if block ~ ~1 ~ #nadi:utilities/air_like run setblock ~ ~ ~ minecraft:air
-          }
-        }
-        # Some fancy effects
-        playsound minecraft:block.lava.extinguish weather @a ~ ~ ~ 0.5 2
-        particle minecraft:smoke ~ ~0.5 ~ 1 0.1 1 0 50 force @a[distance=..64]
+    }
 
-        kill @s
+    execute as @e[type=minecraft:marker,tag=nadi.acidRain] at @s positioned ~-1 ~-1 ~-1 run {
+      LOOP(3, x) {
+        LOOP(3, y) {
+          execute positioned ~<%x%> ~ ~<%y%> unless block ~ ~ ~ #nadi:disasters/acid_rain/ignore if block ~ ~1 ~ #nadi:utilities/air_like run setblock ~ ~ ~ minecraft:air
+        }
       }
+      # Some fancy effects
+      playsound minecraft:block.lava.extinguish weather @a ~ ~ ~ 0.5 2
+      particle minecraft:smoke ~ ~0.5 ~ 1 0.1 1 0 50 force @a[distance=..64]
+
+      kill @s
     }
   }
 
