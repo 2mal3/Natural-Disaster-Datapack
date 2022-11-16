@@ -26,8 +26,8 @@ dir api {
     scoreboard players set %active nadi.thunderstorm 0
 
     scoreboard players set $enabled nadi.thunderstorm 1
-    scoreboard players set $minTime nadi.thunderstorm 10
-    scoreboard players set $maxTime nadi.thunderstorm 15
+    scoreboard players set $minTime nadi.thunderstorm 20
+    scoreboard players set $maxTime nadi.thunderstorm 30
   }
 
   function uninstall {

@@ -26,8 +26,8 @@ dir api {
     scoreboard players set %active nadi.hail 0
 
     scoreboard players set $enabled nadi.hail 1
-    scoreboard players set $minTime nadi.hail 10
-    scoreboard players set $maxTime nadi.hail 15
+    scoreboard players set $minTime nadi.hail 20
+    scoreboard players set $maxTime nadi.hail 30
   }
 
   function uninstall {

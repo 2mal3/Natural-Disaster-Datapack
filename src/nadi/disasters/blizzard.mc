@@ -27,8 +27,8 @@ dir api {
     scoreboard players set %active nadi.blizzard 0
 
     scoreboard players set $enabled nadi.blizzard 1
-    scoreboard players set $minTime nadi.blizzard 10
-    scoreboard players set $maxTime nadi.blizzard 15
+    scoreboard players set $minTime nadi.blizzard 15
+    scoreboard players set $maxTime nadi.blizzard 20
   }
 
   function uninstall {
