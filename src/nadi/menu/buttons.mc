@@ -1,5 +1,19 @@
 ## Actions of buttons in the gui
 
+dir challenge_mode {
+  function on {
+    function nadi:menu/utilities/click
+
+
+
+    tellraw @s {"text": "Challenge Mode activated. Watch out.", "color": "gold"}
+  }
+  function off {
+    function nadi:menu/utilities/click
+    tellraw @s {"text": "Okay!", "color": "gold"}
+  }
+}
+
 function reinstall {
   function nadi:menu/utilities/click
   tellraw @s {"text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}

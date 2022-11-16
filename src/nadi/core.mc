@@ -94,7 +94,8 @@ function install {
 function first_join {
   # Only send the messages to the first player that joins the world
   execute if score %firstPlayerJoin nadi.data matches 0 run {
-    scoreboard players set %first_join nadi.data 1
+    scoreboard players set %firstPlayerJoin nadi.data 1
+    function nadi:menu/pages/challenge_mode
   }
 }
 
