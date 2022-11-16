@@ -1,7 +1,7 @@
 ## Actions of buttons in the gui
 
 function reinstall {
-  function nadi:menu/click
+  function nadi:menu/utilities/click
   tellraw @s {"text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
 
   tellraw @s [{"text": "Do you really want to reinstall the Natural Disaster Datapack?\n", "color": "red"}, {"text": "[ No ]", "color": "dark_green", "clickEvent": {"action": "run_command", "value": "/function nadi:menu/pages/main"}, "hoverEvent":{"action": "show_text", "contents": "§7*click*"}}, {"text": "  [ Yes ]","color":"dark_red", "clickEvent": {"action": "run_command", "value": "/function nadi:core/reinstall"}, "hoverEvent": {"action": "show_text", "contents": "§7*click*"}}]
@@ -9,7 +9,7 @@ function reinstall {
 }
 
 function stop_disaster {
-  function nadi:menu/click
+  function nadi:menu/utilities/click
 
   execute if score %disasterActive nadi.data matches 0 run {
     title @s actionbar {"text": "No Natural Disasters active"}
@@ -22,7 +22,7 @@ function stop_disaster {
 
 dir start_disaster {
   function acid_rain {
-    function nadi:menu/click
+    function nadi:menu/utilities/click
 
     title @s actionbar {"text": "Starting an Acid Rain"}
     function nadi:menu/pages/main
@@ -30,7 +30,7 @@ dir start_disaster {
   }
 
   function blizzard {
-    function nadi:menu/click
+    function nadi:menu/utilities/click
 
     title @s actionbar {"text": "Starting an Blizzard"}
     function nadi:menu/pages/main
@@ -38,7 +38,7 @@ dir start_disaster {
   }
 
   function doline {
-    function nadi:menu/click
+    function nadi:menu/utilities/click
 
     title @s actionbar {"text": "Starting an Doline"}
     function nadi:menu/pages/main
@@ -46,7 +46,7 @@ dir start_disaster {
   }
 
   function hail {
-    function nadi:menu/click
+    function nadi:menu/utilities/click
 
     title @s actionbar {"text": "Starting an Hail"}
     function nadi:menu/pages/main
@@ -54,7 +54,7 @@ dir start_disaster {
   }
 
   function meteoroid {
-    function nadi:menu/click
+    function nadi:menu/utilities/click
 
     title @s actionbar {"text": "Starting an Meteoroid"}
     function nadi:menu/pages/main
@@ -62,7 +62,7 @@ dir start_disaster {
   }
 
   function thunderstorm {
-    function nadi:menu/click
+    function nadi:menu/utilities/click
 
     title @s actionbar {"text": "Starting an Thunderstorm"}
     function nadi:menu/pages/main
@@ -70,7 +70,7 @@ dir start_disaster {
   }
 
   function hurricane {
-    function nadi:menu/click
+    function nadi:menu/utilities/click
 
     title @s actionbar {"text": "Starting an hurricane"}
     function nadi:menu/pages/main
@@ -79,7 +79,7 @@ dir start_disaster {
 }
 
 function start_disaster {
-  function nadi:menu/click
+  function nadi:menu/utilities/click
 
   execute if score %disasterActive nadi.data matches 0 run {
     function nadi:menu/pages/start_disaster
@@ -88,7 +88,7 @@ function start_disaster {
 }
 
 function start_random_disaster {
-  function nadi:menu/click
+  function nadi:menu/utilities/click
 
   execute if score %disasterActive nadi.data matches 0 run {
     title @s actionbar {"text": "Started random natural disaster"}
