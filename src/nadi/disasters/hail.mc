@@ -43,10 +43,10 @@ function start {
   scoreboard players set %disasterActive nadi.data 1
 
   # Generate a random duration for the disaster
-  scoreboard players operation .in0 nadi.data = $minTime nadi.hail
-  scoreboard players operation .in1 nadi.data = $maxTime nadi.hail
-  function nadi:utilities/random
-  scoreboard players operation %time nadi.hail = .out0 nadi.data
+  scoreboard players operation .in0 nasibu = $minTime nadi.hail
+  scoreboard players operation .in1 nasibu = $maxTime nadi.hail
+  function nasibu:random
+  scoreboard players operation %time nadi.hail = .out0 nasibu
 
   # Disable sleeping
   scoreboard players set %preventSleep nadi.data 1

@@ -1,28 +1,6 @@
 import ../../macros/log.mcm
 
 
-## Random number generator
-function random {
-  # Generate random number
-  scoreboard players operation .rng nadi.random *= $multiplier nadi.random
-  scoreboard players operation .rng nadi.random += $increment nadi.random
-
-  # Swap bits
-  scoreboard players operation .bitSwap nadi.random = .rng nadi.random
-  scoreboard players operation .bitSwap nadi.random /= $65536 nadi.random
-  scoreboard players operation .rng nadi.random *= $65536 nadi.random
-  scoreboard players operation .rng nadi.random += bitSwap nadi.random
-
-  # Return output
-  scoreboard players operation .temp0 nadi.data = .in1 nadi.data
-  scoreboard players operation .temp0 nadi.data -= .in0 nadi.data
-  scoreboard players add .temp0 nadi.data 1
-  scoreboard players operation .out0 nadi.data = .rng nadi.random
-  scoreboard players operation .out0 nadi.data %= .temp0 nadi.data
-  scoreboard players operation .out0 nadi.data += .in0 nadi.data
-}
-
-
 ## Random predicates
 dir random {
   predicate 20 {

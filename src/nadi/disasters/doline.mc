@@ -43,10 +43,10 @@ function start {
   scoreboard players set %disasterActive nadi.data 1
 
   # Generate a random duration for the disaster
-  scoreboard players operation .in0 nadi.data = $minDepth nadi.doline
-  scoreboard players operation .in1 nadi.data = $maxDepth nadi.doline
-  function nadi:utilities/random
-  scoreboard players operation %depth nadi.doline = .out0 nadi.data
+  scoreboard players operation .in0 nasibu = $minDepth nadi.doline
+  scoreboard players operation .in1 nasibu = $maxDepth nadi.doline
+  function nasibu:random
+  scoreboard players operation %depth nadi.doline = .out0 nasibu
 
   # f9764ddd-6ec6-4195-825a-cf4fcc4c437c
   execute as @r[gamemode=!spectator,predicate=nadi:utilities/in_overworld,predicate=nadi:disasters/doline/over_0] at @s run summon minecraft:marker ~ ~ ~ {UUID: [I; -109687331, 1858486677, -2107977905, -867417220]}

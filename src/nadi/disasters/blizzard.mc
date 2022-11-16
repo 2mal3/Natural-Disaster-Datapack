@@ -45,10 +45,10 @@ function start {
   scoreboard players set %disasterActive nadi.data 1
 
   # Generate a random duration for the disaster
-  scoreboard players operation .in0 nadi.data = $minTime nadi.blizzard
-  scoreboard players operation .in1 nadi.data = $maxTime nadi.blizzard
-  function nadi:utilities/random
-  scoreboard players operation %time nadi.blizzard = .out0 nadi.data
+  scoreboard players operation .in0 nasibu = $minTime nadi.blizzard
+  scoreboard players operation .in1 nasibu = $maxTime nadi.blizzard
+  function nasibu:random
+  scoreboard players operation %time nadi.blizzard = .out0 nasibu
 
   # Start diaster loops
   schedule function nadi:disasters/blizzard/clock/minute 60s replace

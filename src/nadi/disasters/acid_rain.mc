@@ -43,10 +43,10 @@ function start {
   scoreboard players set %disasterActive nadi.data 1
 
   # Generate a random duration for the disaster
-  scoreboard players operation .in0 nadi.data = $minTime nadi.acidRain
-  scoreboard players operation .in1 nadi.data = $maxTime nadi.acidRain
-  function nadi:utilities/random
-  scoreboard players operation %time nadi.acidRain = .out0 nadi.data
+  scoreboard players operation .in0 nasibu = $minTime nadi.acidRain
+  scoreboard players operation .in1 nasibu = $maxTime nadi.acidRain
+  function nasibu:random
+  scoreboard players operation %time nadi.acidRain = .out0 nasibu
 
   # Set weather to thunder
   weather rain 999999

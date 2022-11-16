@@ -2,10 +2,10 @@ import ../../macros/log.mcm
 
 
 function random_time {
-  scoreboard players operation .in0 nadi.data = $minTime nadi.data
-  scoreboard players operation .in1 nadi.data = $maxTime nadi.data
-  function nadi:utilities/random
-  scoreboard players operation %time nadi.data = .out0 nadi.data
+  scoreboard players operation .in0 nasibu = $minTime nadi.data
+  scoreboard players operation .in1 nasibu = $maxTime nadi.data
+  function nasibu:random
+  scoreboard players operation %time nadi.data = .out0 nasibu
 }
 
 
@@ -69,12 +69,6 @@ function install {
   # Init config
   scoreboard players set $minTime nadi.data 140
   scoreboard players set $maxTime nadi.data 600
-  # Set up random number generator
-  execute store result score .rng nadi.random run seed
-  scoreboard players set $65536 nadi.random 65536
-  scoreboard players set $multiplier nadi.random 1664525
-  scoreboard players set $increment nadi.random 1013904223
-  scoreboard players set .bitSwap nadi.random 0
   # Create storage
   #declare storage nadi:data
   data merge storage nadi:data {root: {temp: 0}}

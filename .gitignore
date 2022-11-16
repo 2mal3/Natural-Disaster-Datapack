@@ -3,6 +3,8 @@ CROSS_RUN.json
 data/global
 data/minecraft
 
+data/nasibu
+
 data/nadi/advancements
 data/nadi/functions
 data/nadi/predicates
