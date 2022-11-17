@@ -46,7 +46,7 @@ dir v1 {
     nadi:disasters/hail/api/uninstall
   }
 
-  function challenge_mode {
+  functions challenge_mode {
     nadi:disasters/thunderstorm/api/challenge_mode
     nadi:disasters/acid_rain/api/challenge_mode
     nadi:disasters/doline/api/challenge_mode
