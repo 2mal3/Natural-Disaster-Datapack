@@ -48,3 +48,13 @@ function start_disaster {
   tellraw @s {"text": ""}
   tellraw @s {"text": "← Back", "color": "red", "clickEvent": {"action": "run_command", "value": "/function nadi:menu/pages/main"}, "hoverEvent": {"action": "show_text", "contents": "§7*click*"}}
 }
+
+function challenge_mode {
+  function nadi:menu/utilities/click
+
+  tellraw @s [{"text":"Do you want to activate the ","color":"gold"},{"text":"Challenge Mode","color":"red"},{"text":"?", "color": "gold"}]
+  tellraw @s {"text": "Natural Disasters will occur much more often, but won't last as long.", "color": "gold"}
+  tellraw @s [{"text":"[ Yes ]","color":"dark_green","clickEvent":{"action":"run_command","value":"a"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" \u0020","color":"gold"},{"text":"[ No ]","color":"dark_red","clickEvent":{"action":"run_command","value":"a"},"hoverEvent":{"action":"show_text","contents":"*click*"}}]
+
+  tellraw @s {"text":"\nDon't worry, you can always change this later in the datapack settings.","italic":true,"color":"gray"}
+}
