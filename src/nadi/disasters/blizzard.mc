@@ -25,15 +25,31 @@ dir api {
 
     scoreboard players set %time nadi.blizzard 0
     scoreboard players set %active nadi.blizzard 0
+    function nadi:disasters/blizzard/config/normal
 
     scoreboard players set $enabled nadi.blizzard 1
-    scoreboard players set $minTime nadi.blizzard 15
-    scoreboard players set $maxTime nadi.blizzard 20
   }
 
   function uninstall {
     scoreboard objectives remove nadi.blizzard
     scoreboard objectives remove nadi.blizzard.soundTime
+  }
+
+  function challenge_mode {
+    function nadi:disasters/blizzard/config/challenge_mode
+  }
+}
+
+
+## Config
+dir config {
+  function normal {
+    scoreboard players set $minTime nadi.blizzard 10
+    scoreboard players set $maxTime nadi.blizzard 20
+  }
+  function challenge_mode {
+    scoreboard players set $minTime nadi.blizzard 10
+    scoreboard players set $maxTime nadi.blizzard 15
   }
 }
 

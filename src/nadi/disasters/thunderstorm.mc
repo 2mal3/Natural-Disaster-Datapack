@@ -24,14 +24,30 @@ dir api {
 
     scoreboard players set %time nadi.thunderstorm 0
     scoreboard players set %active nadi.thunderstorm 0
+    function nadi:disasters/thunderstorm/config/normal
 
     scoreboard players set $enabled nadi.thunderstorm 1
-    scoreboard players set $minTime nadi.thunderstorm 20
-    scoreboard players set $maxTime nadi.thunderstorm 30
   }
 
   function uninstall {
     scoreboard objectives remove nadi.thunderstorm
+  }
+
+  function challenge_mode {
+    function nadi:disasters/thunderstorm/config/challenge_mode
+  }
+}
+
+
+## Config
+dir config {
+  function normal {
+    scoreboard players set $minTime nadi.thunderstorm 20
+    scoreboard players set $maxTime nadi.thunderstorm 30
+  }
+  function challenge_mode {
+    scoreboard players set $minTime nadi.thunderstorm 12
+    scoreboard players set $maxTime nadi.thunderstorm 15
   }
 }
 

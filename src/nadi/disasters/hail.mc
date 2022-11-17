@@ -24,14 +24,30 @@ dir api {
 
     scoreboard players set %time nadi.hail 0
     scoreboard players set %active nadi.hail 0
+    function nadi:disasters/hail/config/normal
 
     scoreboard players set $enabled nadi.hail 1
-    scoreboard players set $minTime nadi.hail 20
-    scoreboard players set $maxTime nadi.hail 30
   }
 
   function uninstall {
     scoreboard objectives remove nadi.hail
+  }
+
+  function challenge_mode {
+    function nadi:disasters/hail/config/challenge_mode
+  }
+}
+
+
+## Config
+dir config {
+  function normal {
+    scoreboard players set $minTime nadi.hail 20
+    scoreboard players set $maxTime nadi.hail 30
+  }
+  function challenge_mode {
+    scoreboard players set $minTime nadi.hail 12
+    scoreboard players set $maxTime nadi.hail 15
   }
 }
 

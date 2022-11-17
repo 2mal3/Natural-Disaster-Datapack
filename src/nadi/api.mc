@@ -49,9 +49,7 @@ dir v1 {
   functions challenge_mode {
     nadi:disasters/thunderstorm/api/challenge_mode
     nadi:disasters/acid_rain/api/challenge_mode
-    nadi:disasters/doline/api/challenge_mode
     nadi:disasters/blizzard/api/challenge_mode
-    nadi:disasters/meteoroid/api/challenge_mode
     nadi:disasters/hail/api/challenge_mode
   }
 

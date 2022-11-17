@@ -4,7 +4,9 @@ dir challenge_mode {
   function on {
     function nadi:menu/utilities/click
 
-
+    scoreboard players set $minTime nadi.data 17
+    scoreboard players set $maxTime nadi.data 20
+    function #nadi:api/v1/challenge_mode
 
     tellraw @s {"text": "Challenge Mode activated. Watch out.", "color": "gold"}
   }

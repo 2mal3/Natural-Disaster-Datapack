@@ -24,14 +24,26 @@ dir api {
 
     scoreboard players set %time nadi.<name> 0
     scoreboard players set %active nadi.<name> 0
+    function nadi:disasters/<name>/config/normal
 
     scoreboard players set $enabled nadi.<name> 1
-    scoreboard players set $minTime nadi.<name> 10
-    scoreboard players set $maxTime nadi.<name> 15
   }
 
   function uninstall {
     scoreboard objectives remove nadi.<name>
+  }
+}
+
+
+## Config
+dir config {
+  function normal {
+    scoreboard players set $minTime nadi.<name> 20
+    scoreboard players set $maxTime nadi.<name> 30
+  }
+  function challenge_mode {
+    scoreboard players set $minTime nadi.<name> 3
+    scoreboard players set $maxTime nadi.<name> 5
   }
 }
 

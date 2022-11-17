@@ -24,14 +24,30 @@ dir api {
 
     scoreboard players set %time nadi.acidRain 0
     scoreboard players set %active nadi.acidRain 0
+    function nadi:disasters/acid_rain/config/normal
 
     scoreboard players set $enabled nadi.acidRain 1
-    scoreboard players set $minTime nadi.acidRain 10
-    scoreboard players set $maxTime nadi.acidRain 15
   }
 
   function uninstall {
     scoreboard objectives remove nadi.acidRain
+  }
+
+  function challenge_mode {
+    function nadi:disasters/acid_rain/config/challenge_mode
+  }
+}
+
+
+## Config
+dir config {
+  function normal {
+    scoreboard players set $minTime nadi.acidRain 10
+    scoreboard players set $maxTime nadi.acidRain 15
+  }
+  function challenge_mode {
+    scoreboard players set $minTime nadi.acidRain 7
+    scoreboard players set $maxTime nadi.acidRain 10
   }
 }
 
