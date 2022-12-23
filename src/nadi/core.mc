@@ -58,6 +58,7 @@ function install {
 
   # Add scoreboards
   scoreboard objectives add nadi.data dummy
+  scoreboard objectives add nadi.challangeMode trigger "Challange Mode"
   scoreboard objectives add 2mal3.debugMode dummy
   # Set the version in format: xx.xx.xx
   scoreboard players set $version nadi.data <%config.version.int%>
@@ -156,6 +157,7 @@ function uninstall {
   function #nadi:api/v1/uninstall
   # Deletes the scoreboards
   scoreboard objectives remove nadi.data
+  scoreboard objectives remove nadi.challangeMode
   scoreboard objectives remove 2mal3.debugMode
   # Deletes storage
   data remove storage nadi:data root

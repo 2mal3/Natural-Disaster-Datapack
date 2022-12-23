@@ -1,3 +1,6 @@
+import ../../../macros/log.mcm
+
+
 ## Displays the different pages of the GUI
 
 # Displays the main menu
@@ -54,7 +57,22 @@ function challenge_mode {
 
   tellraw @s [{"text":"Do you want to activate the ","color":"gold"},{"text":"Challenge Mode","color":"red"},{"text":"?", "color": "gold"}]
   tellraw @s {"text": "Natural Disasters will occur much more often, but won't last as long.", "color": "gold"}
-  tellraw @s [{"text":"[ Yes ]","color":"dark_green","clickEvent":{"action":"run_command","value":"a"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" \u0020","color":"gold"},{"text":"[ No ]","color":"dark_red","clickEvent":{"action":"run_command","value":"a"},"hoverEvent":{"action":"show_text","contents":"*click*"}}]
+  tellraw @s [{"text":"[ Yes ]","color":"dark_green","clickEvent":{"action":"run_command","value":"/trigger nadi.challangeMode set 1"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" \u0020","color":"gold"},{"text":"[ No ]","color":"dark_red","clickEvent":{"action":"run_command","value":"/trigger nadi.challangeMode set 2"},"hoverEvent":{"action":"show_text","contents":"*click*"}}]
 
   tellraw @s {"text":"\nDon't worry, you can always change this later in the datapack settings.","italic":true,"color":"gray"}
+
+  tag @s add nadi.challangeMode
+  scoreboard players enable @s nadi.challangeMode
+  {
+    execute unless score @a[tag=nadi.challangeMode,limit=1] nadi.challangeMode matches 1.. run schedule function $block 1s replace
+
+    execute if score @a[tag=nadi.challangeMode,limit=1] nadi.challangeMode matches 1.. as @a[tag=nadi.challangeMode] run {
+      tag @s remove nadi.challangeMode
+
+      execute if score @s nadi.challangeMode matches 1 run function nadi:menu/buttons/challenge_mode/on
+      execute if score @s nadi.challangeMode matches 2 run function nadi:menu/buttons/challenge_mode/off
+
+      scoreboard players reset @s nadi.challangeMode
+    }
+  }
 }

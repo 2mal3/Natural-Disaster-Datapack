@@ -12,7 +12,7 @@ dir challenge_mode {
   }
   function off {
     function nadi:menu/utilities/click
-    tellraw @s {"text": "Okay!", "color": "gold"}
+    tellraw @s {"text": "Normal Mode activated.", "color": "gold"}
   }
 }
 
