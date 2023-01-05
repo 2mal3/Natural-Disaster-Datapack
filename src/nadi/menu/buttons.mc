@@ -1,4 +1,127 @@
+
 ## Actions of buttons in the gui
+
+
+dir config {
+  dir generell {
+    dir max_time {
+      function add {
+        scoreboard players add $maxTime nadi.data 10
+        function nadi:menu/config/page
+      }
+      function remove {
+        scoreboard players remove $maxTime nadi.data 10
+        function nadi:menu/config/page
+      }
+    }
+    dir min_time {
+      function add {
+        scoreboard players add $minTime nadi.data 10
+        function nadi:menu/config/page
+      }
+      function remove {
+        scoreboard players remove $minTime nadi.data 10
+        function nadi:menu/config/page
+      }
+    }
+  }
+
+  dir blizzard {
+    function on {
+      scoreboard players set $enabled nadi.blizzard 1
+      function nadi:menu/config/page
+    }
+    function off {
+      scoreboard players set $enabled nadi.blizzard 0
+      function nadi:menu/config/page
+    }
+
+    dir max_time {
+      function add {
+        scoreboard players add $maxTime nadi.blizzard 1
+        function nadi:menu/config/page
+      }
+      function remove {
+        scoreboard players remove $maxTime nadi.blizzard 1
+        function nadi:menu/config/page
+      }
+    }
+    dir min_time {
+      function add {
+        scoreboard players add $minTime nadi.blizzard 1
+        function nadi:menu/config/page
+      }
+      function remove {
+        scoreboard players remove $minTime nadi.blizzard 1
+        function nadi:menu/config/page
+      }
+    }
+  }
+
+  dir doline {
+    function on {
+      scoreboard players set $enabled nadi.acidRain 1
+      function nadi:menu/config/page
+    }
+    function off {
+      scoreboard players set $enabled nadi.acidRain 0
+      function nadi:menu/config/page
+    }
+
+    dir max_time {
+      function add {
+        scoreboard players add $maxTime nadi.acidRain 1
+        function nadi:menu/config/page
+      }
+      function remove {
+        scoreboard players remove $maxTime nadi.acidRain 1
+        function nadi:menu/config/page
+      }
+    }
+    dir min_time {
+      function add {
+        scoreboard players add $minTime nadi.acidRain 1
+        function nadi:menu/config/page
+      }
+      function remove {
+        scoreboard players remove $minTime nadi.acidRain 1
+        function nadi:menu/config/page
+      }
+    }
+  }
+
+  dir acid_rain {
+    function on {
+      scoreboard players set $enabled nadi.acidRain 1
+      function nadi:menu/config/page
+    }
+    function off {
+      scoreboard players set $enabled nadi.acidRain 0
+      function nadi:menu/config/page
+    }
+
+    dir max_time {
+      function add {
+        scoreboard players add $maxTime nadi.acidRain 1
+        function nadi:menu/config/page
+      }
+      function remove {
+        scoreboard players remove $maxTime nadi.acidRain 1
+        function nadi:menu/config/page
+      }
+    }
+    dir min_time {
+      function add {
+        scoreboard players add $minTime nadi.acidRain 1
+        function nadi:menu/config/page
+      }
+      function remove {
+        scoreboard players remove $minTime nadi.acidRain 1
+        function nadi:menu/config/page
+      }
+    }
+  }
+}
 
 dir challenge_mode {
   function on {

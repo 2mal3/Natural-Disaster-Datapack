@@ -1,0 +1,11 @@
+
+# option_bool <value> <scoreboard> <text> <hover text> <function>
+
+macro option_bool {
+  execute if score $$0 $$1 matches 0 run {
+    tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function $$4/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" $$2","color":"gold","hoverEvent":{"action":"show_text","contents":"$$3"}}]
+  }
+  execute if score $$0 $$1 matches 1 run {
+    tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function $$4/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" $$2","color":"gold","hoverEvent":{"action":"show_text","contents":"$$3"}}]
+  }
+}

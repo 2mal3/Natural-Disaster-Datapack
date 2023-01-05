@@ -1,0 +1,11 @@
+
+# option_range <value> <scoreboard> <min> <text> <hover text> <function>
+
+macro option_range {
+  execute if score $$0 $$1 matches ..$$2 run {
+    tellraw @s [{"text":"$$3: ","color":"gold","hoverEvent":{"action":"show_text","contents":"$$4"}},{"text":"[ - ] ","color":"gray","hoverEvent":{"action":"show_text","contents":""}},{"score":{"name":"$$0","objective":"$$1"},"color":"red","hoverEvent":{"action":"show_text","contents":""}},{"text":" [ + ]","color":"dark_green","hoverEvent":{"action":"show_text","contents":""},"clickEvent": {"action": "run_command", "value": "/function $$5/add"}}]
+  }
+  execute if score $$0 $$1 matches <%$$2 + 1%>.. run {
+    tellraw @s [{"text":"$$3: ","color":"gold","hoverEvent":{"action":"show_text","contents":"$$4"}},{"text":"[ - ] ","color":"dark_red","hoverEvent":{"action":"show_text","contents":""},"clickEvent": {"action": "run_command", "value": "/function $$5/remove"}},{"score":{"name":"$$0","objective":"$$1"},"color":"red","hoverEvent":{"action":"show_text","contents":""}},{"text":" [ + ]","color":"dark_green","hoverEvent":{"action":"show_text","contents":""},"clickEvent": {"action": "run_command", "value": "/function $$5/add"}}]
+  }
+}

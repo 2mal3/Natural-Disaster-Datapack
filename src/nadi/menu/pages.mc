@@ -18,6 +18,7 @@ function main {
   tellraw @s {"text": ""}
 
   # Actions
+  tellraw @s [{"text": "⚙", "color": "yellow"}, {"text": " Configure Datapack ➤", "color": "gold", "clickEvent": {"action": "run_command", "value": "/function nadi:menu/config/page_1"}, "hoverEvent": {"action": "show_text", "contents": "§7*click*"}}]
   tellraw @s [{"text": "🗡", "color": "yellow"}, {"text": " Start specific Natural Disaster ➤", "color": "gold", "clickEvent": {"action": "run_command", "value": "/function nadi:menu/buttons/start_disaster"}, "hoverEvent": {"action": "show_text", "contents": "§7*click*"}}]
   tellraw @s [{"text": "⚄", "color": "yellow"}, {"text": " Start a random Natural Disaster", "color": "gold", "clickEvent": {"action": "run_command", "value": "/function nadi:menu/buttons/start_random_disaster"}, "hoverEvent": {"action": "show_text", "contents": "§7*click*"}}]
   tellraw @s [{"text": "⏹", "color": "yellow"}, {"text": " Stop Natural Disaster", "color": "gold", "clickEvent": {"action": "run_command", "value": "/function nadi:menu/buttons/stop_disaster"}, "hoverEvent": {"action": "show_text", "contents": "§7*click*"}}]

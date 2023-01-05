@@ -1,0 +1,26 @@
+
+# option <internal name 1> <internal name 2> <name> <default max> <default min>
+
+macro option {
+  # bool
+  execute if score $enabled nadi.$$0 matches 0 run {
+    tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function nadi:menu/buttons/config/$$1/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" $$2","color":"gold","hoverEvent":{"action":"show_text","contents":"$$2 activated"}}]
+  }
+  execute if score $enabled nadi.$$0 matches 1 run {
+    tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function nadi:menu/buttons/config/$$1/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" $$2","color":"gold","hoverEvent":{"action":"show_text","contents":"$$2 activated"}}]
+  }
+
+  # Range
+  execute if score $maxTime nadi.$$0 matches ..$$4 run {
+    tellraw @s [{"text":"Max Time: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Maxiumum duration of a $$2 (minutes).\n§7Default: $$3"}},{"text":"[ - ] ","color":"gray","hoverEvent":{"action":"show_text","contents":""}},{"score":{"name":"$maxTime","objective":"nadi.$$0"},"color":"red","hoverEvent":{"action":"show_text","contents":""}},{"text":" [ + ]","color":"dark_green","hoverEvent":{"action":"show_text","contents":""},"clickEvent": {"action": "run_command", "value": "/function nadi:menu/buttons/config/$$1/max_time/add"}}]
+  }
+  execute if score $maxTime nadi.$$0 matches <%$$4 + 1%>.. run {
+    tellraw @s [{"text":"Max Time: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Maximum duration of a $$2 (minutes).\n§7Default: $$3"}},{"text":"[ - ] ","color":"dark_red","hoverEvent":{"action":"show_text","contents":""},"clickEvent": {"action": "run_command", "value": "/function nadi:menu/buttons/config/$$1/max_time/remove"}},{"score":{"name":"$maxTime","objective":"nadi.$$0"},"color":"red","hoverEvent":{"action":"show_text","contents":""}},{"text":" [ + ]","color":"dark_green","hoverEvent":{"action":"show_text","contents":""},"clickEvent": {"action": "run_command", "value": "/function nadi:menu/buttons/config/$$1/max_time/add"}}]
+  }
+  execute if score $minTime nadi.$$0 matches ..$$3 run {
+    tellraw @s [{"text":"Min Time: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Minium duration of a $$2 (minutes).\n§7Default: $$4"}},{"text":"[ - ] ","color":"gray","hoverEvent":{"action":"show_text","contents":""}},{"score":{"name":"$minTime","objective":"nadi.$$0"},"color":"red","hoverEvent":{"action":"show_text","contents":""}},{"text":" [ + ]","color":"dark_green","hoverEvent":{"action":"show_text","contents":""},"clickEvent": {"action": "run_command", "value": "/function nadi:menu/buttons/config/$$1/min_time/add"}}]
+  }
+  execute if score $minTime nadi.$$0 matches <%$$3 + 1%>.. run {
+    tellraw @s [{"text":"Min Time: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Minium duration of a $$2 (minutes).\nDefault: $$4"}},{"text":"[ - ] ","color":"dark_red","hoverEvent":{"action":"show_text","contents":""},"clickEvent": {"action": "run_command", "value": "/function nadi:menu/buttons/config/$$1/min_time/remove"}},{"score":{"name":"$minTime","objective":"naid.$$0"},"color":"red","hoverEvent":{"action":"show_text","contents":""}},{"text":" [ + ]","color":"dark_green","hoverEvent":{"action":"show_text","contents":""},"clickEvent": {"action": "run_command", "value": "/function nadi:menu/buttons/config/$$1/min_time/add"}}]
+  }
+}
